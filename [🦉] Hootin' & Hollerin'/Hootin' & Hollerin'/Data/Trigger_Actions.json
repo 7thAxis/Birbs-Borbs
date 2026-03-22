@@ -1,0 +1,120 @@
+{
+    "Changes": [
+        {
+            "LogName": "Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+            "{{ModID}}_CheckForOwlStatue": {
+                "Id": "{{ModID}}_CheckForOwlStatue",
+                "Trigger": "DayStarted",
+                "Condition": "Spiderbuttons.BETAS_ITEM_IN_WORLD (BC)95",
+                "Actions": [ "AddMail Current HnH_OwlStatueSpawned tomorrow" ]
+                },
+            "{{ModID}}_CheckForEggSpawn": {
+                "Id": "{{ModID}}_CheckForEggSpawn",
+                "Trigger": "DayEnding",
+                "Condition": "Spiderbuttons.BETAS_ITEM_IN_WORLD (O){{ModID}}_BrownBarnOwlEgg (O){{ModID}}_RedBarnOwlEgg (O){{ModID}}_PurpleBarnOwlEgg (O){{ModID}}_GoldBarnOwlEgg (O){{ModID}}_BrownBarredOwlEgg (O){{ModID}}_GrayBarredOwlEgg (O){{ModID}}_SlateBarredOwlEgg (O){{ModID}}_GoldBarredOwlEgg (O){{ModID}}_BrownScreechOwlEgg (O){{ModID}}_RedScreechOwlEgg (O){{ModID}}_PurpleScreechOwlEgg (O){{ModID}}_GoldScreechOwlEgg (O){{ModID}}_WhiteSnowyOwlEgg (O){{ModID}}_GraySnowyOwlEgg (O){{ModID}}_StoneSnowyOwlEgg (O){{ModID}}_GoldSnowyOwlEgg (O){{ModID}}_GreenSwampOwlEgg (O){{ModID}}_BrownSwampOwlEgg (O){{ModID}}_PurpleSwampOwlEgg (O){{ModID}}_GoldSwampOwlEgg (O){{ModID}}_BrownSpectacledOwlEgg (O){{ModID}}_SlateSpectacledOwlEgg (O){{ModID}}_RedSpectacledOwlEgg (O){{ModID}}_GoldSpectacledOwlEgg",
+                "Actions": [ "AddMail Current HnH_EggSpawned tomorrow" ]
+                },
+            "{{ModID}}_CuriosityLure": {
+                "Id": "{{ModID}}_CuriosityLure",
+                "Trigger": "DayEnding",
+                "Condition": "{{Exclude Items From Perfection|Contains=false}}, ANY \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_BrownOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_RedOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_BrownOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_PurpleOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_GrayOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_SlateOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_SlateOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_WhiteOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_GreenOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_StoneOwlFeather 5\" \"PLAYER_SHIPPED_BASIC_ITEM current {{ModID}}_GoldOwlFeather 5\"",
+                "Actions": [ "AddMail Current HnH_CuriosityLure tomorrow" ]
+                },
+            "{{ModID}}_CuriosityLureOversightFix": {
+                "Id": "{{ModID}}_CuriosityLureOversightFix",
+                "Trigger": "DayEnding",
+                "Condition": "{{Exclude Items From Perfection|Contains=true}}",
+                "Actions": [ "AddMail Current HnH_CuriosityLure tomorrow" ]
+                },
+            "{{ModID}}_MeetWizard": {
+                "Id": "{{ModID}}_MeetWizard",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_SEEN_EVENT Current 112",
+                "Actions": [ "AddMail Current HnH_CCWarpTotem tomorrow" ]
+                },
+            "{{ModID}}_LargeIncubator": {
+                "Id": "{{ModID}}_LargeIncubator",
+                "Trigger": "DayEnding",
+                "Condition": "BUILDINGS_CONSTRUCTED All Barn 1 1 true",
+                "Actions": [ "AddMail Current HnH_LargeIncubator tomorrow" ]
+                },
+            "{{ModID}}_LeahGift": {
+                "Id": "{{ModID}}_LeahGift",
+                "Trigger": "DayEnding",
+                "Condition": "Spiderbuttons.BETAS_ITEM_IN_WORLD  (O){{ModID}}_BrownOwlFeather (O){{ModID}}_RedOwlFeather (O){{ModID}}_BrownOwlFeather (O){{ModID}}_PurpleOwlFeather (O){{ModID}}_GrayOwlFeather (O){{ModID}}_SlateOwlFeather (O){{ModID}}_SlateOwlFeather (O){{ModID}}_WhiteOwlFeather (O){{ModID}}_GreenOwlFeather (O){{ModID}}_StoneOwlFeather (O){{ModID}}_GoldOwlFeather, DAYS_PLAYED 28",
+                "Actions": [ "AddMail Current HnH_LeahGift tomorrow" ]
+            },
+            "{{ModID}}_StiltOwlScareCrowGift": {
+                "Id": "{{ModID}}_StiltOwlScareCrowGift",
+                "Trigger": "DayEnding",
+                "Condition": "Spiderbuttons.BETAS_ITEM_IN_WORLD (O){{ModID}}_BrownStiltOwlEgg (O){{ModID}}_GrayStiltOwlEgg (O){{ModID}}_GreenStiltOwlEgg (O){{ModID}}_GoldStiltOwlEgg, PLAYER_HAS_MAIL Current islandNorthCaveOpened any",
+                "Actions": [ "AddMail Current HnH_SnailStiltOwlScareCrow tomorrow" ]
+            }
+        }
+    },
+    {
+        "LogName": "Trigger Actions - Craftable paintings true",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+            "{{ModID}}_UseOwlBookKnown": {
+                "Id": "{{ModID}}_UseOwlBookKnown",
+                "MarkActionApplied": false,
+                "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                "Condition": "ITEM_ID Input (O){{ModID}}_HowToPaintOwls",
+                "Actions": ["If PLAYER_HAS_MAIL Current OwlPaintingRecipesKnown ## spacechase0.SpaceCore_ShowHudMessage \"{{i18n:HnH.PaintingRecipesKnown}}\" (O){{ModID}}_HowToPaintOwls ## Spiderbuttons.BETAS_TriggerAction {{ModID}}_UseOwlBookUnknown Manual" ]
+            },
+            "{{ModID}}_UseOwlBookUnknown": {
+                "Id": "{{ModID}}_UseOwlBookUnknown",
+                "MarkActionApplied": false,
+                "Trigger": "Manual",
+                "Actions": [
+                "Spiderbuttons.BETAS_PlaySound newRecipe false",
+                "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:HnH.LearnedPaintingRecipes}}\" (O){{ModID}}_HowToPaintOwls",
+                "AddMail Current OwlPaintingRecipesKnown received",
+                "RemoveMail Current OwlPaintingsInStock all",               
+                    "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem1",
+                    "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem2",
+                    "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem3",
+                    "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem4",
+                    "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem5",
+                    "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem6",
+                    "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem7",
+                "AddConversationTopic HnH.LearnedPaintingRecipes 9999"
+                ]
+            }   
+        },
+        "When": { "Craftable Owl Paintings": true }
+    },
+    {
+        "LogName": "Trigger Actions - Craftable paintings true",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+            "{{ModID}}_UseOwlBookKnown.CraftingFalse": {
+                "Id": "{{ModID}}_UseOwlBookKnown.CraftingFalse",
+                "MarkActionApplied": false,
+                "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                "Condition": "ITEM_ID Input (O){{ModID}}_HowToPaintOwls",
+                "Actions": [
+                    "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:HnH.IDontWannaPaint}}\" (O){{ModID}}_HowToPaintOwls",
+                    "AddMail Current OwlPaintingsInStock received",
+                    "RemoveMail Current OwlPaintingRecipesKnown all",
+                    "RemoveConversationTopic HnH.LearnedPaintingRecipes",
+                        "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem1 false",
+                        "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem2 false",
+                        "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem3 false",
+                        "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem4 false",
+                        "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem5 false",
+                        "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem6 false",
+                        "MarkCraftingRecipeKnown Current {{ModID}}_DummyItem7 false"
+                ]
+            }
+        },
+        "When": { "Craftable Owl Paintings": false }
+    }
+]
+}

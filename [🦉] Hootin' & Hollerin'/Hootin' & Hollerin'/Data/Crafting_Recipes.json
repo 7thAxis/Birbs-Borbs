@@ -1,0 +1,540 @@
+{
+    "Changes": [
+        {
+            "LogName": "Owl Statue Crafting Recipes",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "95": "hnh_owl_feather 5 390 50 {{ModID}}_ForestWarpTotem 1/Home/95/true/{{i18n:OwlStatueRecipe}}",
+                "54": "hnh_owl_feather 5 390 5/Home/54/true/{{i18n:NormalOwlStatueRecipe}}",
+                "{{ModID}}_ForestWarpTotem": "hnh_owl_feather 5 771 25 334 1/Home/{{ModID}}_ForestWarpTotem/false/{{i18n:CinderSapWarpTotemRecipe}}",
+                "856": "hnh_owl_feather 1 336 5 64 1/Home/856/false/{{i18n:CuriosityLureRecipe}}"
+            }
+        },
+        {
+            "LogName": "Owl Statue Crafting Recipes",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModID}}_DummyItem1": "hnh_owl_feather 3 color_brown 1 388 20 771 10/Home/{{ModID}}_DummyItem1/true/{{i18n:HnH.ScreechOwlPainting}}",
+                "{{ModID}}_DummyItem2": "hnh_owl_feather 3 color_brown 1 388 20 771 10/Home/{{ModID}}_DummyItem2/true/{{i18n:HnH.SwampOwlPainting}}",
+                "{{ModID}}_DummyItem3": "hnh_owl_feather 3 color_brown 1 388 20 771 10/Home/{{ModID}}_DummyItem3/true/{{i18n:HnH.SnowyOwlPainting}}",
+                "{{ModID}}_DummyItem4": "hnh_owl_feather 3 color_brown 1 388 20 771 10/Home/{{ModID}}_DummyItem4/true/{{i18n:HnH.BarnOwlPainting}}",
+                "{{ModID}}_DummyItem5": "hnh_owl_feather 3 color_brown 1 388 20 771 10/Home/{{ModID}}_DummyItem5/true/{{i18n:HnH.BarredOwlPainting}}",
+                "{{ModID}}_DummyItem6": "hnh_owl_feather 3 color_brown 1 388 20 771 10/Home/{{ModID}}_DummyItem6/true/{{i18n:HnH.BurrowingOwlPainting}}",
+                "{{ModID}}_DummyItem7": "hnh_owl_feather 3 color_brown 1 388 20 771 10/Home/{{ModID}}_DummyItem7/true/{{i18n:HnH.SpectacledOwlPainting}}"
+            },
+            "When": { "Craftable Owl Paintings": true }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CraftingRecipeOverrides",
+            "Entries": {
+                "95": {
+                    "ProductQualifiedId": "(BC)95",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 5,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)390",
+                            "Amount": 50
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O){{ModID}}_ForestWarpTotem",
+                            "Amount": 1
+                        }
+                    ]
+                },
+                "54": {
+                    "ProductQualifiedId": "(BC)54",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 5,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)390",
+                            "Amount": 50
+                        }
+                    ]
+                },
+                "{{ModID}}_ForestWarpTotem": {
+                    "ProductQualifiedId": "(O){{ModID}}_ForestWarpTotem",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 25
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)334",
+                            "Amount": 1
+                        }
+                    ]
+                },
+                "856": {
+                    "ProductQualifiedId": "(O)856",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 1,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)336",
+                            "Amount": 3
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)64",
+                            "Amount": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CraftingRecipeOverrides",
+            "Entries": {
+                "{{ModID}}_DummyItem1": {
+                    "ProductQualifiedId": "(F){{ModID}}_ScreechOwlPainting",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_brown",
+                            "OverrideText": "{{i18n:HnH.AnyBrownDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_white",
+                            "OverrideText": "{{i18n:HnH.AnyWhiteDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 48,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)388",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        }
+                    ]
+                },
+                "{{ModID}}_DummyItem2": {
+                    "ProductQualifiedId": "(F){{ModID}}_SwampOwlPainting",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_green",
+                            "OverrideText": "{{i18n:HnH.AnyGreenDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_red",
+                            "OverrideText": "{{i18n:HnH.AnyRedDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 176,
+                                "Y": 48,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)388",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        }
+                    ]
+                },
+                "{{ModID}}_DummyItem3": {
+                    "ProductQualifiedId": "(F){{ModID}}_SnowyOwlPainting",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_cyan",
+                            "OverrideText": "{{i18n:HnH.AnyBlueDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 208,
+                                "Y": 48,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_white",
+                            "OverrideText": "{{i18n:HnH.AnyWhiteDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 48,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)388",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        }
+                    ]
+                },
+                "{{ModID}}_DummyItem4": {
+                    "ProductQualifiedId": "(F){{ModID}}_BarnOwlPainting",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_brown",
+                            "OverrideText": "{{i18n:HnH.AnyBrownDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_blue",
+                            "OverrideText": "{{i18n:HnH.AnyBlueDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 48,
+                                "Y": 32,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)388",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        }
+                    ]
+                },
+                "{{ModID}}_DummyItem5": {
+                    "ProductQualifiedId": "(F){{ModID}}_BarredOwlPainting",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_brown",
+                            "OverrideText": "{{i18n:HnH.AnyBrownDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_gray",
+                            "OverrideText": "{{i18n:HnH.AnyGrayDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 48,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)388",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        }
+                    ]
+                },
+                "{{ModID}}_DummyItem6": {
+                    "ProductQualifiedId": "(F){{ModID}}_BurrowingOwlPainting",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_brown",
+                            "OverrideText": "{{i18n:HnH.AnyBrownDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_green",
+                            "OverrideText": "{{i18n:HnH.AnyGreenDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)388",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        }
+                    ]
+                },
+                "{{ModID}}_DummyItem7": {
+                    "ProductQualifiedId": "(F){{ModID}}_SpectacledOwlPainting",
+                    "ProductAmount": 1,
+                    "Ingredients": [
+                        {
+                            "Type": "ContextTag",
+                            "Value": "hnh_owl_feather",
+                            "Amount": 3,
+                            "OverrideText": "{{i18n:HnH.AnyOwlFeather}}",
+                            "OverrideTexturePath": "Objects/7A.HnH/Feathers",
+                            "OverrideTextureRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 16,
+                                "Height": 16
+                            }
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_brown",
+                            "OverrideText": "{{i18n:HnH.AnyBrownDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "ContextTag",
+                            "Value": "color_green",
+                            "OverrideText": "{{i18n:HnH.AnyGreenDye}}",
+                            "OverrideTexturePath": "Maps/SpringObjects",
+                            "OverrideTextureRect": {
+                                "X": 144,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "Amount": 1
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)388",
+                            "Amount": 20
+                        },
+                        {
+                            "Type": "Item",
+                            "Value": "(O)771",
+                            "Amount": 10
+                        }
+                    ]
+                }
+            },
+            "When": { "Craftable Owl Paintings": true }
+        }
+
+    ]
+}

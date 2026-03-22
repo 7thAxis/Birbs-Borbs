@@ -1,0 +1,42 @@
+{
+    "Changes": [
+        {
+            "LogName": "LitD Music",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "{{ModID}}_Waltz": {
+                    "ID": "{{ModID}}_Waltz",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/TheFrenchDodo_Waltz.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModID}}_AdultOwl": {
+                    "ID": "{{ModID}}_AdultOwl",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/edschaefer_AdultOwl.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
+                "{{ModID}}_Owlet": {
+                    "ID": "{{ModID}}_Owlet",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/edschaefer_Owlet.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/JukeboxTracks",
+            "Entries": {
+                "{{ModID}}_Waltz": {
+                    "Name": "{{i18n: HnH.BogsWaltz}}",
+                    "Available": null
+                }
+            }
+        }
+    ]
+}

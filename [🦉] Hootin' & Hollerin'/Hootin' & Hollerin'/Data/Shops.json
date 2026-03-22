@@ -1,0 +1,101 @@
+{
+    "Changes": [
+        {
+            "LogName": "Incubator display changes",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "TargetField": [ "254" ],
+            "Entries": {
+                "DisplayName": "{{i18n:HnH.LargeIncubator.Display}}",
+                "Description": "{{i18n:HnH.LargeIncubator.Desc}}"
+            },
+            "When": { "Ostrich Incubator Changes": true }
+        },
+        {
+            "LogName": "Incubator display changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "AnimalShop", "Items" ],
+            "Entries": {
+                "{{ModID}}_OstrichIncubator": {
+                    "Price": 10000,
+                    "Condition": "BUILDINGS_CONSTRUCTED All Barn 1 1 true",
+                    "Id": "HnH_(BC)254",
+                    "ItemId": "(BC)254"
+                }
+            },
+            "When": { "Early Ostrich Incubator": true }
+        },
+        {
+            "LogName": "Incubator display changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "AnimalShop", "Items" ],
+            "Entries": {
+                "{{ModID}}_ScreechOwlPainting": {
+                    "Price": 10000,
+                    "Condition": "PLAYER_HAS_MAIL Current OwlPaintingsInStock Any",
+                    "Id": "{{ModID}}_ScreechOwlPainting",
+                    "ItemId": "{{ModID}}_ScreechOwlPainting"
+                },
+                "{{ModID}}_SwampOwlPainting": {
+                    "Price": 10000,
+                    "Condition": "PLAYER_HAS_MAIL Current OwlPaintingsInStock Any",
+                    "Id": "{{ModID}}_SwampOwlPainting",
+                    "ItemId": "{{ModID}}_SwampOwlPainting"
+                },
+                "{{ModID}}_SnowyOwlPainting": {
+                    "Price": 10000,
+                    "Condition": "PLAYER_HAS_MAIL Current OwlPaintingsInStock Any",
+                    "Id": "{{ModID}}_SnowyOwlPainting",
+                    "ItemId": "{{ModID}}_SnowyOwlPainting"
+                },
+                "{{ModID}}_BarnOwlPainting": {
+                    "Price": 10000,
+                    "Condition": "PLAYER_HAS_MAIL Current OwlPaintingsInStock Any",
+                    "Id": "{{ModID}}_BarnOwlPainting",
+                    "ItemId": "{{ModID}}_BarnOwlPainting"
+                },
+                "{{ModID}}_BarredOwlPainting": {
+                    "Price": 10000,
+                    "Condition": "PLAYER_HAS_MAIL Current OwlPaintingsInStock Any",
+                    "Id": "{{ModID}}_BarredOwlPainting",
+                    "ItemId": "{{ModID}}_BarredOwlPainting"
+                },
+                "{{ModID}}_BurrowingOwlPainting": {
+                    "Price": 10000,
+                    "Condition": "PLAYER_HAS_MAIL Current OwlPaintingsInStock Any",
+                    "Id": "{{ModID}}_BurrowingOwlPainting",
+                    "ItemId": "{{ModID}}_BurrowingOwlPainting"
+                },
+                "{{ModID}}_SpectacledOwlPainting": {
+                    "Price": 10000,
+                    "Condition": "PLAYER_HAS_MAIL Current OwlPaintingsInStock Any",
+                    "Id": "{{ModID}}_SpectacledOwlPainting",
+                    "ItemId": "{{ModID}}_SpectacledOwlPainting"
+                }
+            },
+            "When": { "Craftable Owl Paintings": false }
+        },
+        {
+            "LogName": "Backup Cookbook method",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Bookseller", "Items" ],
+            "Entries": {
+                "{{ModID}}_HowToPaintOwls":
+                    {
+                        "ActionsOnPurchase": null,
+                        "TradeItemAmount": 1,
+                        "Price": 5000,
+                        "AvailableStock": 1,
+                        "AvailableStockLimit": "Player",
+                        "AvoidRepeat": false,
+                        "Condition": "PLAYER_HAS_MAIL Current HnH_LeahGift received",
+                        "Id": "{{ModID}}_HowToPaintOwls",
+                        "ItemId": "{{ModID}}_HowToPaintOwls"
+                    }
+            }
+        }
+    ]
+}

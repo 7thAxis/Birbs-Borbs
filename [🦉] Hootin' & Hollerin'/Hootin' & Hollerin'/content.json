@@ -1,0 +1,154 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "Ostrich Incubator Changes": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Changes the name and description of the Ostrich Incubator to reference general large animals.",
+            "Section": "Gameplay"
+    },
+    "Early Ostrich Incubator": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Allows purchase of the Ostrich Incubator from Marnie's Shop after purchasing a barn.",
+            "Section": "Gameplay"
+    },
+    "Exclude Items From Perfection": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "Description":"Excludes items from perfection. Golden items are always excluded regardless of this toggle.",
+            "Section": "Gameplay"
+    },
+    "Craftable Owl Paintings": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Allows you to craft owl paintings. If the visual clutter due to the game's crafting item display limitations is bothersome, disable this and purchase from them Marnie instead.",
+            "Section": "Gameplay"
+    },
+    "Over-world Owls": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Allows random owls to spawn in the overworld.",
+            "Section": "Graphics"
+    },
+    "Full Boggy Mode": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "Description":"INCOMPLETE. Will change all assets to more ~boggy~ colors. Currently just changes the frames of the owl paintings.",
+            "Section": "Graphics"
+    },
+    "Egg Accessibility Mode": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "Description":"Adds bright borders around eggs, making them a bit easier to find!",
+            "Section": "Graphics"
+    }
+},
+    "DynamicTokens": [
+    //Spring
+        {
+            "Name": "Owl Selection", "Value": "{{Random: {{ModID}}_BarnOwl.Brown, {{ModID}}_BarnOwl.Red, {{ModID}}_BarnOwl.Purple}}",
+            "When": { "Season": "Spring" }
+        },
+        {
+            "Name": "Owl Selection", "Value": "{{ModID}}_BarnOwl.Gold",
+            "When": { "Season": "Spring", "Query: {{Random: {{Range: 1, 50}}|key=HnHOwl}} = 1": true }
+        },
+    //Summer
+        {
+            "Name": "Owl Selection", "Value": "{{Random: {{ModID}}_BarredOwl.Brown, {{ModID}}_BarredOwl.Gray, {{ModID}}_BarredOwl.Slate}}",
+            "When": { "Season": "Summer" }
+        },
+        {
+            "Name": "Owl Selection",
+            "Value": "{{ModID}}_BarredOwl.Gold",
+            "When": { "Season": "Summer", "Query: {{Random: {{Range: 1, 50}}|key=HnHOwl}} = 1": true }
+        },
+    //Fall
+        {
+            "Name": "Owl Selection", "Value": "{{Random: {{ModID}}_ScreechOwl.Brown, {{ModID}}_ScreechOwl.Red, {{ModID}}_BarnOwl.Purple}}",
+            "When": { "Season": "Fall" }
+        },
+        {
+            "Name": "Owl Selection", "Value": "{{ModID}}_ScreechOwl.Gold",
+            "When": { "Season": "Fall", "Query: {{Random: {{Range: 1, 50}}|key=HnHOwl}} = 1": true }
+        },
+    //Winter
+        {
+            "Name": "Owl Selection", "Value": "{{Random: {{ModID}}_SnowyOwl.White, {{ModID}}_SnowyOwl.Gray, {{ModID}}_SnowyOwl.Stone}}",
+            "When": { "Season": "Winter" }
+        },
+        {
+            "Name": "Owl Selection",
+            "Value": "{{ModID}}_SnowyOwl.Gold",
+            "When": { "Season": "Winter", "Query: {{Random: {{Range: 1, 50}}|key=HnHOwl}} = 1": true }
+        },
+    //Special
+        { "Name": "Owl Selection Desert", "Value": "{{Random: {{ModID}}_BurrowingOwl.Brown, {{ModID}}_BurrowingOwl.Red, {{ModID}}_BurrowingOwl.Green}}" },    
+        {
+            "Name": "Owl Selection Desert",
+            "Value": "{{ModID}}_BurrowingOwl.Gold",
+            "When": { "Query: {{Random: {{Range: 1, 50}}|key=HnHOwl}} = 1": true }
+        },
+        { "Name": "Owl Selection Swamp", "Value": "{{Random: {{ModID}}_SwampOwl.Green, {{ModID}}_SwampOwl.Brown, {{ModID}}_SwampOwl.Purple}}" },    
+        {
+            "Name": "Owl Selection Swamp",
+            "Value": "{{ModID}}_SwampOwl.Gold",
+            "When": { "Query: {{Random: {{Range: 1, 50}}|key=HnHOwl}} = 1": true }
+        },
+        { "Name": "Owl Selection GI", "Value": "{{Random: {{ModID}}_SpectacledOwl.Brown, {{ModID}}_SpectacledOwl.Red, {{ModID}}_SpectacledOwl.Slate}}" },    
+        {
+            "Name": "Owl Selection GI",
+            "Value": "{{ModID}}_SpectacledOwl.Gold",
+            "When": { "Query: {{Random: {{Range: 1, 50}}|key=HnHOwl}} = 1": true }
+        },
+    //Spawn Locations
+        {
+            "Name": "Forest Owl Location",
+            "Value": "{{Random: Mountain, Forest, Backwoods|key=HnHOwlL}}"
+        },
+        {
+            "Name": "Forest Owl Location X",
+            "Value": "{{Random: 40, 21, 24|key=HnHOwlL}}"
+        },
+        {
+            "Name": "Forest Owl Location Y",
+            "Value": "{{Random: 34, 85, 12|key=HnHOwlL}}"
+        },
+        {
+            "Name": "GI Owl Location",
+            "Value": "{{Random: IslandEast, IslandWest, IslandShrine|key=HnHOwlL}}"
+        },
+        {
+            "Name": "GI Owl Location X",
+            "Value": "{{Random: 25, 88, 24|key=HnHOwlL}}"
+        },
+        {
+            "Name": "GI Owl Location Y",
+            "Value": "{{Random: 40, 13, 31|key=HnHOwlL}}"
+        },
+    //Stilt Owl Egg Randomization
+        {
+            "Name": "Stilt Owl Egg Randomizer",
+            "Value": "{{Random: {{ModID}}_BrownStiltOwlEgg, {{ModID}}_GrayStiltOwlEgg, {{ModID}}_GreenStiltOwlEgg|key=HnHOwlE}}"
+        },
+        {
+            "Name": "Stilt Owl Egg Randomizer",
+            "Value": "{{ModID}}_GoldStiltOwlEgg",
+            "When": { "Query: {{Random: {{Range: 1, 50}} }} = 1": true }
+        }
+    ],
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "Data/File_Loader.json"
+        }
+    ]
+}

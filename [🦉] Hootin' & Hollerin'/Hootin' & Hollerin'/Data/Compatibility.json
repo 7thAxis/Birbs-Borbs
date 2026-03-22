@@ -1,0 +1,15 @@
+{
+    "Changes": [
+        {
+            "LogName": "Override To Use Chicken Feed",
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "TargetField": [ "{{ModID}}_BoggyAviary", "CustomFields" ],
+            "Priority": "Late",
+            "Entries": {
+                "selph.ExtraAnimalConfig.BuildingFeedOverrideId": "(O)selph.CoopFeed.ChickenFeed"
+            },
+            "When": { "HasMod |contains=selph.CoopFeedCode": "true" }
+        }
+    ]
+}

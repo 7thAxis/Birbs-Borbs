@@ -1,0 +1,17 @@
+{
+	"Name": "Hootin' & Hollerin'",
+	"Author": "7thAxis",
+	"Version": "1.2.0",
+	"Description": "Adds an owl themed content expansion to Stardew Valley!",
+	"UniqueID": "7thAxis.HnH",
+	"UpdateKeys": ["Nexus:43539"],
+	"MinimumApiVersion": "2.11.1",
+	"MinimumGameVersion": "1.6",
+	"ContentPackFor": { "UniqueID": "Pathoschild.ContentPatcher" },
+	"DH.MEEP.FarmAnimalSpawns": "",
+	"Dependencies": [
+		{ "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties", "IsRequired": true },
+		{ "UniqueID": "Spiderbuttons.BETAS", "IsRequired": true },
+		{ "UniqueID": "spacechase0.SpaceCore", "IsRequired": true }
+	]
+}

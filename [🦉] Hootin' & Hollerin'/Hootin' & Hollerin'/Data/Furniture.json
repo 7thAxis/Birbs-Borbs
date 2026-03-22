@@ -1,0 +1,19 @@
+{
+    "Changes": [
+        {
+            "LogName": "Create Furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModID}}_ScreechOwlPainting": "{{ModID}}_ScreechOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.ScreechOwlPainting}}/0/Objects\\7A.HnH\\Paintings/true",
+                "{{ModID}}_SwampOwlPainting": "{{ModID}}_SwampOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.SwampOwlPainting}}/2/Objects\\7A.HnH\\Paintings/true",
+                "{{ModID}}_SnowyOwlPainting": "{{ModID}}_SnowyOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.SnowyOwlPainting}}/4/Objects\\7A.HnH\\Paintings/true",
+                "{{ModID}}_BarnOwlPainting": "{{ModID}}_BarnOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.BarnOwlPainting}}/6/Objects\\7A.HnH\\Paintings/true",
+                "{{ModID}}_BarredOwlPainting": "{{ModID}}_BarredOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.BarredOwlPainting}}/16/Objects\\7A.HnH\\Paintings/true",
+                "{{ModID}}_BurrowingOwlPainting": "{{ModID}}_BurrowingOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.BurrowingOwlPainting}}/18/Objects\\7A.HnH\\Paintings/true",
+                "{{ModID}}_SpectacledOwlPainting": "{{ModID}}_SpectacledOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.SpectacledOwlPainting}}/20/Objects\\7A.HnH\\Paintings/true",
+                "{{ModID}}_LeahOwlPainting": "{{ModID}}_LeahOwlPainting/painting/2 2/2 2/1/-1/-1/{{i18n:HnH.LeahOwlPainting}}/22/Objects\\7A.HnH\\Paintings/true"
+            }
+        }
+    ]
+}

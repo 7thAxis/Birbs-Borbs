@@ -1,0 +1,606 @@
+{
+    "Changes": [
+        {
+            "LogName": "Egg Item Loads",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+            //Barn
+                "{{ModID}}_BrownBarnOwlEgg": {
+                    "Name": "{{ModID}}_BrownBarnOwlEgg",
+                    "DisplayName": "{{i18n:HnH.BrownBarnOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownBarnOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 4,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "hnh_owl_egg",
+                        "hnh_barn_owl_egg"
+                    ]
+                },
+                "{{ModID}}_RedBarnOwlEgg": {
+                    "Name": "{{ModID}}_RedBarnOwlEgg",
+                    "DisplayName": "{{i18n:HnH.RedBarnOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.RedBarnOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 5,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_red",
+                        "hnh_owl_egg",
+                        "hnh_barn_owl_egg"
+                    ]
+                },
+                "{{ModID}}_PurpleBarnOwlEgg": {
+                    "Name": "{{ModID}}_PurpleBarnOwlEgg",
+                    "DisplayName": "{{i18n:HnH.PurpleBarnOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.PurpleBarnOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 6,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_purple",
+                        "hnh_boggyonly",
+                        "hnh_owl_egg",
+                        "hnh_barn_owl_egg"
+                    ]
+                },
+                "{{ModID}}_GoldBarnOwlEgg": {
+                    "Name": "{{ModID}}_GoldBarnOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldBarnOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldBarnOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 7,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_barn_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                },
+            //Barred
+                "{{ModID}}_GrayBarredOwlEgg": {
+                    "Name": "{{ModID}}_GrayBarredOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GrayBarredOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GrayBarredOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 8,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gray",
+                        "hnh_owl_egg",
+                        "hnh_barred_owl_egg"
+                    ]
+                },
+                "{{ModID}}_BrownBarredOwlEgg": {
+                    "Name": "{{ModID}}_BrownBarredOwlEgg",
+                    "DisplayName": "{{i18n:HnH.BrownBarredOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownBarredOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 9,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "hnh_owl_egg",
+                        "hnh_barred_owl_egg"
+                    ]
+                },
+                "{{ModID}}_SlateBarredOwlEgg": {
+                    "Name": "{{ModID}}_SlateBarredOwlEgg",
+                    "DisplayName": "{{i18n:HnH.SlateBarredOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.SlateBarredOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 10,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_DarkSlateBlue",
+                        "hnh_owl_egg",
+                        "hnh_boggyonly",
+                        "hnh_barred_owl_egg"
+                    ]
+                },
+                "{{ModID}}_GoldBarredOwlEgg": {
+                    "Name": "{{ModID}}_GoldBarredOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldBarredOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldBarredOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 11,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_barred_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                },
+            //Screech  
+                "{{ModID}}_BrownScreechOwlEgg": {
+                    "Name": "{{ModID}}_BrownScreechOwlEgg",
+                    "DisplayName": "{{i18n:HnH.BrownScreechOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownScreechOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 0,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "hnh_owl_egg",
+                        "hnh_screech_owl_egg"
+                    ]
+                },      
+                "{{ModID}}_RedScreechOwlEgg": {
+                    "Name": "{{ModID}}_RedScreechOwlEgg",
+                    "DisplayName": "{{i18n:HnH.RedScreechOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.RedScreechOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 1,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_red",
+                        "hnh_owl_egg",
+                        "hnh_screech_owl_egg"
+                    ]
+                }, 
+                "{{ModID}}_PurpleScreechOwlEgg": {
+                    "Name": "{{ModID}}_PurpleScreechOwlEgg",
+                    "DisplayName": "{{i18n:HnH.PurpleScreechOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.PurpleScreechOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 2,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_purple",
+                        "hnh_boggyonly",
+                        "hnh_owl_egg",
+                        "hnh_screech_owl_egg"
+                    ]
+                },   
+                "{{ModID}}_GoldScreechOwlEgg": {
+                    "Name": "{{ModID}}_GoldScreechOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldScreechOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldScreechOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 3,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_screech_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                }, 
+            //Snowy
+                "{{ModID}}_WhiteSnowyOwlEgg": {
+                    "Name": "{{ModID}}_WhiteSnowyOwlEgg",
+                    "DisplayName": "{{i18n:HnH.WhiteSnowyOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.WhiteSnowyOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 12,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_white",
+                        "hnh_owl_egg",
+                        "hnh_snowy_owl_egg"
+                    ]
+                },
+                "{{ModID}}_GraySnowyOwlEgg": {
+                    "Name": "{{ModID}}_GraySnowyOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GraySnowyOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GraySnowyOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 13,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gray",
+                        "hnh_owl_egg",
+                        "hnh_snowy_owl_egg"
+                    ]
+                },
+                "{{ModID}}_StoneSnowyOwlEgg": {
+                    "Name": "{{ModID}}_StoneSnowyOwlEgg",
+                    "DisplayName": "{{i18n:HnH.StoneSnowyOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.StoneSnowyOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 14,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_AntiqueWhite",
+                        "hnh_owl_egg",
+                        "hnh_boggyonly",
+                        "hnh_snowy_owl_egg"
+                    ]
+                },
+                "{{ModID}}_GoldSnowyOwlEgg": {
+                    "Name": "{{ModID}}_GoldSnowyOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldSnowyOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldSnowyOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 15,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_snowy_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                }, 
+            //Burrowing  
+                "{{ModID}}_BrownBurrowingOwlEgg": {
+                    "Name": "{{ModID}}_BrownBurrowingOwlEgg",
+                    "DisplayName": "{{i18n:HnH.BrownBurrowingOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownBurrowingOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 16,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_white",
+                        "hnh_owl_egg",
+                        "hnh_burrowing_owl_egg"
+                    ]
+                },     
+                "{{ModID}}_RedBurrowingOwlEgg": {
+                    "Name": "{{ModID}}_RedBurrowingOwlEgg",
+                    "DisplayName": "{{i18n:HnH.RedBurrowingOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.RedBurrowingOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 17,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_red",
+                        "hnh_owl_egg",
+                        "hnh_burrowing_owl_egg"
+                    ]
+                },     
+                "{{ModID}}_GreenBurrowingOwlEgg": {
+                    "Name": "{{ModID}}_GreenBurrowingOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GreenBurrowingOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GreenBurrowingOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 18,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_green",
+                        "hnh_owl_egg",
+                        "hnh_burrowing_owl_egg"
+                    ]
+                },
+                "{{ModID}}_GoldBurrowingOwlEgg": {
+                    "Name": "{{ModID}}_GoldBurrowingOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldBurrowingOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldBurrowingOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 19,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_burrowing_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                },   
+            //Swamp
+                "{{ModID}}_GreenSwampOwlEgg": {
+                    "Name": "{{ModID}}_GreenSwampOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GreenSwampOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GreenSwampOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 20,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_green",
+                        "hnh_owl_egg",
+                        "hnh_swamp_owl_egg"
+                    ]
+                },     
+                "{{ModID}}_BrownSwampOwlEgg": {
+                    "Name": "{{ModID}}_BrownSwampOwlEgg",
+                    "DisplayName": "{{i18n:HnH.BrownSwampOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownSwampOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 21,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "hnh_owl_egg",
+                        "hnh_swamp_owl_egg"
+                    ]
+                }, 
+                "{{ModID}}_PurpleSwampOwlEgg": {
+                    "Name": "{{ModID}}_PurpleSwampOwlEgg",
+                    "DisplayName": "{{i18n:HnH.PurpleSwampOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.PurpleSwampOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 22,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_purple",
+                        "hnh_boggyonly",
+                        "hnh_owl_egg",
+                        "hnh_swamp_owl_egg"
+                    ]
+                },    
+                "{{ModID}}_GoldSwampOwlEgg": {
+                    "Name": "{{ModID}}_GoldSwampOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldSwampOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldSwampOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 23,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_swamp_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                },
+                "{{ModID}}_BrownSpectacledOwlEgg": {
+                    "Name": "{{ModID}}_BrownSpectacledOwlEgg",
+                    "DisplayName": "{{i18n:HnH.BrownSpectacledOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownSpectacledOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 24,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "hnh_owl_egg",
+                        "hnh_spectacled_owl_egg"
+                    ]
+                },  
+                "{{ModID}}_SlateSpectacledOwlEgg": {
+                    "Name": "{{ModID}}_SlateSpectacledOwlEgg",
+                    "DisplayName": "{{i18n:HnH.SlateSpectacledOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.SlateSpectacledOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 25,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_DarkSlateBlue",
+                        "hnh_owl_egg",
+                        "hnh_spectacled_owl_egg"
+                    ]
+                }, 
+                "{{ModID}}_RedSpectacledOwlEgg": {
+                    "Name": "{{ModID}}_RedSpectacledOwlEgg",
+                    "DisplayName": "{{i18n:HnH.RedSpectacledOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.RedSpectacledOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 26,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_red",
+                        "hnh_owl_egg",
+                        "hnh_spectacled_owl_egg"
+                    ]
+                },    
+                "{{ModID}}_GoldSpectacledOwlEgg": {
+                    "Name": "{{ModID}}_GoldSpectacledOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldSpectacledOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldSpectacledOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 27,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_Spectacled_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                },
+                "{{ModID}}_BrownStiltOwlEgg": {
+                    "Name": "{{ModID}}_BrownStiltOwlEgg",
+                    "DisplayName": "{{i18n:HnH.BrownStiltOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownStiltOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 28,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "hnh_owl_egg",
+                        "hnh_stilt_owl_egg"
+                    ]
+                },
+                "{{ModID}}_GrayStiltOwlEgg": {
+                    "Name": "{{ModID}}_GrayStiltOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GrayStiltOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GrayStiltOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 29,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gray",
+                        "hnh_owl_egg",
+                        "hnh_stilt_owl_egg"
+                    ]
+                },  
+                "{{ModID}}_GreenStiltOwlEgg": {
+                    "Name": "{{ModID}}_GreenStiltOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GreenStiltOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GreenStiltOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 350,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 30,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_green",
+                        "hnh_owl_egg",
+                        "hnh_stilt_owl_egg"
+                    ]
+                },
+                "{{ModID}}_GoldStiltOwlEgg": {
+                    "Name": "{{ModID}}_GoldStiltOwlEgg",
+                    "DisplayName": "{{i18n:HnH.GoldStiltOwlEgg.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldStiltOwlEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Edibility": 10,
+                    "Price": 1000,
+                    "Texture": "Objects/7A.HnH/Eggs",
+                    "SpriteIndex": 31,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_egg",
+                        "hnh_stilt_owl_egg",
+                        "hnh_shiny_egg"
+                    ]
+                }
+            }
+        }
+    ]
+}

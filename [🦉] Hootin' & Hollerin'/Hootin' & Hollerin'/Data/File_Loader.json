@@ -1,0 +1,64 @@
+{
+    "Changes": [
+        {
+            "LogName": "Data files",
+            "Action": "Include",
+            "FromFile": "Data/Animals.json, Data/Forage.json, Data/Machines.json, Data/Feathers.json, Data/Eggs.json, Data/Misc_Items.json, Data/Gift_Tastes.json, Data/Crafting_Recipes.json, Data/Mail.json, Data/Trigger_Actions.json, Data/Shops.json, Data/MEEP.json, Data/Buildings.json, Data/Audio.json, Data/Furniture.json, Data/Compatibility.json"
+        },
+        {
+            "LogName": "Animal Assets",
+            "Action": "Load",
+            "Target" : "Animals/Barn_Owl/Barn_Owl_Brown, Animals/Barn_Owl/Barn_Owl_Red, Animals/Barn_Owl/Barn_Owl_Purple, Animals/Barn_Owl/Barn_Owl_Gold, Animals/Barred_Owl/Barred_Owl_Gray, Animals/Barred_Owl/Barred_Owl_Brown, Animals/Barred_Owl/Barred_Owl_Slate, Animals/Barred_Owl/Barred_Owl_Gold, Animals/Swamp_Owl/Swamp_Owl_Green, Animals/Swamp_Owl/Swamp_Owl_Purple, Animals/Swamp_Owl/Swamp_Owl_Brown, Animals/Swamp_Owl/Swamp_Owl_Gold, Animals/Burrowing_Owl/Burrowing_Owl_Brown, Animals/Burrowing_Owl/Burrowing_Owl_Red, Animals/Burrowing_Owl/Burrowing_Owl_Green, Animals/Burrowing_Owl/Burrowing_Owl_Gold/, Animals/Owlets/Owlet_Brown, Animals/Owlets/Owlet_Gold, Animals/Owlets/Owlet_Gray, Animals/Owlets/Owlet_Green, Animals/Owlets/Owlet_Purple, Animals/Owlets/Owlet_Red, Animals/Owlets/Owlet_Slate, Animals/Owlets/Owlet_Stone, Animals/Owlets/Owlet_White, Animals/Screech_Owl/Screech_Owl_Purple, Animals/Screech_Owl/Screech_Owl_Brown, Animals/Screech_Owl/Screech_Owl_Red, Animals/Screech_Owl/Screech_Owl_Gold, Animals/Snowy_Owl/Snowy_Owl_White, Animals/Snowy_Owl/Snowy_Owl_Gray, Animals/Snowy_Owl/Snowy_Owl_Stone, Animals/Snowy_Owl/Snowy_Owl_Gold, Animals/Spectacled_Owl/Spectacled_Owl_Gold, Animals/Spectacled_Owl/Spectacled_Owl_Brown, Animals/Spectacled_Owl/Spectacled_Owl_Slate, Animals/Spectacled_Owl/Spectacled_Owl_Red, Animals/Stilt_Owl/Stilt_Owl_Brown,  Animals/Stilt_Owl/Stilt_Owl_Gray,  Animals/Stilt_Owl/Stilt_Owl_Green,  Animals/Stilt_Owl/Stilt_Owl_Gold",
+            "FromFile": "Assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+        },
+    //Items
+        {
+            "LogName": "Item Assets",
+            "Action": "Load",
+            "Target" : "Objects/7A.HnH/Eggs, Objects/7A.HnH/Feathers, Objects/7A.HnH/Misc, Objects/7A.HnH/Paintings, Objects/7A.HnH/Icons, Objects/7A.HnH/Ore, Objects/7A.HnH/BigCraftables",
+            "FromFile": "Assets/Objects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Egg Accessibility Overlay Assets",
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Objects/7A.HnH/Eggs",
+            "FromFile": "Assets/Objects/Eggs_Accessibility.png",
+            "When": { "Egg Accessibility Mode": true }
+        },
+    //Texture Compat
+        {
+            "LogName": "Boggy Mode",
+            "Action": "EditImage",
+            "Target" : "Objects/7A.HnH/Paintings, Objects/7A.HnH/Misc, Objects/7A.HnH/Feathers",
+            "FromFile": "Assets/Objects/{{TargetWithoutPath}}_Boggy.png",
+            "When": { "Full Boggy Mode": true }
+        },
+    //Building
+        {
+            "LogName": "Maps",
+            "Action": "Load",
+            "Target" : "Maps/BogAviary_Interior",
+            "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
+        },
+        {
+            "LogName": "Aviary Textures Default",
+            "Action": "Load",
+            "Target" : "Buildings/BogAviary",
+            "FromFile": "Assets/Buildings/BogAviary_Spring.png"
+        },
+        {
+            "LogName": "Aviary Textures",
+            "Action": "EditImage",
+            "Target" : "Buildings/BogAviary",
+            "FromFile": "Assets/Buildings/BogAviary_{{season}}.png"
+        },
+        {
+            "LogName": "Aviary Spirits Eve Texture",
+            "Action": "EditImage",
+            "Target" : "Buildings/BogAviary",
+            "FromFile": "Assets/Buildings/BogAviary_SE.png",
+            "When": { "Season": "fall", "Day": "{{Range: 22, 27}}" }
+        }
+    ]
+}

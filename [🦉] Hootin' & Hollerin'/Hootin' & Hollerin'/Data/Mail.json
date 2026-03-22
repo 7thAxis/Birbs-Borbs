@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "Owl Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": { 
+                "HnH_OwlStatueSpawned": "{{i18n:HnH.OwlStatueSpawned}}",
+                "HnH_CuriosityLure": "{{i18n:HnH.CCWarpTotem}}",
+                "HnH_CCWarpTotem": "{{i18n:HnH.CuriosityLure}}",
+                "HnH_LargeIncubator": "{{i18n:HnH.LargeIncubator}}",
+                "HnH_EggSpawned": "{{i18n:HnH.EggSpawned}}",
+                "HnH_LeahGift": "{{i18n:HnH.LeahGift}}",
+                "HnH_SnailStiltOwlScareCrow": "{{i18n:HnH.SnailStiltOwlScareCrow}}"
+             }
+        }
+    ]
+}

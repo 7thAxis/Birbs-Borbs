@@ -1,0 +1,48 @@
+{
+    "Changes": [
+        {
+            "LogName": "Spawn Owls",
+            "Action": "EditData",
+            "Target": "MEEP/FarmAnimals/SpawnData",
+             "Entries": {
+                "{{ModID}}_ForestOwlSpawn": {
+                    "AnimalId": "{{Owl Selection}}",
+                    "Age": 10,
+                    "LocationId": "{{Forest Owl Location}}",
+                    "PetMessage": [ "{{i18n:HnH.Hoot}}" ],
+                    "HomeTileX": "{{Forest Owl Location X}}",
+                    "HomeTileY": "{{Forest Owl Location Y}}",
+                    "Condition": "RANDOM 0.1"
+                },
+                "{{ModID}}_DesertOwlSpawn": {
+                    "AnimalId": "{{Owl Selection Desert}}",
+                    "Age": 10,
+                    "LocationId": "Desert",
+                    "PetMessage": [ "{{i18n:HnH.Hoot}}" ],
+                    "HomeTileX": "20",
+                    "HomeTileY": "36",
+                    "Condition": "RANDOM 0.1"
+                },
+                "{{ModID}}_SwampOwlSpawn": {
+                    "AnimalId": "{{Owl Selection Swamp}}",
+                    "Age": 10,
+                    "LocationId": "WitchSwamp",
+                    "PetMessage": [ "{{i18n:HnH.Hoot}}" ],
+                    "HomeTileX": "22",
+                    "HomeTileY": "24",
+                    "Condition": "RANDOM 0.1"
+                },
+                "{{ModID}}_SpectacledOwlSpawn": {
+                    "AnimalId": "{{Owl Selection GI}}",
+                    "Age": 10,
+                    "LocationId": "{{GI Owl Location}}",
+                    "PetMessage": [ "{{i18n:HnH.Hoot}}" ],
+                    "HomeTileX": "{{GI Owl Location X}}",
+                    "HomeTileY": "{{GI Owl Location Y}}",
+                    "Condition": "RANDOM 0.1"
+                }         
+             },
+             "When": { "Over-world Owls": true }
+        }
+    ]
+}

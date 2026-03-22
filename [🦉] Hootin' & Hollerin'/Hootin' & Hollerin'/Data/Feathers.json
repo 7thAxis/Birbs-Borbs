@@ -1,0 +1,158 @@
+{
+    "Changes": [
+        {
+            "LogName": "Feather Item Loads",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_BrownOwlFeather": {
+                    "Name": "{{ModID}}_BrownOwlFeather",
+                    "DisplayName": "{{i18n:HnH.BrownOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.BrownOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 0,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "hnh_owl_feather"
+                    ]
+                },
+                "{{ModID}}_RedOwlFeather": {
+                    "Name": "{{ModID}}_RedOwlFeather",
+                    "DisplayName": "{{i18n:HnH.RedOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.RedOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 1,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_red",
+                        "hnh_owl_feather"
+                    ]
+                },
+                "{{ModID}}_PurpleOwlFeather": {
+                    "Name": "{{ModID}}_PurpleOwlFeather",
+                    "DisplayName": "{{i18n:HnH.PurpleOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.PurpleOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 2,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_purple",
+                        "hnh_owl_feather",
+                        "hnh_boggyonly"
+                    ]
+                },
+                "{{ModID}}_GrayOwlFeather": {
+                    "Name": "{{ModID}}_GrayOwlFeather",
+                    "DisplayName": "{{i18n:HnH.GrayOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.GrayOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 3,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gray",
+                        "hnh_owl_feather"
+                    ]
+                },
+                "{{ModID}}_SlateOwlFeather": {
+                    "Name": "{{ModID}}_SlateOwlFeather",
+                    "DisplayName": "{{i18n:HnH.SlateOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.SlateOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 4,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_DarkSlateBlue",
+                        "hnh_owl_feather",
+                        "hnh_boggyonly"
+                    ]
+                },
+                "{{ModID}}_WhiteOwlFeather": {
+                    "Name": "{{ModID}}_WhiteOwlFeather",
+                    "DisplayName": "{{i18n:HnH.WhiteOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.WhiteOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 5,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_white",
+                        "hnh_owl_feather"
+                    ]
+                },
+                "{{ModID}}_GreenOwlFeather": {
+                    "Name": "{{ModID}}_GreenOwlFeather",
+                    "DisplayName": "{{i18n:HnH.GreenOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.GreenOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 6,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_green",
+                        "hnh_owl_feather"
+                    ]
+                },
+                "{{ModID}}_StoneOwlFeather": {
+                    "Name": "{{ModID}}_StoneOwlFeather",
+                    "DisplayName": "{{i18n:HnH.StoneOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.StoneOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 7,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_AntiqueWhite",
+                        "hnh_owl_feather",
+                        "hnh_boggyonly"
+                    ]
+                },
+                "{{ModID}}_GoldOwlFeather": {
+                    "Name": "{{ModID}}_GoldOwlFeather",
+                    "DisplayName": "{{i18n:HnH.GoldOwlFeather.DisplayName}}",
+                    "Description": "{{i18n:HnH.GoldOwlFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 750,
+                    "Texture": "Objects/7A.HnH/Feathers",
+                    "SpriteIndex": 8,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "hnh_owl_feather"
+                    ]
+                }
+            }
+        }
+    ]
+}

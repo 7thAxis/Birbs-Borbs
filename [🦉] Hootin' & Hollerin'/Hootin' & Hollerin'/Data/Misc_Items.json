@@ -1,0 +1,233 @@
+{
+    "Changes": [
+        {
+            "LogName": "Misc Item Loads",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+              "{{ModID}}_OwlMayonnaise": {
+                "Name": "{{ModID}}_OwlMayonnaise",
+                "DisplayName": "{{i18n:OwlMayonnaise.DisplayName}}",
+                "Description": "{{i18n:OwlMayonnaise.Description}}",
+                "Type": "Basic",
+                "Category": -26,
+                "Price": 500,
+                "Texture": "Objects/7A.HnH/Misc",
+                "SpriteIndex": 0,
+                "Edibility": 30,
+                "IsDrink": true,
+                "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                "ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_white",
+                    "mayo_item",
+                    "allergen_egg",
+                    "food_nonvegan"
+                ]
+            },
+            "{{ModID}}_GoldenOwlMayonnaise": {
+                "Name": "{{ModID}}_GoldenMayonnaise",
+                "DisplayName": "{{i18n:GoldenOwlMayonnaise.DisplayName}}",
+                "Description": "{{i18n:GoldenOwlMayonnaise.Description}}",
+                "Type": "Basic",
+                "Category": -26,
+                "Price": 1300,
+                "Texture": "Objects/7A.HnH/Misc",
+                "SpriteIndex": 1,
+                "Edibility": 50,
+                "IsDrink": true,
+                "ExcludeFromShippingCollection": true,
+                "ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_gold",
+                    "mayo_item",
+                    "allergen_egg",
+                    "food_nonvegan"
+                ]
+            },
+            "{{ModID}}_ForestWarpTotem": {
+                "Name": "{{ModID}}_ForestWarpTotem",
+                "DisplayName": "{{i18n:ForestWarpTotem.DisplayName}}",
+                "Description": "{{i18n:ForestWarpTotem.Description}}",
+                "Type": "Crafting",
+                "Category": 0,
+                "Price": 20,
+                "Texture": "Objects/7A.HnH/Misc",
+                "SpriteIndex": 2,
+                "Edibility": -300,
+                "IsDrink": true,
+                "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                "ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_brown",
+                    "not_placeable",
+                    "totem_item"
+                ]
+            },
+            "{{ModID}}_HowToPaintOwls": {
+                "Name": "{{ModID}}_HowToPaintOwls",
+                "DisplayName": "{{i18n:HowToPaintOwls.DisplayName}}",
+                "Description": "{{i18n:HowToPaintOwls.Description}}",
+                "Type": "Basic",
+                "Category": 0,
+                "Price": 1000,
+                "Texture": "Objects/7A.HnH/Misc",
+                "SpriteIndex": 3,
+                "Edibility": -300,
+                "IsDrink": true,
+                "ExcludeFromShippingCollection": true,
+                "ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_green",
+                    "not_placeable",
+                    "book_item"
+                ]
+            },
+            "{{ModID}}_StiltOwlOre": {
+                "Name": "{{ModID}}_StiltOwlOre",
+                "DisplayName": "Debug Stilt Owl Ore",
+                "Description": "You shouldn't have this.",
+                "Price": -1,
+                "Type": "Basic",
+                "Category": 0,
+                "Texture": "Objects/7A.HnH/Ore",
+                "SpriteIndex": 0,
+                "ExcludeFromShippingCollection": true,
+                "ExcludeFromRandomSale": true
+            }
+        }
+    },
+    {
+            "LogName": "Misc Item Loads",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+            "{{ModID}}_DummyItem1": {
+                "Name": "{{ModID}}_DummyItem1",
+                "DisplayName": "{{i18n:HnH.ScreechOwlPainting}}",
+                "Description": "{{i18n:HnH.ScreechOwlPainting.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/Icons",
+                "SpriteIndex": 0,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem2": {
+                "Name": "{{ModID}}_DummyItem1",
+                "DisplayName": "{{i18n:HnH.SwampOwlPainting}}",
+                "Description": "{{i18n:HnH.SwampScreechOwlPainting.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/Icons",
+                "SpriteIndex": 0,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem3": {
+                "Name": "{{ModID}}_DummyItem3",
+                "DisplayName": "{{i18n:HnH.SnowyOwlPainting}}",
+                "Description": "{{i18n:HnH.SnowyOwlPainting.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/Icons",
+                "SpriteIndex": 0,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem4": {
+                "Name": "{{ModID}}_DummyItem4",
+                "DisplayName": "{{i18n:HnH.BarnOwlPainting}}",
+                "Description": "{{i18n:HnH.BarnOwlPainting.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/Icons",
+                "SpriteIndex": 0,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem5": {
+                "Name": "{{ModID}}_DummyItem5",
+                "DisplayName": "{{i18n:HnH.BarredOwlPainting}}",
+                "Description": "{{i18n:HnH.BarredOwlPainting.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/Icons",
+                "SpriteIndex": 0,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem6": {
+                "Name": "{{ModID}}_DummyItem6",
+                "DisplayName": "{{i18n:HnH.BurrowingOwlPainting}}",
+                "Description": "{{i18n:HnH.BurrowingOwlPainting.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/Icons",
+                "SpriteIndex": 0,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem7": {
+                "Name": "{{ModID}}_DummyItem7",
+                "DisplayName": "{{i18n:HnH.SpectacledOwlPainting}}",
+                "Description": "{{i18n:HnH.SpectacledOwlPainting.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/Icons",
+                "SpriteIndex": 0,
+                "ContextTags": null
+            },
+            "{{ModID}}_StiltOwlScareCrow": {
+                "Name": "{{ModID}}_StiltOwlScareCrow",
+                "DisplayName": "{{i18n:HnH.StiltOwlScareCrow}}",
+                "Description": "{{i18n:HnH.StiltOwlScareCrow.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": true,
+                "CanBePlacedIndoors": true,
+                "IsLamp": false,
+                "Texture": "Objects/7A.HnH/BigCraftables",
+                "SpriteIndex": 0,
+                "ContextTags": [ "crow_scare" ],
+                "CustomFields": null
+            }
+        }
+    },
+    {
+        "LogName": "Misc Item Loads",
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+        "Entries": {
+            "{{ModID}}_ForestWarpTotem": {
+                "TotemWarp": {
+                    "Location": "Forest",
+                    "Position": "5, 27",
+                    "Color": { "B": 0, "G": 255, "R": 0, "A": 155 },
+                    "ConsumedOnUse": true
+                }
+            },
+            "{{ModID}}_HowToPaintOwls": {
+                "CanBeShipped": false,
+                "UseForTriggerAction": true,
+                "CategoryTextOverride": "{{i18n:HnH.CategoryBook}}"
+            }
+        }
+    }
+]
+}

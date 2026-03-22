@@ -1,0 +1,434 @@
+{
+    "Changes": [
+        //Egg Pools
+        {
+            "LogName": "Egg Spawn Groups",
+            "Action": "Editdata",
+            "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+            "Entries": {
+                "{{ModID}}_SpringForestEggs": {
+                    "Type": "Forageable",
+                    "Condition": "TRUE",
+                    "ForageableExpiresWeekly": true,
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_BrownBarnOwlEgg", "ItemId": "(O){{ModID}}_BrownBarnOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_RedBarnOwlEgg", "ItemId": "(O){{ModID}}_RedBarnOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.5,
+                            "Value": { "Id": "(O){{ModID}}_PurpleBarnOwlEgg", "ItemId": "(O){{ModID}}_PurpleBarnOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.01,
+                            "Value": { "Id": "(O){{ModID}}_GoldBarnOwlEgg", "ItemId": "(O){{ModID}}_GoldBarnOwlEgg", "MaxItems": 1 }
+                        }                      
+                    ]
+                },
+                 "{{ModID}}_SummerForestEggs": {
+                    "Type": "Forageable",
+                    "Condition": "TRUE",
+                    "ForageableExpiresWeekly": true,
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_GrayBarredOwlEgg", "ItemId": "(O){{ModID}}_GrayBarredOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_BrownBarredOwlEgg", "ItemId": "(O){{ModID}}_BrownBarredOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.5,
+                            "Value": { "Id": "(O){{ModID}}_SlateBarredOwlEgg", "ItemId": "(O){{ModID}}_SlateBarredOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.01,
+                            "Value": { "Id": "(O){{ModID}}_GoldBarredOwlEgg", "ItemId": "(O){{ModID}}_GoldBarredOwlEgg", "MaxItems": 1 }
+                        }                       
+                    ]
+                },
+                 "{{ModID}}_AutumnForestEggs": {
+                    "Type": "Forageable",
+                    "Condition": "TRUE",
+                    "ForageableExpiresWeekly": true,
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_BrownScreechOwlEgg", "ItemId": "(O){{ModID}}_BrownScreechOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_RedScreechOwlEgg", "ItemId": "(O){{ModID}}_RedScreechOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.5,
+                            "Value": { "Id": "(O){{ModID}}_PurpleScreechOwlEgg", "ItemId": "(O){{ModID}}_PurpleScreechOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.01,
+                            "Value": { "Id": "(O){{ModID}}_GoldScreechOwlEgg", "ItemId": "(O){{ModID}}_GoldScreechOwlEgg", "MaxItems": 1 }
+                        }                       
+                    ]
+                },
+                "{{ModID}}_WinterForestEggs": {
+                    "Type": "Forageable",
+                    "Condition": "TRUE",
+                    "ForageableExpiresWeekly": true,
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_WhiteSnowyOwlEgg", "ItemId": "(O){{ModID}}_WhiteSnowyOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_GraySnowyOwlEgg", "ItemId": "(O){{ModID}}_GraySnowyOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.5,
+                            "Value": { "Id": "(O){{ModID}}_StoneSnowyOwlEgg", "ItemId": "(O){{ModID}}_StoneSnowyOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.01,
+                            "Value": { "Id": "(O){{ModID}}_GoldSnowyOwlEgg", "ItemId": "(O){{ModID}}_GoldSnowyOwlEgg", "MaxItems": 1 }
+                        }                       
+                    ]
+                },
+                "{{ModID}}_SwampEggs": {
+                    "Type": "Forageable",
+                    "Condition": "TRUE",
+                    "ForageableExpiresWeekly": true,
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_GreenSwampOwlEgg", "ItemId": "(O){{ModID}}_GreenSwampOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_BrownSwampOwlEgg", "ItemId": "(O){{ModID}}_BrownSwampOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.5,
+                            "Value": { "Id": "(O){{ModID}}_PurpleSwampOwlEgg", "ItemId": "(O){{ModID}}_PurpleSwampOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.01,
+                            "Value": { "Id": "(O){{ModID}}_GoldSwampOwlEgg", "ItemId": "(O){{ModID}}_GoldSwampOwlEgg", "MaxItems": 1 }
+                        }                       
+                    ]
+                },
+                "{{ModID}}_DesertEggs": {
+                    "Type": "Forageable",
+                    "Condition": "TRUE",
+                    "ForageableExpiresWeekly": true,
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_BrownBurrowingOwlEgg", "ItemId": "(O){{ModID}}_BrownBurrowingOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_RedBurrowingOwlEgg", "ItemId": "(O){{ModID}}_RedBurrowingOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.5,
+                            "Value": { "Id": "(O){{ModID}}_GreenBurrowingOwlEgg", "ItemId": "(O){{ModID}}_GreenBurrowingOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.01,
+                            "Value": { "Id": "(O){{ModID}}_GoldBurrowingOwlEgg", "ItemId": "(O){{ModID}}_GoldBurrowingOwlEgg", "MaxItems": 1 }
+                        }                       
+                    ]
+                },
+                "{{ModID}}_GingerIslandEggs": {
+                    "Type": "Forageable",
+                    "Condition": "TRUE",
+                    "ForageableExpiresWeekly": true,
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_BrownSpectacledOwlEgg", "ItemId": "(O){{ModID}}_BrownSpectacledOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 1,
+                            "Value": { "Id": "(O){{ModID}}_SlateSpectacledOwlEgg", "ItemId": "(O){{ModID}}_SlateSpectacledOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.5,
+                            "Value": { "Id": "(O){{ModID}}_RedSpectacledOwlEgg", "ItemId": "(O){{ModID}}_RedSpectacledOwlEgg", "MaxItems": 1 }
+                        },
+                        {
+                            "Weight": 0.01,
+                            "Value": { "Id": "(O){{ModID}}_GoldSpectacledOwlEgg", "ItemId": "(O){{ModID}}_GoldSpectacledOwlEgg", "MaxItems": 1 }
+                        }                       
+                    ]
+                },
+                "{{ModID}}_StiltEggOre": {
+                    "Type": "Minable",
+                    "Condition": "TRUE",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "(O){{ModID}}_StiltOwlOre",
+                    "MineableHealth": 25,
+                    "MinableDrops": [
+                    [
+                        {
+                        "Weight": 1.0,
+                        "Value": { "Id": "Eggs", "ItemId": "(O){{Stilt Owl Egg Randomizer}}", "MaxItems": 1 } }
+                    ],
+                    [
+                        {
+                        "Weight": 1.0,
+                        "Value": { "Id": "BoneFragment", "ItemId": "(O)881", "MinStack": 5, "MaxStack": 15 }
+                        }
+                    ],
+                    [
+                        {
+                        "Weight": 1.0,
+                        "Value": { "Id": "SnakeBone", "ItemId": "{{Random: (O)825, (O)826}}", "MaxItems": 1 }
+                        }
+                    ],
+                    [
+                        {
+                        "Weight": 1.0,
+                        "Value": { "Id": "OwlLeg", "ItemId": "(O)823", "MaxItems": 1 }
+                        }
+                    ]
+                    ],
+                    "MinableExperienceGranted": 15
+                }
+            }
+        },
+    //Spawning Groups
+        {
+            "LogName": "Egg Forage Groups",
+            "Action": "Editdata",
+            "Target": "Spacechase0.SpaceCore/SpawningGroups",
+            "Entries": {
+                "{{ModID}}_SpringEggsSpawning": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_SpringForestEggs" } ],
+                            "Minimum": -6, "Maximum": 1
+                        }
+                    ]
+                },
+                "{{ModID}}_SummerEggsSpawning": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_SummerForestEggs" } ],
+                            "Minimum": -6, "Maximum": 1
+                        }
+                    ]
+                },
+                "{{ModID}}_AutumnEggsSpawning": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_AutumnForestEggs" } ],
+                            "Minimum": -6, "Maximum": 1
+                        }
+                    ]
+                },
+                "{{ModID}}_WinterEggsSpawning": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_WinterForestEggs" } ],
+                            "Minimum": -6, "Maximum": 1
+                        }
+                    ]
+                },
+                "{{ModID}}_SwampEggsSpawning": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_SwampEggs" } ],
+                            "Minimum": -6, "Maximum": 1
+                        }
+                    ]
+                },
+                "{{ModID}}_DesertEggsSpawning": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_DesertEggs" } ],
+                            "Minimum": -6, "Maximum": 1
+                        }
+                    ]
+                },
+                "{{ModID}}_GingerIslandEggsSpawning": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_GingerIslandEggs" } ],
+                            "Minimum": -6, "Maximum": 1
+                        }
+                    ]
+                },
+            "{{ModID}}_GingerIslandSpawnEggOre": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "{{ModID}}_StiltEggOre" } ],
+                            "Minimum": -5, "Maximum": 1
+                        }
+                    ]
+                }
+            }
+        },
+    //Actual Spawning
+        {
+            "LogName": "Spawn eggs spring",
+            "Action": "Editdata",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+            "{{ModID}}_SpringEggSpawningTrigger": {
+                "Id": "{{ModID}}_SpringEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "Condition": "SEASON Spring",
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning Forest",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning Backwoods",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning Mountain",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning Custom_ForestWest",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning Custom_ShearwaterBridge",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning EastScarp_DeepMountains",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning EastScarp_Orchard", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning EastScarp_MtEvermore", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpringEggsSpawning FairyPool"
+                    
+                ]
+            },
+            "{{ModID}}_SummerEggSpawningTrigger": {
+                "Id": "{{ModID}}_SummerEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "Condition": "SEASON Summer",
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning Forest",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning Backwoods",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning Mountain",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning Custom_ForestWest",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning Custom_ShearwaterBridge",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning EastScarp_DeepMountains",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning EastScarp_Orchard", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning EastScarp_MtEvermore", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SummerEggsSpawning FairyPool"    
+                ]
+            },
+            "{{ModID}}_FallEggSpawningTrigger": {
+                "Id": "{{ModID}}_FallEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "Condition": "SEASON Fall",
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning Forest",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning Backwoods",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning Mountain",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning Custom_ForestWest",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning Custom_ShearwaterBridge",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning EastScarp_DeepMountains",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning EastScarp_Orchard", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning EastScarp_MtEvermore", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_AutumnEggsSpawning FairyPool"    
+                ]
+            },
+            "{{ModID}}_WinterEggSpawningTrigger": {
+                "Id": "{{ModID}}_WinterEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "Condition": "SEASON Winter",
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning Forest",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning Backwoods",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning Mountain",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning Custom_ForestWest",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning Custom_ShearwaterBridge",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning EastScarp_DeepMountains",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning EastScarp_Orchard", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning EastScarp_MtEvermore", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_WinterEggsSpawning FairyPool" 
+                ]
+            },
+            "{{ModID}}_SpecialSwampEggSpawningTrigger": {
+                "Id": "{{ModID}}_SpecialSwampEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "Condition": "SEASON Fall, DAY_OF_MONTH 22 23 24 25 26 27 28",
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning Forest",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning Backwoods",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning Mountain",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning Custom_ForestWest",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning Custom_ShearwaterBridge",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning EastScarp_DeepMountains",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning EastScarp_Orchard", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning EastScarp_MtEvermore", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning FairyPool" 
+                ]
+            },
+            "{{ModID}}_CommonSwampEggSpawningTrigger": {
+                "Id": "{{ModID}}_CommonSwampEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning WitchSwamp",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning Woods"
+                ]
+            },
+            "{{ModID}}_DesertEggSpawningTrigger": {
+                "Id": "{{ModID}}_DesertEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DesertEggsSpawning Desert",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DesertEggsSpawning SkullCave",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SwampEggsSpawning Custom_CrimsonBadlands"   
+                ]
+            },
+            "{{ModID}}_GingerIslandEggSpawningTrigger": {
+                "Id": "{{ModID}}_GingerIslandEggSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning IslandEast",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning IslandWest",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning IslandShrine"
+                ]
+            },
+            "{{ModID}}_GingerIslandEggSpawningTriggerSpecial": {
+                "Id": "{{ModID}}_GingerIslandEggSpawningTriggerSpecial",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "Condition": "SEASON Summer, DAY_OF_MONTH 10 11 12",
+                "HostOnly": true,
+                "Actions": [
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning Forest",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning Backwoods",
+                    "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning Mountain",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning Custom_ForestWest",
+                    "If Spiderbuttons.BETAS_HAS_MOD FlashShifter.StardewValleyExpandedCP ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning Custom_ShearwaterBridge",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning EastScarp_DeepMountains",
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning EastScarp_Orchard", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning EastScarp_MtEvermore", 
+                    "If Spiderbuttons.BETAS_HAS_MOD LemurKat.EastScarp ## spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandEggsSpawning FairyPool" 
+                ]
+            },
+            "{{ModID}}_GingerIslandEggOreSpawningTrigger": {
+                "Id": "{{ModID}}_GingerIslandEggOreSpawningTrigger",
+                "Trigger": "DayStarted",
+                "MarkActionApplied": false,
+                "HostOnly": true,
+                "Actions": [ "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GingerIslandSpawnEggOre IslandNorth 4,48,19,15" ]
+            }
+            }
+        }
+    ]
+}

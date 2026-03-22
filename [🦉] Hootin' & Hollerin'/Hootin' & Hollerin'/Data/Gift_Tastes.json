@@ -1,0 +1,56 @@
+{
+    "Changes": [
+        {
+            "LogName": "Hatred Override",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+            //Love
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Demetrius", 1 ],
+                    "Value": "hnh_owl_egg hnh_owl_feather",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Leo", 1 ],
+                    "Value": "hnh_owl_egg hnh_owl_feather",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Elliott", 1 ],
+                    "Value": "hnh_owl_egg hnh_owl_feather",
+                    "Delimiter": " "
+                },
+            //Like
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Emily", 3 ],
+                    "Value": "hnh_owl_feather",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Harvey", 3 ],
+                    "Value": "hnh_owl_feather",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Wizard", 3 ],
+                    "Value": "hnh_owl_feather",
+                    "Delimiter": " "
+                },
+            //Dislike
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Penny", 5 ],
+                    "Value": "hnh_owl_feather",
+                    "Delimiter": " "
+                }     
+            ]
+        }
+    ]
+}
