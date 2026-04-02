@@ -1,0 +1,28 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+
+    "Wild Corvids": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Allows random corvids to spawn in the overworld.",
+            "Section": "Graphics"
+    },
+    "Egg Accessibility Mode": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "Description":"Adds bright borders around eggs, making them a bit easier to find!",
+            "Section": "Graphics"
+    }
+},
+    /*"DynamicTokens": [
+    ],*/
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "Data/File_Loader.json"
+        }
+    ]
+}
