@@ -15,6 +15,13 @@
             "AllowBlank": false,
             "Description":"Adds bright borders around eggs, making them a bit easier to find!",
             "Section": "Graphics"
+    },
+    "Exclude Items From Perfection": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "Description":"Excludes items from perfection. Golden items are always excluded regardless of this toggle.",
+            "Section": "Gameplay"
     }
 },
     /*"DynamicTokens": [
