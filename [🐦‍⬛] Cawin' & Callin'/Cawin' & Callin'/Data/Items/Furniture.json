@@ -1,5 +1,57 @@
 {
     "Changes": [
-        
+ {
+            "LogName": "Create Furniture",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModID}}_JayTapestry": "{{ModID}}_JayTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.JayTapestry}}/0/Objects\\7A.CnC\\BigCraftables/true",
+                "{{ModID}}_RavenTapestry": "{{ModID}}_RavenTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.RavenTapestry}}/1/Objects\\7A.CnC\\BigCraftables/true",
+                "{{ModID}}_CrowTapestry": "{{ModID}}_CrowTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.CrowTapestry}}/2/Objects\\7A.CnC\\BigCraftables/true",
+                "{{ModID}}_MagpieTapestry": "{{ModID}}_MagpieTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.MagpieTapestry}}/3/Objects\\7A.CnC\\BigCraftables/true",
+                "{{ModID}}_NutcrackerTapestry": "{{ModID}}_NutcrackerTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.NutcrackerTapestry}}/8/Objects\\7A.CnC\\BigCraftables/true",
+               "{{ModID}}_TreepieTapestry": "{{ModID}}_TreepieTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.TreepieTapestry}}/9/Objects\\7A.CnC\\BigCraftables/true",
+                "{{ModID}}_RookTapestry": "{{ModID}}_RookTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.RookTapestry}}/10/Objects\\7A.CnC\\BigCraftables/true",
+                "{{ModID}}_JackdawTapestry": "{{ModID}}_JackdawTapestry/painting/1 2/1 2/1/-1/-1/{{i18n:CnC.JackdawTapestry}}/11/Objects\\7A.CnC\\BigCraftables/true",
+               /* "{{ModID}}_CorvidNest": "{{ModID}}_CorvidNest/other/1 2/1 2/1/-1/1/{{i18n:CnC.CorvidNest}}/16/Objects\\7A.CnC\\BigCraftables/true",
+                "{{ModID}}_CorvidStatue": "{{ModID}}_CorvidStatue/decor/1 2/1 2/1/-1/-1/{{i18n:CnC.CorvidStatue}}/17/Objects\\7A.CnC\\BigCraftables/true"*/
+            }
+        },
+        {
+            "LogName": "Misc Item Loads",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModID}}_CorvidNest": {
+                    "Name": "{{ModID}}_CorvidNest",
+                    "DisplayName": "{{i18n:CnC.CorvidNest}}",
+                    "Description": "{{i18n:CnC.CorvidNest.Desc}}",
+                    "Price": -1,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": false,
+                    "IsLamp": false,
+                    "Texture": "Objects/7A.CnC/BigCraftables",
+                    "SpriteIndex": 8,
+                    "ContextTags": [ "cnc_corvid_nest" ],
+                    "CustomFields": null
+                },
+                "{{ModID}}_CorvidStatue": {
+                    "Name": "{{ModID}}_CorvidStatue",
+                    "DisplayName": "{{i18n:CnC.CorvidStatue}}",
+                    "Description": "{{i18n:CnC.CorvidStatue.Desc}}",
+                    "Price": -1,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "Objects/7A.CnC/BigCraftables",
+                    "SpriteIndex": 9,
+                    "ContextTags": [ "cnc_corvid_statue" ],
+                    "CustomFields": null
+                } 
+             },
+            
+        }
     ]
 }

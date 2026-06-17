@@ -1,5 +1,193 @@
 {
     "Changes": [
-        
+        {
+            "LogName": "Misc Item Loads",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+              "{{ModID}}_CorvidMayonnaise": {
+                "Name": "{{ModID}}_CorvidMayonnaise",
+                "DisplayName": "{{i18n:CorvidMayonnaise.DisplayName}}",
+                "Description": "{{i18n:CorvidMayonnaise.Description}}",
+                "Type": "Basic",
+                "Category": -26,
+                "Price": 500,
+                "Texture": "Objects/7A.CnC/Misc",
+                "SpriteIndex": 1,
+                "Edibility": 30,
+                "IsDrink": true,
+                "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                "ExcludeFromRandomSale": false,
+                "ContextTags": [
+                    "color_white",
+                    "mayo_item",
+                    "allergen_egg",
+                    "food_nonvegan"
+                ]
+            },
+            "{{ModID}}_GoldenCorvidMayonnaise": {
+                "Name": "{{ModID}}_GoldenMayonnaise",
+                "DisplayName": "{{i18n:GoldenCorvidMayonnaise.DisplayName}}",
+                "Description": "{{i18n:GoldenCorvidMayonnaise.Description}}",
+                "Type": "Basic",
+                "Category": -26,
+                "Price": 1300,
+                "Texture": "Objects/7A.CnC/Misc",
+                "SpriteIndex": 2,
+                "Edibility": 50,
+                "IsDrink": true,
+                "ExcludeFromShippingCollection": true,
+                "ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_gold",
+                    "mayo_item",
+                    "allergen_egg",
+                    "food_nonvegan"
+                ]
+            },
+            "{{ModID}}_HowToStitchCorvids": {
+                "Name": "{{ModID}}_HowToStitchCorvids",
+                "DisplayName": "{{i18n:HowToStitchCorvids.DisplayName}}",
+                "Description": "{{i18n:HowToStitchCorvids.Description}}",
+                "Type": "Basic",
+                "Category": 0,
+                "Price": 1000,
+                "Texture": "Objects/7A.CnC/Misc",
+                "SpriteIndex": 0,
+                "Edibility": -300,
+                "IsDrink": true,
+                "ExcludeFromShippingCollection": true,
+                "ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_green",
+                    "not_placeable",
+                    "book_item"
+                ]
+            }
+        }
+    },
+    /*{
+            "LogName": "Misc Item Loads",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+            "{{ModID}}_DummyItem1": {
+                "Name": "{{ModID}}_DummyItem1",
+                "DisplayName": "{{i18n:CnC.CrowTapestry}}",
+                "Description": "{{i18n:CnC.CrowTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem2": {
+                "Name": "{{ModID}}_DummyItem2",
+                "DisplayName": "{{i18n:CnC.RavenTapestry}}",
+                "Description": "{{i18n:CnC.RavenTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem3": {
+                "Name": "{{ModID}}_DummyItem3",
+                "DisplayName": "{{i18n:CnC.JayTapestry}}",
+                "Description": "{{i18n:CnC.JayTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem4": {
+                "Name": "{{ModID}}_DummyItem4",
+                "DisplayName": "{{i18n:CnC.MagpieTapestry}}",
+                "Description": "{{i18n:CnC.MagpieTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem5": {
+                "Name": "{{ModID}}_DummyItem5",
+                "DisplayName": "{{i18n:CnC.NutcrackerTapestry}}",
+                "Description": "{{i18n:CnC.NutcrackerTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem6": {
+                "Name": "{{ModID}}_DummyItem6",
+                "DisplayName": "{{i18n:CnC.TreepieTapestry}}",
+                "Description": "{{i18n:CnC.TreepieTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem7": {
+                "Name": "{{ModID}}_DummyItem7",
+                "DisplayName": "{{i18n:CnC.RookTapestry}}",
+                "Description": "{{i18n:CnC.RookTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+            "{{ModID}}_DummyItem8": {
+                "Name": "{{ModID}}_DummyItem8",
+                "DisplayName": "{{i18n:CnC.JackdawTapestry}}",
+                "Description": "{{i18n:CnC.JackdawTapestry.Desc}}",
+                "Price": -1,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": false,
+                "CanBePlacedIndoors": false,
+                "IsLamp": false,
+                "Texture": "Objects/7A.CnC/Icons",
+                "SpriteIndex": 3,
+                "ContextTags": null
+            },
+        }
+    },*/
+    {
+        "LogName": "Misc Item Loads",
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+        "Entries": {
+            "{{ModID}}_HowToStitchCorvids": {
+                "CanBeShipped": false,
+                "UseForTriggerAction": true,
+                "CategoryTextOverride": "{{i18n:CnC.CategoryBook}}"
+            }
+        }
+    }
     ]
 }

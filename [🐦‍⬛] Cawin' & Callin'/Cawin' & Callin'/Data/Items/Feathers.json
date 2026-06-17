@@ -1,5 +1,107 @@
 {
     "Changes": [
-        
+        {
+            "LogName": "Feather Item Loads",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_BlackCorvidFeather": {
+                    "Name": "{{ModID}}_BlackCorvidFeather",
+                    "DisplayName": "{{i18n:CnC.BlackCorvidFeather.DisplayName}}",
+                    "Description": "{{i18n:CnC.BlackCorvidFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.CnC/Feathers",
+                    "SpriteIndex": 0,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_black",
+                        "cnc_corvid_feather"
+                    ]
+                },
+                "{{ModID}}_WhiteCorvidFeather": {
+                    "Name": "{{ModID}}_WhiteCorvidFeather",
+                    "DisplayName": "{{i18n:CnC.WhiteCorvidFeather.DisplayName}}",
+                    "Description": "{{i18n:CnC.WhiteCorvidFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.CnC/Feathers",
+                    "SpriteIndex": 1,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_white",
+                        "cnc_corvid_feather"
+                    ]
+                },
+                "{{ModID}}_BrownCorvidFeather": {
+                    "Name": "{{ModID}}_BrownCorvidFeather",
+                    "DisplayName": "{{i18n:CnC.BrownCorvidFeather.DisplayName}}",
+                    "Description": "{{i18n:CnC.BrownCorvidFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.CnC/Feathers",
+                    "SpriteIndex": 2,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "cnc_corvid_feather"
+                    ]
+                },
+                "{{ModID}}_GrayCorvidFeather": {
+                    "Name": "{{ModID}}_GrayCorvidFeather",
+                    "DisplayName": "{{i18n:CnC.GrayCorvidFeather.DisplayName}}",
+                    "Description": "{{i18n:CnC.GrayCorvidFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.CnC/Feathers",
+                    "SpriteIndex": 3,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gray",
+                        "cnc_corvid_feather"
+                    ]
+                },
+                "{{ModID}}_PurpleCorvidFeather": {
+                    "Name": "{{ModID}}_PurpleCorvidFeather",
+                    "DisplayName": "{{i18n:CnC.PurpleCorvidFeather.DisplayName}}",
+                    "Description": "{{i18n:CnC.PurpleCorvidFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 250,
+                    "Texture": "Objects/7A.CnC/Feathers",
+                    "SpriteIndex": 4,
+                    "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_purple",
+                        "cnc_corvid_feather"
+                    ]
+                },
+                "{{ModID}}_GoldCorvidFeather": {
+                    "Name": "{{ModID}}_GoldCorvidFeather",
+                    "DisplayName": "{{i18n:CnC.GoldCorvidFeather.DisplayName}}",
+                    "Description": "{{i18n:CnC.GoldCorvidFeather.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 750,
+                    "Texture": "Objects/7A.CnC/Feathers",
+                    "SpriteIndex": 5,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_gold",
+                        "cnc_corvid_feather"
+                    ]
+                }
+            }
+        }
     ]
 }

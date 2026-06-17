@@ -8,7 +8,7 @@
         {
             "LogName": "Data files",
             "Action": "Include",
-            "FromFile": "Data/Items/Eggs.json"
+            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json"
         },
         {
             "LogName": "Animal Assets",
