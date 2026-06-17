@@ -1,0 +1,29 @@
+{
+    "Changes": [
+        /*{
+            "LogName": "Data files",
+            "Action": "Include",
+            "FromFile": "Data/Animals.json, Data/Forage.json, Data/Machines.json, Data/Feathers.json, Data/Eggs.json, Data/Misc_Items.json, Data/Gift_Tastes.json, Data/Crafting_Recipes.json, Data/Mail.json, Data/Trigger_Actions.json, Data/Shops.json, Data/MEEP.json, Data/Audio.json, Data/Furniture.json"
+        },*/
+        {
+            "LogName": "Animal Assets",
+            "Action": "Load",
+            "Target" : "Animals/Chicks/Corvid_Chick_Black, Animals/Chicks/Corvid_Chick_Brown, Animals/Chicks/Corvid_Chick_Gold, Animals/Chicks/Corvid_Chick_Gray, Animals/Chicks/Corvid_Chick_Purple, Animals/Chicks/Corvid_Chick_White, Animals/Crow/Crow_Black, Animals/Crow/Crow_Brown, Animals/Crow/Crow_Gold, Animals/Crow/Crow_White, Animals/Jackdaw/Jackdaw_Black, Animals/Jackdaw/Jackdaw_Brown, Animals/Jackdaw/Jackdaw_Gold, Animals/Jackdaw/Jackdaw_Purple, Animals/Jay/Jay_Blue, Animals/Jay/Jay_Brown, Animals/Jay/Jay_Gold, Animals/Jay/Jay_Purple, Animals/Magpie/Magpie_Blue, Animals/Magpie/Magpie_Gold, Animals/Magpie/Magpie_Green, Animals/Magpie/Magpie_Red, Animals/Nutcracker/Nutcracker_Brown, Animals/Nutcracker/Nutcracker_Gold, Animals/Nutcracker/Nutcracker_Stone, Animals/Nutcracker/Nutcracker_Tan, Animals/Raven/Raven_Black, Animals/Raven/Raven_Brown, Animals/Raven/Raven_Gold, Animals/Raven/Raven_White, Animals/Rook/Rook_Black, Animals/Rook/Rook_Gold, Animals/Rook/Rook_Gray, Animals/Rook/Rook_White, Animals/Treepie/Treepie_Brown, Animals/Treepie/Treepie_Gold, Animals/Treepie/Treepie_Purple, Animals/Treepie/Treepie_Red",
+            "FromFile": "Assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Item Assets",
+            "Action": "Load",
+            "Target" : "Objects/7A.CnC/Eggs, Objects/7A.CnC/Feathers, Objects/7A.CnC/Misc, Objects/7A.CnC/BigCraftables",
+            "FromFile": "Assets/Objects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Egg Accessibility Overlay Assets",
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Objects/7A.CnC/Eggs",
+            "FromFile": "Assets/Objects/Eggs_Accessibility.png",
+            "When": { "Egg Accessibility Mode": true }
+        }
+    ]
+}

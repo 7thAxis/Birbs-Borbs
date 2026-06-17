@@ -1,0 +1,604 @@
+{
+    "Changes": [
+        {
+            "LogName": "Egg Item Loads",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+
+            //Crows
+                "{{ModID}}_BlackCrowEgg": {
+                        "Name": "{{ModID}}_BlackCrowEgg",
+                        "DisplayName": "{{i18n:CnC.BlackCrowEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BlackCrowEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 0,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_black",
+                            "cnc_corvid_egg",
+                            "cnc_crow_egg"
+                        ]
+                    },
+                    "{{ModID}}_BrownCrowEgg": {
+                        "Name": "{{ModID}}_BrownCrowEgg",
+                        "DisplayName": "{{i18n:CnC.BrownCrowEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BrownCrowEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 1,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_brown",
+                            "cnc_corvid_egg",
+                            "cnc_crow_egg"
+                        ]
+                    },
+                    "{{ModID}}_WhiteCrowEgg": {
+                        "Name": "{{ModID}}_WhiteCrowEgg",
+                        "DisplayName": "{{i18n:CnC.WhiteCrowEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.WhiteCrowEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 2,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_white",
+                            "cnc_corvid_egg",
+                            "cnc_crow_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldCrowEgg": {
+                        "Name": "{{ModID}}_GoldCrowEgg",
+                        "DisplayName": "{{i18n:CnC.GoldCrowEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldCrowEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 3,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_crow_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    },
+                //Jackdaw
+                    "{{ModID}}_BlackJackdawEgg": {
+                        "Name": "{{ModID}}_BlackJackdawEgg",
+                        "DisplayName": "{{i18n:CnC.BlackJackdawEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BlackJackdawEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 28,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_black",
+                            "cnc_corvid_egg",
+                            "cnc_jackdaw_egg"
+                        ]
+                    },
+                    "{{ModID}}_BrownJackdawEgg": {
+                        "Name": "{{ModID}}_BrownJackdawEgg",
+                        "DisplayName": "{{i18n:CnC.BrownJackdawEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BrownJackdawEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 30,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_brown",
+                            "cnc_corvid_egg",
+                            "cnc_jackdaw_egg"
+                        ]
+                    },
+                    "{{ModID}}_PurpleJackdawEgg": {
+                        "Name": "{{ModID}}_PurpleJackdawEgg",
+                        "DisplayName": "{{i18n:CnC.PurpleJackdawEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.PurpleJackdawEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 29,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_Purple",
+                            "cnc_corvid_egg",
+                            "cnc_jackdaw_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldJackdawEgg": {
+                        "Name": "{{ModID}}_GoldJackdawEgg",
+                        "DisplayName": "{{i18n:CnC.GoldJackdawEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldJackdawEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 31,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_jackdaw_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    },
+                //Jay
+                    "{{ModID}}_BlueJayEgg": {
+                        "Name": "{{ModID}}_BlueJayEgg",
+                        "DisplayName": "{{i18n:CnC.BlueJayEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BlueJayEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 8,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_blue",
+                            "cnc_corvid_egg",
+                            "cnc_jay_egg"
+                        ]
+                    },
+                    "{{ModID}}_BrownJayEgg": {
+                        "Name": "{{ModID}}_BrownJayEgg",
+                        "DisplayName": "{{i18n:CnC.BrownJayEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BrownJayEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 9,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_brown",
+                            "cnc_corvid_egg",
+                            "cnc_jay_egg"
+                        ]
+                    },
+                    "{{ModID}}_PurpleJayEgg": {
+                        "Name": "{{ModID}}_PurpleJayEgg",
+                        "DisplayName": "{{i18n:CnC.PurpleJayEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.PurpleJayEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 10,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_purple",
+                            "cnc_corvid_egg",
+                            "cnc_jay_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldJayEgg": {
+                        "Name": "{{ModID}}_GoldJayEgg",
+                        "DisplayName": "{{i18n:CnC.GoldJayEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldJayEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 11,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_jay_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    },
+            //Magpie
+                    "{{ModID}}_BlueMagpieEgg": {
+                        "Name": "{{ModID}}_BlueMagpieEgg",
+                        "DisplayName": "{{i18n:CnC.BlueMagpieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BlueMagpieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 12,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_blue",
+                            "cnc_corvid_egg",
+                            "cnc_magpie_egg"
+                        ]
+                    },
+                    "{{ModID}}_RedMagpieEgg": {
+                        "Name": "{{ModID}}_RedMagpieEgg",
+                        "DisplayName": "{{i18n:CnC.RedMagpieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.RedMagpieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 14,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_red",
+                            "cnc_corvid_egg",
+                            "cnc_magpie_egg"
+                        ]
+                    },
+                    "{{ModID}}_GreenMagpieEgg": {
+                        "Name": "{{ModID}}_GreenMagpieEgg",
+                        "DisplayName": "{{i18n:CnC.GreenMagpieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GreenMagpieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 13,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_green",
+                            "cnc_corvid_egg",
+                            "cnc_magpie_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldMagpieEgg": {
+                        "Name": "{{ModID}}_GoldMagpieEgg",
+                        "DisplayName": "{{i18n:CnC.GoldMagpieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldMagpieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 15,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_magpie_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    },
+                //Nutcracker
+                    "{{ModID}}_BrownNutcrackerEgg": {
+                        "Name": "{{ModID}}_BrownNutcrackerEgg",
+                        "DisplayName": "{{i18n:CnC.BrownNutcrackerEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BrownNutcrackerEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 16,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_brown",
+                            "cnc_corvid_egg",
+                            "cnc_nutcracker_egg"
+                        ]
+                    },
+                    "{{ModID}}_StoneNutcrackerEgg": {
+                        "Name": "{{ModID}}_StoneNutcrackerEgg",
+                        "DisplayName": "{{i18n:CnC.StoneNutcrackerEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.StoneNutcrackerEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 18,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_AntiqueWhite",
+                            "cnc_corvid_egg",
+                            "cnc_nutcracker_egg"
+                        ]
+                    },
+                    "{{ModID}}_TanNutcrackerEgg": {
+                        "Name": "{{ModID}}_TanNutcrackerEgg",
+                        "DisplayName": "{{i18n:CnC.TanNutcrackerEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.TanNutcrackerEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 17,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_brown",
+                            "cnc_corvid_egg",
+                            "cnc_nutcracker_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldNutcrackerEgg": {
+                        "Name": "{{ModID}}_GoldNutcrackerEgg",
+                        "DisplayName": "{{i18n:CnC.GoldNutcrackerEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldNutcrackerEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 19,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_nutcracker_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    },
+                //Raven
+                    "{{ModID}}_BlackRavenEgg": {
+                        "Name": "{{ModID}}_BlackRavenEgg",
+                        "DisplayName": "{{i18n:CnC.BlackRavenEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BlackRavenEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 4,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_black",
+                            "cnc_corvid_egg",
+                            "cnc_raven_egg"
+                        ]
+                    },
+                    "{{ModID}}_BrownRavenEgg": {
+                        "Name": "{{ModID}}_BrownRavenEgg",
+                        "DisplayName": "{{i18n:CnC.BrownRavenEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BrownRavenEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 5,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_brown",
+                            "cnc_corvid_egg",
+                            "cnc_raven_egg"
+                        ]
+                    },
+                    "{{ModID}}_WhiteRavenEgg": {
+                        "Name": "{{ModID}}_WhiteRavenEgg",
+                        "DisplayName": "{{i18n:CnC.WhiteRavenEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.WhiteRavenEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 6,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_white",
+                            "cnc_corvid_egg",
+                            "cnc_raven_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldRavenEgg": {
+                        "Name": "{{ModID}}_GoldRavenEgg",
+                        "DisplayName": "{{i18n:CnC.GoldRavenEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldRavenEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 7,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_raven_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    },
+                //Rook
+                    "{{ModID}}_BlackRookEgg": {
+                        "Name": "{{ModID}}_BlackRookEgg",
+                        "DisplayName": "{{i18n:CnC.BlackRookEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BlackRookEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 24,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_black",
+                            "cnc_corvid_egg",
+                            "cnc_rook_egg"
+                        ]
+                    },
+                    "{{ModID}}_GrayRookEgg": {
+                        "Name": "{{ModID}}_GrayRookEgg",
+                        "DisplayName": "{{i18n:CnC.GrayRookEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GrayRookEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 26,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gray",
+                            "cnc_corvid_egg",
+                            "cnc_rook_egg"
+                        ]
+                    },
+                    "{{ModID}}_WhiteRookEgg": {
+                        "Name": "{{ModID}}_WhiteRookEgg",
+                        "DisplayName": "{{i18n:CnC.WhiteRookEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.WhiteRookEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 25,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_white",
+                            "cnc_corvid_egg",
+                            "cnc_rook_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldRookEgg": {
+                        "Name": "{{ModID}}_GoldRookEgg",
+                        "DisplayName": "{{i18n:CnC.GoldRookEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldRookEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 27,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_rook_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    },
+                //Treepie
+                    "{{ModID}}_BrownTreepieEgg": {
+                        "Name": "{{ModID}}_BrownTreepieEgg",
+                        "DisplayName": "{{i18n:CnC.BrownTreepieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.BrownTreepieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 20,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_brown",
+                            "cnc_corvid_egg",
+                            "cnc_treepie_egg"
+                        ]
+                    },
+                    "{{ModID}}_RedTreepieEgg": {
+                        "Name": "{{ModID}}_RedTreepieEgg",
+                        "DisplayName": "{{i18n:CnC.RedTreepieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.RedTreepieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 21,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_red",
+                            "cnc_corvid_egg",
+                            "cnc_treepie_egg"
+                        ]
+                    },
+                    "{{ModID}}_PurpleTreepieEgg": {
+                        "Name": "{{ModID}}_PurpleTreepieEgg",
+                        "DisplayName": "{{i18n:CnC.PurpleTreepieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.PurpleTreepieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 350,
+                        "Texture": "Objects/7A.CnC/Eggs",
+                        "SpriteIndex": 22,
+                        "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_purple",
+                            "cnc_corvid_egg",
+                            "cnc_treepie_egg"
+                        ]
+                    },
+                    "{{ModID}}_GoldTreepieEgg": {
+                        "Name": "{{ModID}}_GoldTreepieEgg",
+                        "DisplayName": "{{i18n:CnC.GoldTreepieEgg.DisplayName}}",
+                        "Description": "{{i18n:CnC.GoldTreepieEgg.Description}}",
+                        "Type": "Basic",
+                        "Category": -5,
+                        "Edibility": 10,
+                        "Price": 1000,
+                        "Texture": "Objects/7A.HnH/Eggs",
+                        "SpriteIndex": 23,
+                        "ExcludeFromShippingCollection": true,
+                        "ExcludeFromRandomSale": true,
+                        "ContextTags": [
+                            "color_gold",
+                            "cnc_corvid_egg",
+                            "cnc_treepie_egg",
+                            "cnc_shiny_egg"
+                        ]
+                    }
+            }
+        }
+    ]
+}
