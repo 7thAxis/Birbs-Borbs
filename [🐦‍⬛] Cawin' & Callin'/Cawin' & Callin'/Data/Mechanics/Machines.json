@@ -1,5 +1,58 @@
 {
     "Changes": [
-        
+        {
+            "LogName": "Produce - Snail Mayo Machine",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)24", "OutputRules" ],
+            "MoveEntries": [
+                { "Id": "{{ModID}}_CorvidMayonnaise", "ToPosition": "Top" },
+                {  "Id": "{{ModID}}_GoldenCorvidMayonnaise", "ToPosition": "Top" }
+            ],
+            "Entries": {
+               "{{ModID}}_GoldenCorvidMayonnaise": {
+                  "Id": "{{ModID}}_GoldenCorvidMayonnaise",
+                  "Triggers": [
+                     {
+                        "Id": "GoldenCorvidEggInputMachine",
+                        "Trigger": "ItemPlacedInMachine",
+                        "RequiredTags": [ "cnc_shiny_egg" ],
+                        "RequiredCount": 1
+                     }
+                  ],
+                  "OutputItem": [
+                     {
+                        "Id": "GoldenCorvidEggOutputMachine",
+                        "ItemId": "{{ModID}}_GoldenCorvidMayonnaise",
+                        "MaxItems": 1,
+                        "CopyQuality": true
+                     }
+                  ],
+                  "MinutesUntilReady": 380,
+                  "DaysUntilReady": -1
+               },
+               "{{ModID}}_CorvidMayonnaise": {
+                  "Id": "{{ModID}}_CorvidMayonnaise",
+                  "Triggers": [
+                     {
+                        "Id": "CorvidEggInputMachine",
+                        "Trigger": "ItemPlacedInMachine",
+                        "RequiredTags": [ "cnc_corvid_egg" ],
+                        "RequiredCount": 1
+                     }
+                  ],
+                  "OutputItem": [
+                     {
+                        "Id": "CorvidEggOutputMachine",
+                        "ItemId": "{{ModID}}_CorvidMayonnaise",
+                        "MaxItems": 1,
+                        "CopyQuality": true
+                     }
+                  ],
+                  "MinutesUntilReady": 280,
+                  "DaysUntilReady": -1
+               }
+            }
+        }
     ]
 }
