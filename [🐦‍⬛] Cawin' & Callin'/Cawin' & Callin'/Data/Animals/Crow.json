@@ -29,7 +29,7 @@
                         },
                         {
                             "Id": "Egg",
-                            "Condition": "RANDOM 0.1",
+                            "Condition": "RANDOM 0.15",
                             "MinimumFriendship": 0,
                             "ItemId": "{{ModID}}_BlackCrowEgg"
                         },
@@ -41,9 +41,9 @@
                         },
                         {
                             "Id": "Vanilla",
-                            "Condition": "RANDOM 0.2",
+                            "Condition": "RANDOM 0.1",
                             "MinimumFriendship": 0,
-                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 516, 559, 578, GoldCoin, 801, 771, 388, 72, 74}}"
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
                         }
                     ],
                     "ProduceOnMature": true,
@@ -58,15 +58,15 @@
                     "UseFlippedRightForLeft": false,
                     "SpriteWidth": 16,
                     "SpriteHeight": 16,
-                    "UseDoubleUniqueAnimationFrames": false,
+                    "UseDoubleUniqueAnimationFrames": true,
                     "SleepFrame": 19,
-                    "EmoteOffset": { "X": 0, "Y": 0 },
+                    "EmoteOffset": { "X": 0, "Y": -16 },
                     "ShadowWhenBaby": { "Visible": true },
                     "ShadowWhenAdult": { "Visible": true },
                     "CanSwim": false,
                     "BabiesFollowAdults": true,
                     "GrassEatAmount": 2,
-                    "HappinessDrain": 3,
+                    "HappinessDrain": 7,
                     "StatToIncrementOnProduce": null,
                     "ShowInSummitCredits": true
                 },
@@ -94,7 +94,7 @@
                         },
                         {
                             "Id": "Egg",
-                            "Condition": "RANDOM 0.1",
+                            "Condition": "RANDOM 0.15",
                             "MinimumFriendship": 0,
                             "ItemId": "{{ModID}}_BrownCrowEgg"
                         },
@@ -106,9 +106,9 @@
                         },
                         {
                             "Id": "Vanilla",
-                            "Condition": "RANDOM 0.2",
+                            "Condition": "RANDOM 0.1",
                             "MinimumFriendship": 0,
-                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 516, 559, 578, GoldCoin, 801, 771, 388, 72, 74}}"
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
                         }
                     ],
                     "ProduceOnMature": true,
@@ -123,15 +123,15 @@
                     "UseFlippedRightForLeft": false,
                     "SpriteWidth": 16,
                     "SpriteHeight": 16,
-                    "UseDoubleUniqueAnimationFrames": false,
+                    "UseDoubleUniqueAnimationFrames": true,
                     "SleepFrame": 19,
-                    "EmoteOffset": { "X": 0, "Y": 0 },
+                    "EmoteOffset": { "X": 0, "Y": -16 },
                     "ShadowWhenBaby": { "Visible": true },
                     "ShadowWhenAdult": { "Visible": true },
                     "CanSwim": false,
                     "BabiesFollowAdults": true,
                     "GrassEatAmount": 2,
-                    "HappinessDrain": 3,
+                    "HappinessDrain": 7,
                     "StatToIncrementOnProduce": null,
                     "ShowInSummitCredits": true
                 },
@@ -159,7 +159,7 @@
                         },
                         {
                             "Id": "Egg",
-                            "Condition": "RANDOM 0.1",
+                            "Condition": "RANDOM 0.15",
                             "MinimumFriendship": 0,
                             "ItemId": "{{ModID}}_WhiteCrowEgg"
                         },
@@ -171,9 +171,9 @@
                         },
                         {
                             "Id": "Vanilla",
-                            "Condition": "RANDOM 0.2",
+                            "Condition": "RANDOM 0.1",
                             "MinimumFriendship": 0,
-                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 516, 559, 578, GoldCoin, 801, 771, 388, 72, 74}}"
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
                         }
                     ],
                     "ProduceOnMature": true,
@@ -190,13 +190,13 @@
                     "SpriteHeight": 16,
                     "UseDoubleUniqueAnimationFrames": true,
                     "SleepFrame": 19,
-                    "EmoteOffset": { "X": 0, "Y": 0 },
+                    "EmoteOffset": { "X": 0, "Y": -16 },
                     "ShadowWhenBaby": { "Visible": true },
                     "ShadowWhenAdult": { "Visible": true },
                     "CanSwim": false,
                     "BabiesFollowAdults": true,
                     "GrassEatAmount": 2,
-                    "HappinessDrain": 3,
+                    "HappinessDrain": 7,
                     "StatToIncrementOnProduce": null,
                     "ShowInSummitCredits": true
                 },
@@ -216,7 +216,7 @@
                     "DaysToProduce": 2,
                     "HarvestType": "DropOvernight",
                     "ProduceItemIds": [
- {
+                        {
                             "Id": "Feather",
                             "Condition": "RANDOM 0.8",
                             "MinimumFriendship": 0,
@@ -230,9 +230,9 @@
                         },
                         {
                             "Id": "Vanilla",
-                            "Condition": "RANDOM 0.2",
+                            "Condition": "RANDOM 0.1",
                             "MinimumFriendship": 0,
-                            "ItemId": "{{Random: 73, 124, 125, 336, 373, 384, 791, 928, GoldenBobber, TroutDerbyTag, GoldCoin, GoldenAnimalCracker, GoldenMysteryBox, 74, 559, 549, 542, 517, 516, 417, 888}}"
+                            "ItemId": "{{Random: 73, 124, 125, 336, 373, 384, 791, 928, GoldenBobber, TroutDerbyTag, GoldCoin, GoldenAnimalCracker, GoldenMysteryBox, 74, 559, 549, 542,  417, }}"
                         }
                     ],
                     "ProduceOnMature": true,
@@ -249,16 +249,16 @@
                     "SpriteHeight": 16,
                     "UseDoubleUniqueAnimationFrames": true,
                     "SleepFrame": 19,
-                    "EmoteOffset": { "X": 0, "Y": 0 },
+                    "EmoteOffset": { "X": 0, "Y": -16 },
                     "ShadowWhenBaby": { "Visible": true },
                     "ShadowWhenAdult": { "Visible": true },
                     "CanSwim": false,
                     "BabiesFollowAdults": true,
                     "GrassEatAmount": 2,
-                    "HappinessDrain": 3,
+                    "HappinessDrain": 7,
                     "StatToIncrementOnProduce": null,
                     "ShowInSummitCredits": true
-                },
+                }
             }
         }
     ]

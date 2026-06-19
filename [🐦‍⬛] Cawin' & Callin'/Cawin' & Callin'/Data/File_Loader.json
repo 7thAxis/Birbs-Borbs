@@ -1,15 +1,12 @@
 {
     "Changes": [
-        /*{
-            "LogName": "Data files",
-            "Action": "Include",
-            "FromFile": "Data/Animals.json, Data/Forage.json, Data/Machines.json, Data/Feathers.json, Data/Eggs.json, Data/Misc_Items.json, Data/Gift_Tastes.json, Data/Crafting_Recipes.json, Data/Mail.json, Data/Trigger_Actions.json, Data/Shops.json, Data/MEEP.json, Data/Audio.json, Data/Furniture.json"
-        },*/
+    //DATA FILES
         {
             "LogName": "Data files",
             "Action": "Include",
-            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json"
+            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json, Data/Animals/Jackdaw.json, Data/Animals/Jay.json, Data/Animals/Magpie.json, Data/Animals/Nutcracker.json, Data/Animals/Raven.json, Data/Animals/Rook.json, Data/Animals/Treepie.json"
         },
+    //GRAPHIC LOADS
         {
             "LogName": "Animal Assets",
             "Action": "Load",
@@ -22,6 +19,7 @@
             "Target" : "Objects/7A.CnC/Eggs, Objects/7A.CnC/Feathers, Objects/7A.CnC/Misc, Objects/7A.CnC/BigCraftables",
             "FromFile": "Assets/Objects/{{TargetWithoutPath}}.png"
         },
+        //OVERLAYS AND REPLACERS
         {
             "LogName": "Egg Accessibility Overlay Assets",
             "Action": "EditImage",
@@ -29,6 +27,36 @@
             "Target": "Objects/7A.CnC/Eggs",
             "FromFile": "Assets/Objects/Eggs_Accessibility.png",
             "When": { "Egg Accessibility Mode": true }
+        },
+        {
+            "LogName": "Critter Crow Replacer Top Row",
+            "Action": "EditImage",
+            "Target": "TileSheets/critters",
+            "FromFile": "Assets/Misc/Crow_Replacers.png",
+            "PatchMode": "Replace",
+            "FromArea": { "X": 0, "Y": 32, "Width": 192, "Height": 32 },
+            "ToArea": { "X": 128, "Y": 32, "Width": 192, "Height": 32 },
+            "When":  { "Vanilla Crow Retexture": true }
+        },
+        {
+            "LogName": "Critter Crow Replacer Bottom Row",
+            "Action": "EditImage",
+            "Target": "TileSheets/critters",
+            "FromFile": "Assets/Misc/Crow_Replacers.png",
+            "PatchMode": "Replace",
+            "FromArea": { "X": 0, "Y": 64, "Width": 160, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 64, "Width": 160, "Height": 32 },
+            "When":  { "Vanilla Crow Retexture": true }
+        },
+        {
+            "LogName": "LooseSprites Crow Replacer",
+            "Action": "EditImage",
+            "Target": "LooseSprites/birds",
+            "FromFile": "Assets/Misc/Crow_Replacers.png",
+            "PatchMode": "Replace",
+            "FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 16 },
+            "ToArea": { "X": 0, "Y": 160, "Width": 160, "Height": 16 },
+            "When":  { "Vanilla Crow Retexture": true }
         }
     ]
 }

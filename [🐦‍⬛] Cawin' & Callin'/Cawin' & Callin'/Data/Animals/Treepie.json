@@ -1,0 +1,265 @@
+{
+    "Changes": [ 
+        {
+            "LogName": "Load Treepies",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": { 
+                "{{ModID}}_Treepie.Brown": {
+                    "DisplayName": "{{i18n:CnC.Treepie}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 500,
+                    "RequiredBuilding": "Barn",
+                    "EggItemIds": [ "{{ModID}}_BrownTreepieEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_BrownCorvidFeather"
+                        },
+                        {
+                            "Id": "Egg",
+                            "Condition": "RANDOM 0.15",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_BrownTreepieEgg"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldTreepieEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "crow",
+                    "Texture": "Animals/Treepie/Treepie_Brown",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Brown",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                },
+                "{{ModID}}_Treepie.Purple": {
+                    "DisplayName": "{{i18n:CnC.Treepie}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 500,
+                    "RequiredBuilding": "Barn",
+                    "EggItemIds": [ "{{ModID}}_PurpleTreepieEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_PurpleCorvidFeather"
+                        },
+                        {
+                            "Id": "Egg",
+                            "Condition": "RANDOM 0.15",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_PurpleTreepieEgg"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldTreepieEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "crow",
+                    "Texture": "Animals/Treepie/Treepie_Purple",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Purple",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                },
+                 "{{ModID}}_Treepie.Red": {
+                    "DisplayName": "{{i18n:CnC.Treepie}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 500,
+                    "RequiredBuilding": "Barn",
+                    "EggItemIds": [ "{{ModID}}_RedTreepieEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_BlackCorvidFeather"
+                        },
+                        {
+                            "Id": "Egg",
+                            "Condition": "RANDOM 0.15",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_RedTreepieEgg"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldTreepieEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "crow",
+                    "Texture": "Animals/Treepie/Treepie_Red",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Black",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                },
+                "{{ModID}}_Treepie.Gold": {
+                    "DisplayName": "{{i18n: CnC.Treepie}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 3000,
+                    "RequiredBuilding": "Coop",
+                    "EggItemIds": [ "{{ModID}}_GoldTreepieEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldCorvidFeather"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldTreepieEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 73, 124, 125, 336, 373, 384, 791, 928, GoldenBobber, TroutDerbyTag, GoldCoin, GoldenAnimalCracker, GoldenMysteryBox, 74, 559, 549, 542,  417, }}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "Treepie",
+                    "Texture": "Animals/Treepie/Treepie_Gold",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Gold",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                }
+            }    
+        }
+    ]
+}

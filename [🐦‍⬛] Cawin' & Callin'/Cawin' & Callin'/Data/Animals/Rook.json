@@ -1,0 +1,265 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Rooks",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModID}}_Rook.Black": {
+                    "DisplayName": "{{i18n:CnC.Rook}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 500,
+                    "RequiredBuilding": "Barn",
+                    "EggItemIds": [ "{{ModID}}_BlackRookEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_BlackCorvidFeather"
+                        },
+                        {
+                            "Id": "Egg",
+                            "Condition": "RANDOM 0.15",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_BlackRookEgg"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldRookEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "crow",
+                    "Texture": "Animals/Rook/Rook_Black",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Black",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                },
+                "{{ModID}}_Rook.Gray": {
+                    "DisplayName": "{{i18n:CnC.Rook}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 500,
+                    "RequiredBuilding": "Barn",
+                    "EggItemIds": [ "{{ModID}}_GrayRookEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GrayCorvidFeather"
+                        },
+                        {
+                            "Id": "Egg",
+                            "Condition": "RANDOM 0.15",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GrayRookEgg"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldRookEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "crow",
+                    "Texture": "Animals/Rook/Rook_Gray",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Gray",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                },
+                "{{ModID}}_Rook.White": {
+                    "DisplayName": "{{i18n:CnC.Rook}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 500,
+                    "RequiredBuilding": "Barn",
+                    "EggItemIds": [ "{{ModID}}_WhiteRookEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_WhiteCorvidFeather"
+                        },
+                        {
+                            "Id": "Egg",
+                            "Condition": "RANDOM 0.15",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_WhiteRookEgg"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldRookEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 170, 171, 382, 378, 380, 384, 559, 578, GoldCoin, 771, 388, 72, 74}}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "crow",
+                    "Texture": "Animals/Rook/Rook_White",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_White",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                },
+                "{{ModID}}_Rook.Gold": {
+                    "DisplayName": "{{i18n: CnC.Rook}}",
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": -1,
+                    "SellPrice": 3000,
+                    "RequiredBuilding": "Coop",
+                    "EggItemIds": [ "{{ModID}}_GoldRookEgg" ],
+                    "IncubationTime": -1,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n: CnC.BirthText}}",
+                    "DaysToMature": 4,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 2,
+                    "HarvestType": "DropOvernight",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Feather",
+                            "Condition": "RANDOM 0.8",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldCorvidFeather"
+                        },
+                        {
+                            "Id": "RareEgg",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModID}}_GoldRookEgg"
+                        },
+                        {
+                            "Id": "Vanilla",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{Random: 73, 124, 125, 336, 373, 384, 791, 928, GoldenBobber, TroutDerbyTag, GoldCoin, GoldenAnimalCracker, GoldenMysteryBox, 74, 559, 549, 542,  417, }}"
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": 200,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "Sound": "crow",
+                    //"BabySound": "crow",
+                    "Texture": "Animals/Rook/Rook_Gold",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Gold",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 19,
+                    "EmoteOffset": { "X": 0, "Y": -16 },
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 2,
+                    "HappinessDrain": 7,
+                    "StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true
+                }
+            }
+        }
+    ]
+}

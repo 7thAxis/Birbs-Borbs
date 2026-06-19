@@ -16,6 +16,13 @@
             "Description":"Adds bright borders around eggs, making them a bit easier to find!",
             "Section": "Graphics"
     },
+    "Vanilla Crow Retexture": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Replaces vanilla crow textures with ones in this mod's style.",
+            "Section": "Graphics"
+    },
     "Exclude Items From Perfection": {
             "AllowValues": "true, false",
             "Default": false,
