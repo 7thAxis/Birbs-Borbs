@@ -1,0 +1,57 @@
+//The Murder Below Dungeon
+{
+    "Changes": [
+        {
+            "LogName": "Crow Basement Thing i forget what i need it for",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "CnC_CrowBasement": {
+                    "DisplayName": "{{i18n:Dungeon.CrowBasement}}",
+                    "ExcludeFromNpcPathfinding": true
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/LocationContexts",
+            "Entries": {
+                "CnCCrowBasement": { 
+                    "PlayRandomAmbientSounds": false,
+                    "CopyWeatherFromLocation": "Desert",
+                    "DefaultMusic": "Volcano_Ambient",
+                    "AllowRainTotem": false,
+                    "MaxPassOutCost": 3500,
+                    "ReviveLocations": [
+                        {
+                            "Id": "Default",
+                            "Location": "Hospital",
+                            "Position": { "X": 20, "Y": 12 }
+                        }
+                      ],
+                      "PassOutMail": [
+                        {
+                          "Id": "Default",
+                          "Mail": "passedOut2",
+                          "MaxPassOutCost": 3500,
+                          "SkipRandomSelection": false
+                        }
+                      ],
+                    "CustomFields": {}
+                }
+
+            }
+        },
+        {
+            "LogName": "Crow Monsters",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Entries": {
+                // "health/damage/_/_/_/_/drops/defense/_/_/speed/_/_/exp/name"
+                "Void_Crow_Underling": "4/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Bat",
+                "Void_Crow_Boss": "300/15/0/0/false/1000/80 0/5/.01/3/2/.0/true/7/Pepper Rex",
+                "Void_Crow_Walker": "60/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Brute"
+            }
+        },
+    ]
+}

@@ -4,7 +4,7 @@
         {
             "LogName": "Data files",
             "Action": "Include",
-            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json, Data/Animals/Jackdaw.json, Data/Animals/Jay.json, Data/Animals/Magpie.json, Data/Animals/Nutcracker.json, Data/Animals/Raven.json, Data/Animals/Rook.json, Data/Animals/Treepie.json, Data/Mechanics/Machines.json"
+            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json, Data/Animals/Jackdaw.json, Data/Animals/Jay.json, Data/Animals/Magpie.json, Data/Animals/Nutcracker.json, Data/Animals/Raven.json, Data/Animals/Rook.json, Data/Animals/Treepie.json, Data/Mechanics/Machines.json, Data/Dungeon/Initialization.json"
         },
     //GRAPHIC LOADS
         {
@@ -18,6 +18,19 @@
             "Action": "Load",
             "Target" : "Objects/7A.CnC/Eggs, Objects/7A.CnC/Feathers, Objects/7A.CnC/Misc, Objects/7A.CnC/BigCraftables",
             "FromFile": "Assets/Objects/{{TargetWithoutPath}}.png"
+        },
+        //MAPS
+        {
+            "LogName": "Loads Tilesheets",
+            "Action": "Load",
+            "Target": "Maps/Crow_Basement_Tilesheet",
+            "FromFile": "Assets/Misc/Crow_Basement_Tilesheet.png"
+        },
+        {
+            "LogName": "Loads Tilesheets",
+            "Action": "Load",
+            "Target": "Maps/7A.TMB.1, Maps/7A.TMB.2, Maps/7A.TMB.3, Maps/7A.TMB.4, Maps/7A.TMB.5, Maps/7A.TMB.6, Maps/7A.TMB.7, Maps/7A.TMB.8, Maps/7A.TMB.9, Maps/7A.TMB.10, Maps/7A.TMB.END, Maps/7A.TMB.ENTRY",
+            "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
         },
         //OVERLAYS AND REPLACERS
         {
