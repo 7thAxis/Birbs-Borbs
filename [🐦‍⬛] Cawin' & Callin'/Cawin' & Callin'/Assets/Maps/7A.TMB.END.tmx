@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="50" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="7">
+ <properties>
+  <property name="LocationContext" value="CnCCrowBasement"/>
+  <property name="SeasonOveride" value="fall"/>
+  <property name="TreatAsOutdoors" value="true"/>
+  <property name="spacechase0.SpaceCore_DungeonElevatorEntrance" value="12 10"/>
+  <property name="spacechase0.SpaceCore_DungeonLadderEntrance" value="6 10"/>
+ </properties>
  <tileset firstgid="1" name="Crow_Basement_Tilesheet" tilewidth="16" tileheight="16" tilecount="288" columns="16">
   <image source="Crow_Basement_Tilesheet" width="256" height="288"/>
   <tile id="0">
