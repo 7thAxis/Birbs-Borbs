@@ -417,7 +417,7 @@
   </object>
   <object id="6" name="TileData" x="192" y="144" width="16" height="16">
    <properties>
-    <property name="Action" value="spacechase0.SpaceCore_DungeonElevatorMenu CnCCrowBasement"/>
+    <property name="Action" value="spacechase0.SpaceCore_DungeonElevatorMenu 7thAxis.CnC_TheMurderBelow"/>
    </properties>
   </object>
  </objectgroup>

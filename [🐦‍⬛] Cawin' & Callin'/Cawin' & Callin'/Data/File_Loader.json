@@ -30,7 +30,7 @@
             "LogName": "Loads Tilesheets",
             "Action": "Load",
             "Target": "Maps/7A.TMB.1, Maps/7A.TMB.2, Maps/7A.TMB.3, Maps/7A.TMB.4, Maps/7A.TMB.5, Maps/7A.TMB.6, Maps/7A.TMB.7, Maps/7A.TMB.8, Maps/7A.TMB.9, Maps/7A.TMB.10, Maps/7A.TMB.END, Maps/7A.TMB.ENTRY",
-            "FromFile": "Assets/Maps/{{TargetWithoutPath}}.png"
+            "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
         },
         //OVERLAYS AND REPLACERS
         {

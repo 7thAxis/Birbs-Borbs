@@ -309,12 +309,12 @@
   </object>
   <object id="5" name="TileData" x="192" y="80" width="16" height="16">
    <properties>
-    <property name="Action" value="spacechase0.SpaceCore_DungeonElevatorMenu CnCCrowBasement"/>
+    <property name="Action" value="spacechase0.SpaceCore_DungeonElevatorMenu 7thAxis.CnC_TheMurderBelow"/>
    </properties>
   </object>
   <object id="6" name="TileData" x="240" y="176" width="16" height="16">
    <properties>
-    <property name="Action" value="spacechase0.SpaceCore_DungeonLadder"/>
+    <property name="Action" value="spacechase0.SpaceCore_DungeonEntrance 7thAxis.CnC_TheMurderBelow"/>
    </properties>
   </object>
  </objectgroup>
