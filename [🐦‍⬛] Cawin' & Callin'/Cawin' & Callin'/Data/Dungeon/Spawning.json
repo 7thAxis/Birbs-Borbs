@@ -1,6 +1,98 @@
 {
     "Changes": [
         {
+            "LogName": "Deep Dark Spawnable Definitions",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+            "Entries": {
+
+                // Monsters
+                "CnC_Spawn_CrowUnderling": {
+                    "Type": "Monster",
+                    "MonsterType": "Bat",
+                    "MonsterName": "Void_Crow_Underling",
+                    "MonsterTextureOverride": "Monsters/Void_Crow_Underling",
+                    //"MonsterDropOverride": [],
+                },
+                "CnC_Spawn_CrowWalker": {
+                    "Type": "Monster",
+                    "MonsterType": "ShadowBrute",
+                    "MonsterName": "Void_Crow_Walker",
+                    "MonsterTextureOverride": "Monsters/Void_Crow_Walker",
+                    //"MonsterDropOverride": [],
+                },
+                "CnC_Spawn_CrowBoss": {
+                    "Type": "Monster",
+                    "MonsterType": "DinoMonster",
+                    "MonsterName": "Void_Crow_Boss",
+                    "MonsterTextureOverride": "Monsters/Void_Crow_Boss",
+                    //"MonsterDropOverride": [],
+                },
+                "CnC_Spawn_NovusCorvus": {
+                    "Type": "Monster",
+                    "MonsterType": "Serpent",
+                    "MonsterName": "Novus_Corvus",
+                    "MonsterTextureOverride": "Monsters/Novus_Corvus",
+                    //"MonsterDropOverride": [],
+                    "MonsterAdditionalData": { "SegmentCount": 10 }
+                }
+            }
+        },
+        {
+            "LogName": "Spawning Groups",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawningGroups",
+            "Entries": {
+                "CnC_Dungeon_Spawns": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                { "Weight": 1.0, "Value": "CnC_Spawn_CrowUnderling" },
+                                { "Weight": 1.0, "Value": "CnC_Spawn_CrowWalker" },
+                                { "Weight": 1.0, "Value": "CnC_Spawn_CrowBoss" }
+                            ],
+                            "Minimum": 5, "Maximum": 10
+                        }
+                    ]
+                },
+                "CnC_Boss_Spawns": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "CnC_Spawn_NovusCorvus" } ],
+                            "Minimum": 1, "Maximum": 1
+                        }
+                    ]
+                },
+            }
+        },//
+        {
+            "LogName": "Deep Dark Spawning Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "CnC_TMB_Spawn_Trigger": {
+                    "Id": "CnC_TMB_Spawn_Trigger",
+                    "Trigger": "Manual",
+                    "MarkActionApplied": false,
+                    "HostOnly": true,
+                    "Actions": [ "spacechase0.SpaceCore_TriggerSpawnGroup CnC_Dungeon_Spawns Target" ]
+                },
+                "CnC_TMB_Boss_Trigger": {
+                    "Id": "CnC_TMB_Boss_Trigger",
+                    "Trigger": "Manual",
+                    "MarkActionApplied": false,
+                    "HostOnly": true,
+                    "Actions": [ "spacechase0.SpaceCore_TriggerSpawnGroup CnC_Boss_Spawns Target" ]
+                },
+                "CnC_TMB_PathLayerReset": {
+                    "Id": "CnC_TMB_PathLayerReset",
+                    "Trigger": "LocationChanged",
+                    "Condition": "LOCATION_NAME Here CnC_CrowBasement",
+                    "MarkActionApplied": false,
+                    "HostOnly": true,
+                    "Actions": [ "Spiderbuttons.BETAS_RegeneratePathsLayer Here" ]
+                },
+            }
         }
     ]
 }

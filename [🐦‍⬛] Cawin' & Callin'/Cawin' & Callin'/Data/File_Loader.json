@@ -4,13 +4,19 @@
         {
             "LogName": "Data files",
             "Action": "Include",
-            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json, Data/Animals/Jackdaw.json, Data/Animals/Jay.json, Data/Animals/Magpie.json, Data/Animals/Nutcracker.json, Data/Animals/Raven.json, Data/Animals/Rook.json, Data/Animals/Treepie.json, Data/Mechanics/Machines.json, Data/Dungeon/Initialization.json"
+            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json, Data/Animals/Jackdaw.json, Data/Animals/Jay.json, Data/Animals/Magpie.json, Data/Animals/Nutcracker.json, Data/Animals/Raven.json, Data/Animals/Rook.json, Data/Animals/Treepie.json, Data/Mechanics/Machines.json, Data/Dungeon/Initialization.json, Data/Dungeon/Spawning.json, Data/Other/Audio.json"
         },
     //GRAPHIC LOADS
         {
             "LogName": "Animal Assets",
             "Action": "Load",
             "Target" : "Animals/Chicks/Corvid_Chick_Black, Animals/Chicks/Corvid_Chick_Brown, Animals/Chicks/Corvid_Chick_Gold, Animals/Chicks/Corvid_Chick_Gray, Animals/Chicks/Corvid_Chick_Purple, Animals/Chicks/Corvid_Chick_White, Animals/Crow/Crow_Black, Animals/Crow/Crow_Brown, Animals/Crow/Crow_Gold, Animals/Crow/Crow_White, Animals/Jackdaw/Jackdaw_Black, Animals/Jackdaw/Jackdaw_Brown, Animals/Jackdaw/Jackdaw_Gold, Animals/Jackdaw/Jackdaw_Purple, Animals/Jay/Jay_Blue, Animals/Jay/Jay_Brown, Animals/Jay/Jay_Gold, Animals/Jay/Jay_Purple, Animals/Magpie/Magpie_Blue, Animals/Magpie/Magpie_Gold, Animals/Magpie/Magpie_Green, Animals/Magpie/Magpie_Red, Animals/Nutcracker/Nutcracker_Brown, Animals/Nutcracker/Nutcracker_Gold, Animals/Nutcracker/Nutcracker_Stone, Animals/Nutcracker/Nutcracker_Tan, Animals/Raven/Raven_Black, Animals/Raven/Raven_Brown, Animals/Raven/Raven_Gold, Animals/Raven/Raven_White, Animals/Rook/Rook_Black, Animals/Rook/Rook_Gold, Animals/Rook/Rook_Gray, Animals/Rook/Rook_White, Animals/Treepie/Treepie_Brown, Animals/Treepie/Treepie_Gold, Animals/Treepie/Treepie_Purple, Animals/Treepie/Treepie_Red",
+            "FromFile": "Assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Monster Assets",
+            "Action": "Load",
+            "Target" : "Monsters/Void_Crow_Underling, Monsters/Void_Crow_Walker, Monsters/Void_Crow_Boss, Monsters/Novus_Corvus",
             "FromFile": "Assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
         },
         {
@@ -29,7 +35,7 @@
         {
             "LogName": "Loads Tilesheets",
             "Action": "Load",
-            "Target": "Maps/7A.TMB.1, Maps/7A.TMB.2, Maps/7A.TMB.3, Maps/7A.TMB.4, Maps/7A.TMB.5, Maps/7A.TMB.6, Maps/7A.TMB.7, Maps/7A.TMB.8, Maps/7A.TMB.9, Maps/7A.TMB.10, Maps/7A.TMB.END, Maps/7A.TMB.ENTRY",
+            "Target": "Maps/7A.TMB.1, Maps/7A.TMB.2, Maps/7A.TMB.3, Maps/7A.TMB.4, Maps/7A.TMB.5, Maps/7A.TMB.6, Maps/7A.TMB.7, Maps/7A.TMB.8, Maps/7A.TMB.9, Maps/7A.TMB.END, Maps/7A.TMB.ENTRY",
             "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
         },
         //OVERLAYS AND REPLACERS
@@ -70,6 +76,15 @@
             "FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 16 },
             "ToArea": { "X": 0, "Y": 160, "Width": 160, "Height": 16 },
             "When":  { "Vanilla Crow Retexture": true }
+        },
+        {
+            "LogName": "LooseSprites Crow Replacer",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "TileSheets/Projectiles",
+            "FromFile": "Assets/Misc/Void_Ball.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": 32, "Y": 16, "Width": 16, "Height": 16 },
         }
     ]
 }

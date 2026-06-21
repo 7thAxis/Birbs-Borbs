@@ -1,5 +1,55 @@
 {
     "Changes": [
-        
+        {
+            "LogName": "Murder Below Audio",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "CnC_TheMurderBelow": {
+                    "ID": "CnC_TheMurderBelow",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jetdarc_Slowly_Awaken_Rebirth.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                    //https://www.youtube.com/watch?v=KKurml4cd_Q
+                },
+                "CnC_CorruptedCaw": {
+                    "Id": "CnC_CorruptedCaw",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
+                    "Category": "Sound",
+                    "StreamedVorbis": false,
+                    "Looped": false,
+                    "UseReverb": false,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "LogName": "Murder Below SFX changes",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Update": "OnLocationChange",
+            "Entries": {
+                "batScreech": {
+                    "Id": "batScreech",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
+                },
+                "grunt": {
+                    "Id": "grunt",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
+                }
+            },
+            "When": { "LocationName": "CnC_CrowBasement, CnC_CrowBasementEntry", "Dungeon Audio Changes": true }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/JukeboxTracks",
+            "Entries": {
+                "CnC_TheMurderBelow": {
+                    "Name": "{{i18n:Music.TheMurderBelow}}",
+                    "Available": null
+                }
+            }
+        }
     ]
 }

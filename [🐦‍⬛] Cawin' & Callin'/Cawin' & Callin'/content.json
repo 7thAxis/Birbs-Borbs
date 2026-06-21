@@ -29,6 +29,13 @@
             "AllowBlank": false,
             "Description":"Excludes items from perfection. Golden items are always excluded regardless of this toggle.",
             "Section": "Gameplay"
+    },
+    "Dungeon Audio Changes": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Replaces monster sound effects with crow caws when in The Murder Below dungeon. Disable if you experience a significant lag spike when entering/exiting the dungeon. Hardware dependant.",
+            "Section": "Other"
     }
 },
     /*"DynamicTokens": [
