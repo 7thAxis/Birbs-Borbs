@@ -65,7 +65,7 @@
                         "CnCForest.1": {
                             "LevelRange": { "Begin": 1, "End": 4 },
                             "MapPool": [
-                                { "Weight": 1.0, "Value": "Maps/7A.TMB.1" },
+                                { "Weight": 1.0, "Value": "Maps/7A.TMB.4" },
                                 /*{ "Weight": 1.0, "Value": "Maps/7A.TMB.2" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.3" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.4" },
