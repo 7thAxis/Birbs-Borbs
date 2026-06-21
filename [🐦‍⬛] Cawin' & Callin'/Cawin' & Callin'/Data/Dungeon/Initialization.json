@@ -15,6 +15,12 @@
                     "ExcludeFromNpcPathfinding": true,
                     "CreateOnLoad": { "MapPath": "Maps/7A.TMB.ENTRY" }
                 },
+                "CnC_CrowBasementTreasureRoom": {
+                    "DisplayName": "{{i18n:Dungeon.CrowBasementTreasureRoom}}",
+                    "ExcludeFromNpcPathfinding": true,
+                    "CreateOnLoad": { "MapPath": "Maps/7A.TMB.END" },
+                    "Music": [ { "Track": "Volcano_Ambient" } ]
+                }
             }
         },
         {
@@ -65,13 +71,13 @@
                         "CnCForest.1": {
                             "LevelRange": { "Begin": 1, "End": 4 },
                             "MapPool": [
-                                { "Weight": 1.0, "Value": "Maps/7A.TMB.4" },
-                                /*{ "Weight": 1.0, "Value": "Maps/7A.TMB.2" },
+                                { "Weight": 1.0, "Value": "Maps/7A.TMB.1" },
+                                { "Weight": 1.0, "Value": "Maps/7A.TMB.2" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.3" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.4" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.6" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.7" },
-                                { "Weight": 1.0, "Value": "Maps/7A.TMB.8" }*/
+                                { "Weight": 1.0, "Value": "Maps/7A.TMB.8" }
                             ],
                             "TriggerActionsOnEntry": [ "CnC_TMB_Spawn_Trigger" ],
                             "LocationDataEntry": "CnC_CrowBasement"
@@ -86,12 +92,12 @@
                             "LevelRange": { "Begin": 6, "End": 8 },
                             "MapPool": [
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.1" },
-                               /* { "Weight": 1.0, "Value": "Maps/7A.TMB.2" },
+                                { "Weight": 1.0, "Value": "Maps/7A.TMB.2" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.3" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.4" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.6" },
                                 { "Weight": 1.0, "Value": "Maps/7A.TMB.7" },
-                                { "Weight": 1.0, "Value": "Maps/7A.TMB.8" }*/
+                                { "Weight": 1.0, "Value": "Maps/7A.TMB.8" }
                             ],
                             "TriggerActionsOnEntry": [ "CnC_TMB_Spawn_Trigger" ],
                             "LocationDataEntry": "CnC_CrowBasement"
@@ -106,7 +112,7 @@
                             "LevelRange": { "Begin": 10, "End": 10 },
                             "MapPool": [ { "Weight": 1.0, "Value": "Maps/7A.TMB.END" } ],
                             //"TriggerActionsOnEntry": ["CnC_TMB_Spawn_Trigger"],
-                            "LocationDataEntry": "CnC_CrowBasement"
+                            "LocationDataEntry": "CnC_CrowBasementTreasureRoom"
                         }
                         },
                         "LadderExitLocation": "CnC_CrowBasementEntry",

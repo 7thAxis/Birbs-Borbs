@@ -87,7 +87,7 @@
                 "CnC_TMB_PathLayerReset": {
                     "Id": "CnC_TMB_PathLayerReset",
                     "Trigger": "LocationChanged",
-                    "Condition": "LOCATION_NAME Here CnC_CrowBasement",
+                    "Condition": "LOCATION_NAME Here CnC_CrowBasement CnC_CrowBasementTreasureRoom",
                     "MarkActionApplied": false,
                     "HostOnly": true,
                     "Actions": [ "Spiderbuttons.BETAS_RegeneratePathsLayer Here" ]
