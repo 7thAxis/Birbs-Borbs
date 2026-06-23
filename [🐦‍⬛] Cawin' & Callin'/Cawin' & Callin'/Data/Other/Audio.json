@@ -39,11 +39,11 @@
                     "Id": "grunt",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
                 },
-                "serpentHit": {
+                "serpentDie": {
                     "Id": "grunt",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
                 },
-                "serpentDie": {
+                "shadowDie": {
                     "Id": "grunt",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
                 }

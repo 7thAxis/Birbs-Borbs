@@ -1,7 +1,7 @@
 {
     "Changes": [
         {
-            "LogName": "Deep Dark Spawnable Definitions",
+            "LogName": "TMB Spawnable Definitions",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
             "Entries": {
@@ -14,14 +14,14 @@
                     "MonsterTextureOverride": "Monsters/Void_Crow_Underling",
                     "MonsterDropOverride": [
                         [
-                            { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather" } }
+                            { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather", "MinStack": 1, "MaxStack": 2 } }
                         ],
                         [
-                            { "Weight": 0.3, "Value": { "ItemId": "(O)769" } }, //void essence
-                            { "Weight": 0.5, "Value": { "ItemId": "(O)118" } }, //glass shards
-                            { "Weight": 0.1, "Value": { "ItemId": "(O)384" } }, //gold nugget
-                            { "Weight": 0.05, "Value": { "ItemId": "(O)424" } }, //cheese 
-                            { "Weight": 0.01, "Value": { "ItemId": "(O)522" } } //vampire ring 
+                            { "Weight": 0.3, "Value": { "ItemId": "(O)769", "MinStack": 1, "MaxStack": 1 } }, //void essence
+                            { "Weight": 0.5, "Value": { "ItemId": "(O)118", "MinStack": 1, "MaxStack": 1 } }, //glass shards
+                            { "Weight": 0.1, "Value": { "ItemId": "(O)384", "MinStack": 1, "MaxStack": 1 } }, //gold nugget
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)424", "MinStack": 1, "MaxStack": 1 } }, //cheese 
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)522", "MinStack": 1, "MaxStack": 1 } } //vampire ring 
                         ]
                     ]
                 }, 
@@ -32,14 +32,14 @@
                     "MonsterTextureOverride": "Monsters/Void_Crow_Walker",
                     "MonsterDropOverride": [
                         [
-                            { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather" } }
+                            { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather", "MinStack": 1, "MaxStack": 2 } }
                         ],
                         [
-                            { "Weight": 0.3, "Value": { "ItemId": "(O)769" } }, //void essence
-                            { "Weight": 0.5, "Value": { "ItemId": "(O)118" } }, //glass shards
+                            { "Weight": 0.3, "Value": { "ItemId": "(O)769", "MinStack": 1, "MaxStack": 1 } }, //void essence
+                            { "Weight": 0.5, "Value": { "ItemId": "(O)118", "MinStack": 1, "MaxStack": 1 } }, //glass shards
                             { "Weight": 0.1, "Value": { "ItemId": "(O)384", "MinStack": 1, "MaxStack": 2 } }, //gold nugget
-                            { "Weight": 0.05, "Value": { "ItemId": "(O)424" } }, //cheese 
-                            { "Weight": 0.01, "Value": { "ItemId": "(O)521" } } //Warrior ring 
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)424", "MinStack": 1, "MaxStack": 1 } }, //cheese 
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)521", "MinStack": 1, "MaxStack": 1 } } //Warrior ring 
                         ]
                     ]
                 },
@@ -53,11 +53,11 @@
                             { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather" } }
                         ],
                         [
-                            { "Weight": 0.3, "Value": { "ItemId": "(O)769" } }, //void essence
-                            { "Weight": 0.5, "Value": { "ItemId": "(O)118" } }, //glass shards
-                            { "Weight": 0.1, "Value": { "ItemId": "(O)336" } }, //gold bar
-                            { "Weight": 0.05, "Value": { "ItemId": "(O)424" } }, //cheese 
-                            { "Weight": 0.01, "Value": { "ItemId": "(O)523" } } //savage ring
+                            { "Weight": 0.3, "Value": { "ItemId": "(O)769", "MinStack": 1, "MaxStack": 1 } }, //void essence
+                            { "Weight": 0.5, "Value": { "ItemId": "(O)118", "MinStack": 1, "MaxStack": 1 } }, //glass shards
+                            { "Weight": 0.1, "Value": { "ItemId": "(O)336", "MinStack": 1, "MaxStack": 1 } }, //gold bar
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)424", "MinStack": 1, "MaxStack": 1 } }, //cheese 
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)523", "MinStack": 1, "MaxStack": 1 } } //savage ring
                         ]
                     ]
                 }, //862 soul sapper ring
@@ -84,15 +84,15 @@
                         [
                             {
                                 "Weight": 1.0,
-                                "Value": { "ItemId": "(O)336" } //gold bar
+                                "Value": { "ItemId": "(O)336", "MinStack": 1, "MaxStack": 1 } //gold bar
                             } 
                         ],
                         [
                             { "Weight": 1.0, "Value": { "ItemId": "(O)384", "MinStack": 5, "MaxStack": 10 } }, //gold nugget
                             { "Weight": 0.5, "Value": { "ItemId": "(O)336", "MinStack": 1, "MaxStack": 2 } }, //gold bar
-                            { "Weight": 0.05, "Value": { "ItemId": "(O)862" } }, //soul sapper ring
-                            { "Weight": 0.02, "Value": { "ItemId": "(O)166" } }, //treasure chest
-                            { "Weight": 0.01, "Value": { "ItemId": "(O)166" } } //prismatic shard
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)862", "MinStack": 1, "MaxStack": 1 } }, //soul sapper ring
+                            { "Weight": 0.02, "Value": { "ItemId": "(O)166", "MinStack": 1, "MaxStack": 1 } }, //treasure chest
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)166", "MinStack": 1, "MaxStack": 1 } } //prismatic shard
                         ]
                     ],
                     "MonsterAdditionalData": { "SegmentCount": 8 }
@@ -112,6 +112,29 @@
                     ],
                     "ForageableExperienceGranted": 10
                 },
+                "CnC_Spawn_Ore": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "VolcanoGoldNode",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": { "ItemId": "(O)384", "MinStack": 1, "MaxStack": 3 //gold
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": { "ItemId": "(O)390", "MinStack": 1, "MaxStack": 1 //stone
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 18
+                }
             }
         },
         {
@@ -127,11 +150,15 @@
                                 { "Weight": 0.5, "Value": "CnC_Spawn_CrowWalker" },
                                 { "Weight": 0.2, "Value": "CnC_Spawn_CrowBoss" }
                             ],
-                            "Minimum": 5, "Maximum": 10
+                            "Minimum": 6, "Maximum": 10
                         },
                         {
                             "SpawnableIds": [ { "Weight": 1.0, "Value": "CnC_Spawn_Forage" } ],
-                            "Minimum": 1, "Maximum": 4
+                            "Minimum": 2, "Maximum": 4
+                        },
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "CnC_Spawn_Ore" } ],
+                            "Minimum": 0, "Maximum": 2
                         }
                     ]
                 },
