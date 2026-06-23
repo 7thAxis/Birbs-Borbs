@@ -19,7 +19,7 @@
                     "DisplayName": "{{i18n:Dungeon.CrowBasementTreasureRoom}}",
                     "ExcludeFromNpcPathfinding": true,
                     "CreateOnLoad": { "MapPath": "Maps/7A.TMB.END" },
-                    "Music": [ { "Track": "Volcano_Ambient" } ]
+                    "Music": [ { "Track": "caldera" } ]
                 }
             }
         },
@@ -55,10 +55,10 @@
             "Target": "Data/Monsters",
             "Entries": {
                 // "health/damage/_/_/_/_/drops/defense/_/_/speed/_/_/exp/name"
-                "Void_Crow_Underling": "4/6/0/0/true/1000/767 .9 767 .4 108 .001 287 .02 96 .005 99 .001/1/.01/4/3/.00/true/3/Bat",
-                "Void_Crow_Boss": "300/15/0/0/false/1000/80 0/5/.01/3/2/.0/true/7/Pepper Rex",
-                "Void_Crow_Walker": "60/18/0/0/false/0/769 .75 769 .1 337 .002 336 .01 335 .02 334 .04 203 .04 108 .003 -4 .1 98 .005 99 .001 74 .0005/2/.01/8/3/.0/true/15/Shadow Brute",
-                "Novus_Corvus": "150/23/0/2/true/1000/769 .99 769 .15 287 .15 226 .06 446 .008 74 .001/0/.01/13/2/.0/true/20/Royal Serpent"
+                "Void_Crow_Underling": "80/15/0/0/true/1000//1/.01/4/3/.00/true/15/{{i18n:Monster.VoidCrowUnderling}}",
+                "Void_Crow_Boss": "300/15/0/0/false/1000//5/.01/3/2/.0/true/7/{{i18n:Monster.VoidCrowBoss}}",
+                "Void_Crow_Walker": "160/18/0/0/false/0//2/.01/8/3/.0/true/15/{{i18n:Monster.VoidCrowWalker}}",
+                "Novus_Corvus": "700/23/0/2/true/1000//0/.01/13/2/.0/true/20/{{i18n:Monster.NovusCorvus}}"
             }
         },
         {

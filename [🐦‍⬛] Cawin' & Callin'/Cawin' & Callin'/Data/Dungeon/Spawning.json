@@ -12,30 +12,106 @@
                     "MonsterType": "Bat",
                     "MonsterName": "Void_Crow_Underling",
                     "MonsterTextureOverride": "Monsters/Void_Crow_Underling",
-                    //"MonsterDropOverride": [],
-                },
+                    "MonsterDropOverride": [
+                        [
+                            { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather" } }
+                        ],
+                        [
+                            { "Weight": 0.3, "Value": { "ItemId": "(O)769" } }, //void essence
+                            { "Weight": 0.5, "Value": { "ItemId": "(O)118" } }, //glass shards
+                            { "Weight": 0.1, "Value": { "ItemId": "(O)384" } }, //gold nugget
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)424" } }, //cheese 
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)522" } } //vampire ring 
+                        ]
+                    ]
+                }, 
                 "CnC_Spawn_CrowWalker": {
                     "Type": "Monster",
                     "MonsterType": "ShadowBrute",
                     "MonsterName": "Void_Crow_Walker",
                     "MonsterTextureOverride": "Monsters/Void_Crow_Walker",
-                    //"MonsterDropOverride": [],
+                    "MonsterDropOverride": [
+                        [
+                            { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather" } }
+                        ],
+                        [
+                            { "Weight": 0.3, "Value": { "ItemId": "(O)769" } }, //void essence
+                            { "Weight": 0.5, "Value": { "ItemId": "(O)118" } }, //glass shards
+                            { "Weight": 0.1, "Value": { "ItemId": "(O)384", "MinStack": 1, "MaxStack": 2 } }, //gold nugget
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)424" } }, //cheese 
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)521" } } //Warrior ring 
+                        ]
+                    ]
                 },
                 "CnC_Spawn_CrowBoss": {
                     "Type": "Monster",
                     "MonsterType": "DinoMonster",
                     "MonsterName": "Void_Crow_Boss",
                     "MonsterTextureOverride": "Monsters/Void_Crow_Boss",
-                    //"MonsterDropOverride": [],
-                },
+                    "MonsterDropOverride": [
+                        [
+                            { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather" } }
+                        ],
+                        [
+                            { "Weight": 0.3, "Value": { "ItemId": "(O)769" } }, //void essence
+                            { "Weight": 0.5, "Value": { "ItemId": "(O)118" } }, //glass shards
+                            { "Weight": 0.1, "Value": { "ItemId": "(O)336" } }, //gold bar
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)424" } }, //cheese 
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)523" } } //savage ring
+                        ]
+                    ]
+                }, //862 soul sapper ring
                 "CnC_Spawn_NovusCorvus": {
                     "Type": "Monster",
                     "MonsterType": "Serpent",
                     "MonsterName": "Novus_Corvus",
                     "MonsterTextureOverride": "Monsters/Novus_Corvus",
-                    //"MonsterDropOverride": [],
-                    "MonsterAdditionalData": { "SegmentCount": 10 }
-                }
+                    "MonsterDropOverride": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_BlackCorvidFeather", "MinStack": 5, "MaxStack": 10
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": { "ItemId": "(O)769", "MinStack": 1, "MaxStack": 3 } //void essence
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": { "ItemId": "(O)336" } //gold bar
+                            } 
+                        ],
+                        [
+                            { "Weight": 1.0, "Value": { "ItemId": "(O)384", "MinStack": 5, "MaxStack": 10 } }, //gold nugget
+                            { "Weight": 0.5, "Value": { "ItemId": "(O)336", "MinStack": 1, "MaxStack": 2 } }, //gold bar
+                            { "Weight": 0.05, "Value": { "ItemId": "(O)862" } }, //soul sapper ring
+                            { "Weight": 0.02, "Value": { "ItemId": "(O)166" } }, //treasure chest
+                            { "Weight": 0.01, "Value": { "ItemId": "(O)166" } } //prismatic shard
+                        ]
+                    ],
+                    "MonsterAdditionalData": { "SegmentCount": 8 }
+                },
+                "CnC_Spawn_Forage": {
+                    "Type": "Forageable",
+                    "ForageableItemData": [
+                        { "Weight": 1.0, "Value": { "ItemId": "(O){{ModID}}_BlackCorvidFeather" } },
+                        { "Weight": 1.0, "Value": { "ItemId": "(O)376" } }, //Poppy
+                        { "Weight": 1.0, "Value": { "ItemId": "(O)591" } }, //Tulip 
+                        { "Weight": 0.6, "Value": { "ItemId": "(O)420" } }, //red mush
+                        { "Weight": 0.3, "Value": { "ItemId": "(O)769" } }, //void essence,
+                        { "Weight": 1.3, "Value": { "ItemId": "(O)118" } }, //glass shards
+                        { "Weight": 0.1, "Value": { "ItemId": "(O)384" } }, //gold nugget
+                        { "Weight": 0.005, "Value": { "ItemId": "(O)424" } }, //...cheese
+                        { "Weight": 0.01, "Value": { "ItemId": "(O)166" } } //treasure chest
+                    ],
+                    "ForageableExperienceGranted": 10
+                },
             }
         },
         {
@@ -48,10 +124,14 @@
                         {
                             "SpawnableIds": [
                                 { "Weight": 1.0, "Value": "CnC_Spawn_CrowUnderling" },
-                                { "Weight": 1.0, "Value": "CnC_Spawn_CrowWalker" },
-                                { "Weight": 1.0, "Value": "CnC_Spawn_CrowBoss" }
+                                { "Weight": 0.5, "Value": "CnC_Spawn_CrowWalker" },
+                                { "Weight": 0.2, "Value": "CnC_Spawn_CrowBoss" }
                             ],
                             "Minimum": 5, "Maximum": 10
+                        },
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "CnC_Spawn_Forage" } ],
+                            "Minimum": 1, "Maximum": 4
                         }
                     ]
                 },
@@ -60,13 +140,17 @@
                         {
                             "SpawnableIds": [ { "Weight": 1.0, "Value": "CnC_Spawn_NovusCorvus" } ],
                             "Minimum": 1, "Maximum": 1
+                        },
+                        {
+                            "SpawnableIds": [ { "Weight": 1.0, "Value": "CnC_Spawn_CrowUnderling" } ],
+                            "Minimum": 30, "Maximum": 30
                         }
                     ]
-                },
+                }
             }
         },//
         {
-            "LogName": "Deep Dark Spawning Trigger Actions",
+            "LogName": "Spawning Trigger Actions",
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {

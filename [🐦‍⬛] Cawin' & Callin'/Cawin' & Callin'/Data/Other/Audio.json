@@ -29,12 +29,21 @@
             "Action": "EditData",
             "Target": "Data/AudioChanges",
             "Update": "OnLocationChange",
+            "Priority": "Late + 999",
             "Entries": {
                 "batScreech": {
                     "Id": "batScreech",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
                 },
                 "grunt": {
+                    "Id": "grunt",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
+                },
+                "serpentHit": {
+                    "Id": "grunt",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
+                },
+                "serpentDie": {
                     "Id": "grunt",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
                 }
