@@ -95,7 +95,7 @@
                             { "Weight": 0.01, "Value": { "ItemId": "(O)166", "MinStack": 1, "MaxStack": 1 } } //prismatic shard
                         ]
                     ],
-                    "MonsterAdditionalData": { "SegmentCount": 8 }
+                    "MonsterAdditionalData": { "SegmentCount": 6 }
                 },
                 "CnC_Spawn_Forage": {
                     "Type": "Forageable",

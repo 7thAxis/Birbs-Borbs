@@ -1,0 +1,83 @@
+{
+    "Changes": [
+        {
+            "LogName": "Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+            "{{ModID}}_Crow_On_Farm.test": {
+                "Id": "{{ModID}}_Crow_On_Farm.test",
+                "Trigger": "DayStarted",
+                "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Black ANY\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Brown ANY\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.White ANY\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Gold ANY\"",
+                "Actions": [ "AddMail Current CnC_Crow_On_Farm now" ]
+                },
+            "{{ModID}}_Has_Golden_Axe": {
+                "Id": "{{ModID}}_Has_Golden_Axe",
+                "Trigger": "DayStarted",
+                "Condition": "ANY \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)GoldAxe\"  \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)IridiumAxe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)prismaticAxe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)Prismatic Axe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)Radioactive Axe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)Cobalt Axe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)prismaticAxe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)PrismaticAxe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)RadioactiveAxe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)CobaltAxe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)DN.SnS_StygiumAxe\" \"Spiderbuttons.BETAS_ITEM_IN_WORLD (T)DN.SnS_BlessedAxe\"",
+                "Actions": [ "AddMail Current CnC_Has_Golden_Axe now" ]
+                },
+            "{{ModID}}_Reached_MineLevel_80": {
+                "Id": "{{ModID}}_Reached_MineLevel_80",
+                "Trigger": "DayStarted",
+                "Condition": "MINE_LOWEST_LEVEL_REACHED 80",
+                "Actions": [ "AddMail Current CnC_Reached_MineLevel_80 now" ]
+                },
+            "{{ModID}}_Reached_MineLevel_100": {
+                "Id": "{{ModID}}_Reached_MineLevel_100",
+                "Trigger": "DayStarted",
+                "Condition": "MINE_LOWEST_LEVEL_REACHED 100",
+                "Actions": [ "AddMail Current CnC_Reached_MineLevel_100 now" ]
+                },
+            "{{ModID}}_Reached_SkullLevel_25": {
+                "Id": "{{ModID}}_Reached_SkullLevel_25",
+                "Trigger": "DayStarted",
+                "Condition": "MINE_LOWEST_LEVEL_REACHED 145",
+                "Actions": [ "AddMail Current CnC_Reached_SkullLevel_25 now" ]
+                },
+            "{{ModID}}_Reached_SkullLevel_50": {
+                "Id": "{{ModID}}_Reached_SkullLevel_50",
+                "Trigger": "DayStarted",
+                "Condition": "MINE_LOWEST_LEVEL_REACHED 170",
+                "Actions": [ "AddMail Current CnC_Reached_SkullLevel_50 now" ]
+                },
+            "{{ModID}}_Reached_SkullLevel_100": {
+                "Id": "{{ModID}}_Reached_SkullLevel_100",
+                "Trigger": "DayStarted",
+                "Condition": "MINE_LOWEST_LEVEL_REACHED 220",
+                "Actions": [ "AddMail Current CnC_Reached_SkullLevel_100 now" ]
+                },
+            "{{ModID}}_Reached_MineLevel_120": {
+                "Id": "{{ModID}}_Reached_MineLevel_120",
+                "Trigger": "DayStarted",
+                "Condition": "MINE_LOWEST_LEVEL_REACHED 120",
+                "Actions": [ "AddMail Current CnC_Reached_MineLevel_120 now" ]
+                },
+            "{{ModID}}_QiChallenge9_Received": {
+                "Id": "{{ModID}}_QiChallenge9_Received",
+                "Trigger": "DayStarted",
+                "Condition": "PLAYER_SPECIAL_ORDER_ACTIVE Any QiChallenge9",
+                "Actions": [ "AddMail Current CnC_QiChallenge9_Received now" ]
+                },
+            "{{ModID}}_Has_Infinity_Blade": {
+                "Id": "{{ModID}}_Has_Infinity_Blade",
+                "Trigger": "DayStarted",
+                "Condition": "ANY \"Spiderbuttons.BETAS_ITEM_IN_WORLD (W)62\"",
+                "Actions": [ "AddMail Current CnC_Has_Infinity_Blade now" ]
+                },
+            "{{ModID}}_Has_Combat_Mastery": {
+                "Id": "{{ModID}}_Has_Combat_Mastery",
+                "Trigger": "DayStarted",
+                "Condition": "PLAYER_STAT Current Mastery_4 1",
+                "Actions": [ "AddMail Current CnC_Has_Combat_Mastery now" ]
+                },
+            "{{ModID}}_The_Murder_Below_Dungeon_Unlocked.test": {
+                "Id": "{{ModID}}_The_Murder_Below_Dungeon_Unlocked.test",
+                "Trigger": "DayStarted",
+                "Condition": "PLAYER_HAS_MAIL Any CnC_Crow_On_Farm Any, PLAYER_HAS_MAIL Any CnC_Has_Golden_Axe Any, CnC_Reached_MineLevel_80",
+                "Actions": [ "AddMail Current CnC_The_Murder_Below_Dungeon_Unlocked now" ]
+                },
+            }
+        }
+    ]
+}

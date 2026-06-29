@@ -1,0 +1,420 @@
+{
+    "Changes": [
+        //STAGE 1
+        {
+            "LogName": "Crow Monsters",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Entries": {
+                "Void_Crow_Underling": "80/13/0/0/true/1000/{{ModID}}_BlackCorvidFeather 1 {{ModID}}_BlackCorvidFeather 1 769 .3 118 .5 384 .1 424 .05 522 .01/1/.01/4/3/.00/true/15/{{i18n:Monster.VoidCrowUnderling}}",
+                "Void_Crow_Boss": "300/15/0/0/false/1000/{{ModID}}_BlackCorvidFeather 1 769 .3 118 .5 336 .1 424 .05 523 .01/5/.01/3/2/.0/true/20/{{i18n:Monster.VoidCrowBoss}}",
+                "Void_Crow_Walker": "160/18/0/0/false/0/{{ModID}}_BlackCorvidFeather 1 {{ModID}}_BlackCorvidFeather 1 769 .3 118 .5 384 .1 384 .1 424 .05 521 .01/2/.01/8/3/.0/true/15/{{i18n:Monster.VoidCrowWalker}}",
+                "Novus_Corvus": "700/23/0/2/true/1000/{{ModID}}_BlackCorvidFeather 1 {{ModID}}_BlackCorvidFeather 1 {{ModID}}_BlackCorvidFeather 1 {{ModID}}_BlackCorvidFeather 1 {{ModID}}_BlackCorvidFeather 1 {{ModID}}_BlackCorvidFeather .5 {{ModID}}_BlackCorvidFeather .5 {{ModID}}_BlackCorvidFeather .5 {{ModID}}_BlackCorvidFeather .5 {{ModID}}_BlackCorvidFeather .5 769 1 769 1 769 1 336 1 384 1 384 1 384 1 384 1 384 1 384 .5 384 .5 384 .5 384 .5 384 .5 336 .5 336 .5 862 .05 166 .02 74 .01/0/.01/13/2/.0/true/20/{{i18n:Monster.NovusCorvus}}"
+            }
+        },
+        //BASIC MINES
+        {
+            "LogName": "Stage 2 Crow Stat Changes",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 90,    // HP
+                    "1": 16,    // Damage
+                    "7": 2,     // Defense
+                    "9": 4,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 16    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 320,   // HP
+                    "1": 17,    // Damage
+                    "7": 4,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 21    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 170,   // HP
+                    "1": 20,    // Damage
+                    "7": 3,     // Defense
+                    "9": 8,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 21    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 720,   // HP
+                    "1": 25,    // Damage
+                    "7": 1,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 7,   // speed
+                    "13": 30    // Exp
+                }
+            },
+            "When": {  "HasFlag": "CnC_Reached_MineLevel_100" }
+        },
+        {
+            "LogName": "Stage 3 Crow Stat Changes",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 100,   // HP
+                    "1": 18,    // Damage
+                    "7": 3,     // Defense
+                    "9": 4,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 17    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 340,   // HP
+                    "1": 18,    // Damage
+                    "7": 4,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 22    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 190,   // HP
+                    "1": 21,    // Damage
+                    "7": 3,     // Defense
+                    "9": 8,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 22    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 740,   // HP
+                    "1": 27,    // Damage
+                    "7": 1,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 8,   // speed
+                    "13": 33    // Exp
+                }
+            },
+            "When": {  "HasFlag": "HasSkullKey, CnC_Reached_MineLevel_120" }
+        },
+        //SKULL CAVERN
+        {
+            "LogName": "Stage 4 Crow Stat Changes",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 300,   // HP
+                    "1": 25,    // Damage
+                    "7": 3,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 21    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 500,   // HP
+                    "1": 35,    // Damage
+                    "7": 4,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 26    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 250,   // HP
+                    "1": 30,    // Damage
+                    "7": 3,     // Defense
+                    "9": 7,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 26    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 1000,   // HP
+                    "1": 40,    // Damage
+                    "7": 2,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 9,   // speed
+                    "13": 40    // Exp
+                }
+            },
+            "When": {  "HasFlag": "galaxySword, HasUnlockedSkullDoor" }
+        },
+        {
+            "LogName": "Stage 5 Crow Stat Changes",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 320,   // HP
+                    "1": 27,    // Damage
+                    "7": 3,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 24    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 520,   // HP
+                    "1": 36,    // Damage
+                    "7": 4,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 28    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 260,   // HP
+                    "1": 31,    // Damage
+                    "7": 3,     // Defense
+                    "9": 7,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 28    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 1100,   // HP
+                    "1": 42,    // Damage
+                    "7": 3,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 10,   // speed
+                    "13": 43    // Exp
+                }
+            },
+            "When": {  "HasFlag": "CnC_Reached_SkullLevel_25" }
+        },
+        {
+            "LogName": "Stage 6 Crow Stat Changes",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 340,   // HP
+                    "1": 28,    // Damage
+                    "7": 3,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 26    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 540,   // HP
+                    "1": 37,    // Damage
+                    "7": 4,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 30    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 280,   // HP
+                    "1": 32,    // Damage
+                    "7": 3,     // Defense
+                    "9": 7,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 30    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 1200,   // HP
+                    "1": 44,    // Damage
+                    "7": 2,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 11,   // speed
+                    "13": 45    // Exp
+                }
+            },
+            "When": {  "HasFlag": "CnC_Reached_SkullLevel_50, Saw_Flame_Sprite_Volcano"  }
+        },
+        {
+            "LogName": "Stage 7 Crow Stat Changes", //d-mines or floor 100
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 360,   // HP
+                    "1": 30,    // Damage
+                    "7": 4,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 30    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 560,   // HP
+                    "1": 40,    // Damage
+                    "7": 5,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 35    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 300,   // HP
+                    "1": 35,    // Damage
+                    "7": 4,     // Defense
+                    "9": 6,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 35    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 1300,   // HP
+                    "1": 50,    // Damage
+                    "7": 5,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 15,   // speed
+                    "13": 50    // Exp
+                }
+            },
+            "When": {  "HasFlag": "reachedCaldera, CnC_QiChallenge9_Received"  }
+        },
+{
+            "LogName": "Stage 7.5 Crow Stat Changes", //d-mines or floor 100 + mastery
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 460,   // HP
+                    "1": 35,    // Damage
+                    "7": 5,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 30    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 660,   // HP
+                    "1": 45,    // Damage
+                    "7": 6,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 35    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 400,   // HP
+                    "1": 45,    // Damage
+                    "7": 5,     // Defense
+                    "9": 6,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 35    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 1500,   // HP
+                    "1": 55,    // Damage
+                    "7": 6,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 15,   // speed
+                    "13": 50    // Exp
+                }
+            },
+            "When": {  "HasFlag": "reachedBottomOfHardMines, qiCave, CnC_Reached_SkullLevel_100, CnC_Has_Infinity_Blade, CnC_Has_Combat_Mastery"  }
+        },
+//DEEP DARK
+        {
+            "LogName": "Stage 8 Crow Stat Changes", 
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 2250,  // HP
+                    "1": 35,    // Damage
+                    "7": 4,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 33    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 3125,   // HP
+                    "1": 45,    // Damage
+                    "7": 5,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 37    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 2500,   // HP
+                    "1": 40,    // Damage
+                    "7": 4,     // Defense
+                    "9": 6,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 37    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 6500,   // HP
+                    "1": 55,    // Damage
+                    "7": 5,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 15,   // speed
+                    "13": 55    // Exp
+                }
+            },
+            "When": {  "HasSeenEvent": "SnS.Ch4.Dandelion.7"  }
+        },
+        {
+            "LogName": "Stage 9 Crow Stat Changes", 
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 2350,  // HP
+                    "1": 40,    // Damage
+                    "7": 4,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 33    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 3425,   // HP
+                    "1": 50,    // Damage
+                    "7": 5,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 37    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 2700,   // HP
+                    "1": 45,    // Damage
+                    "7": 4,     // Defense
+                    "9": 6,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 37    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 9000, // HP
+                    "1": 60,    // Damage
+                    "7": 5,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 15,   // speed
+                    "13": 55    // Exp
+                }
+            },
+            "When": {  "HasFlag": "DuskspireDefeated"  }
+        },
+        {
+            "LogName": "Stage 9.5 Crow Stat Changes DD + Mastery", 
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 2450,  // HP
+                    "1": 45,    // Damage
+                    "7": 5,     // Defense
+                    "9": 3,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 33    // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 3525,   // HP
+                    "1": 55,    // Damage
+                    "7": 6,     // Defense
+                    "9": 2,     // Movement threshold
+                    "10": 2,    // speed
+                    "13": 37    // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 2800,   // HP
+                    "1": 50,    // Damage
+                    "7": 5,     // Defense
+                    "9": 6,     // Movement threshold
+                    "10": 3,    // speed
+                    "13": 37    // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 10000, // HP
+                    "1": 65,    // Damage
+                    "7": 6,     // Defense
+                    "9": 50,    // Movement threshold
+                    "10": 15,   // speed
+                    "13": 55    // Exp
+                }
+            },
+            "When": {  "HasFlag": "DuskspireDefeated, CnC_Has_Combat_Mastery"  }
+        }
+    ]
+}
+//"health/damage/x/x/glider?/movement duration/drops/defense/jitteriness/distance threshold/speed/miss chance/mine monster?/exp/name"
