@@ -11,7 +11,7 @@
                     "Description": "{{i18n:CnC.BlackCorvidFeather.Description}}",
                     "Type": "Basic",
                     "Category": -26,
-                    "Price": 250,
+                    "Price": 5,
                     "Texture": "Objects/7A.CnC/Feathers",
                     "SpriteIndex": 0,
                     "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
