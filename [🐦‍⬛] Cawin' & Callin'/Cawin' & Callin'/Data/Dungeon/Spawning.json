@@ -203,7 +203,15 @@
                     "HostOnly": true,
                     "Actions": [ "Spiderbuttons.BETAS_RegeneratePathsLayer Here" ]
                 },
-            }
+                "CnC_TMB_EntryExit_PathLayerReset": {
+                    "Id": "CnC_TMB_EntryExit_PathLayerReset",
+                    "Trigger": "DayStarted",
+                    "Condition": "DAY_OF_WEEK Sunday",
+                    "MarkActionApplied": false,
+                    "HostOnly": true,
+                    "Actions": [  "Spiderbuttons.BETAS_RegeneratePathsLayer CnC_CrowBasementEntry" ]
+                }
+            } 
         }
     ]
 }

@@ -41,6 +41,12 @@
                 "Condition": "MINE_LOWEST_LEVEL_REACHED 170",
                 "Actions": [ "AddMail Current CnC_Reached_SkullLevel_50 now" ]
                 },
+            "{{ModID}}_Reached_SkullLevel_75": {
+                "Id": "{{ModID}}_Reached_SkullLevel_75",
+                "Trigger": "DayStarted",
+                "Condition": "MINE_LOWEST_LEVEL_REACHED 195",
+                "Actions": [ "AddMail Current CnC_Reached_SkullLevel_75 now" ]
+                },
             "{{ModID}}_Reached_SkullLevel_100": {
                 "Id": "{{ModID}}_Reached_SkullLevel_100",
                 "Trigger": "DayStarted",
@@ -76,7 +82,7 @@
                 "Trigger": "DayStarted",
                 "Condition": "PLAYER_HAS_MAIL Any CnC_Crow_On_Farm Any, PLAYER_HAS_MAIL Any CnC_Has_Golden_Axe Any, PLAYER_HAS_MAIL Any CnC_Reached_MineLevel_80 any",
                 "Actions": [ "AddMail Current CnC_The_Murder_Below_Dungeon_Unlocked now" ]
-                },
+                }
             }
         }
     ]

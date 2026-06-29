@@ -8,9 +8,9 @@
 	"MinimumApiVersion": "2.11.1",
 	"MinimumGameVersion": "1.6",
 	"ContentPackFor": { "UniqueID": "Pathoschild.ContentPatcher" },
-	//"DH.MEEP.FarmAnimalSpawns": "",
 	"Dependencies": [
 		{ "UniqueID": "Spiderbuttons.BETAS", "IsRequired": true },
-		{ "UniqueID": "spacechase0.SpaceCore", "IsRequired": true }
+		{ "UniqueID": "spacechase0.SpaceCore", "IsRequired": true },
+		{ "UniqueID": "selph.ExtraAnimalConfig", "IsRequired": true }
 	]
 }

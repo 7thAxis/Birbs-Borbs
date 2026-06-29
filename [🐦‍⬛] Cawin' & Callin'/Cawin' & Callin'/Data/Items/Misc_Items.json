@@ -63,6 +63,25 @@
                     "not_placeable",
                     "book_item"
                 ]
+            },
+            "{{ModID}}_TMBDungeonTotem": {
+                "Name": "{{ModID}}_TMBDungeonTotem",
+                "DisplayName": "{{i18n:TheMurderBelowTotem.DisplayName}}",
+                "Description": "{{i18n:TheMurderBelowTotem.Description}}",
+                "Type": "Crafting",
+                "Category": 0,
+                "Price": 20,
+                "Texture": "Objects/7A.CnC/Misc",
+                "SpriteIndex": 4,
+                "Edibility": -300,
+                "IsDrink": false,
+                "ExcludeFromShippingCollection": "{{Exclude Items From Perfection}}",
+                "ExcludeFromRandomSale": true,
+                "ContextTags": [
+                    "color_black",
+                    "not_placeable",
+                    "totem_item"
+                ]
             }
         }
     },
@@ -186,6 +205,14 @@
                 "CanBeShipped": false,
                 "UseForTriggerAction": true,
                 "CategoryTextOverride": "{{i18n:CnC.CategoryBook}}"
+            },
+            "{{ModID}}_TMBDungeonTotem": {
+                "TotemWarp": {
+                    "Location": "CnC_CrowBasementEntry",
+                    "Position": "7, 8",
+                    "Color": { "B": 0, "G": 0, "R": 255, "A": 155 },
+                    "ConsumedOnUse": true
+                }
             }
         }
     }

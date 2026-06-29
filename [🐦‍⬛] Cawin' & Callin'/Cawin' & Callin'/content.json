@@ -41,43 +41,43 @@
     "DynamicTokens": [
         { "Name": "DungeonStage", "Value": "0" }, 
         {
-            "Name": "DungeonStage", "Value": "1",
+            "Name": "DungeonStage", "Value": 1,
             "When": { "HasFlag": "CnC_Reached_MineLevel_100" }
         },  
         {
-            "Name": "DungeonStage", "Value": "2",
+            "Name": "DungeonStage", "Value": 2,
             "When": { "HasFlag": "HasSkullKey, CnC_Reached_MineLevel_120" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "3",
+            "Name": "DungeonStage", "Value": 3,
             "When": { "HasFlag": "galaxySword, HasUnlockedSkullDoor" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "4",
+            "Name": "DungeonStage", "Value": 4,
             "When": { "HasFlag": "CnC_Reached_SkullLevel_25" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "5",
-            "When": { "HasFlag": "CnC_Reached_SkullLevel_50, Saw_Flame_Sprite_Volcano" }
+            "Name": "DungeonStage", "Value": 5,
+            "When": { "HasFlag": "CnC_Reached_SkullLevel_50, reachedCaldera" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "6",
-            "When": { "HasFlag": "reachedCaldera, CnC_QiChallenge9_Received" }
+            "Name": "DungeonStage", "Value": 6,
+            "When": { "HasFlag": "CnC_Reached_SkullLevel_75, CnC_QiChallenge9_Received" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "7",
-            "When": { "HasFlag": "reachedBottomOfHardMines, qiCave, CnC_Reached_SkullLevel_100, CnC_Has_Infinity_Blade, CnC_Has_Combat_Mastery" }
+            "Name": "DungeonStage", "Value": 7,
+            "When": { "HasFlag": "reachedBottomOfHardMines, CnC_Reached_SkullLevel_100, CnC_Has_Infinity_Blade, CnC_Has_Combat_Mastery" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "8",
+            "Name": "DungeonStage", "Value": 8,
             "When": { "HasSeenEvent": "SnS.Ch4.Dandelion.7" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "9",
+            "Name": "DungeonStage", "Value": 9,
             "When": { "HasFlag": "DuskspireDefeated" }
         }, 
         {
-            "Name": "DungeonStage", "Value": "10",
+            "Name": "DungeonStage", "Value": 10,
             "When": { "HasFlag": "DuskspireDefeated, CnC_Has_Combat_Mastery" }
         }
     ],
