@@ -14,7 +14,7 @@
         },
         //BASIC MINES
         {
-            "LogName": "Stage 2 Crow Stat Changes",
+            "LogName": "Stage 1 Crow Stat Changes",
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -51,10 +51,10 @@
                     "13": 30    // Exp
                 }
             },
-            "When": {  "HasFlag": "CnC_Reached_MineLevel_100" }
+            "When": {  "DungeonStage": 1 }
         },
         {
-            "LogName": "Stage 3 Crow Stat Changes",
+            "LogName": "Stage 2 Crow Stat Changes",
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -91,11 +91,11 @@
                     "13": 33    // Exp
                 }
             },
-            "When": {  "HasFlag": "HasSkullKey, CnC_Reached_MineLevel_120" }
+            "When": {  "DungeonStage": 2 }
         },
         //SKULL CAVERN
         {
-            "LogName": "Stage 4 Crow Stat Changes",
+            "LogName": "Stage 3 Crow Stat Changes",
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -132,10 +132,10 @@
                     "13": 40    // Exp
                 }
             },
-            "When": {  "HasFlag": "galaxySword, HasUnlockedSkullDoor" }
+            "When": {  "DungeonStage": 3 }
         },
         {
-            "LogName": "Stage 5 Crow Stat Changes",
+            "LogName": "Stage 4 Crow Stat Changes",
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -172,10 +172,10 @@
                     "13": 43    // Exp
                 }
             },
-            "When": {  "HasFlag": "CnC_Reached_SkullLevel_25" }
+            "When": {  "DungeonStage": 4 }
         },
         {
-            "LogName": "Stage 6 Crow Stat Changes",
+            "LogName": "Stage 5 Crow Stat Changes",
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -212,10 +212,10 @@
                     "13": 45    // Exp
                 }
             },
-            "When": {  "HasFlag": "CnC_Reached_SkullLevel_50, Saw_Flame_Sprite_Volcano"  }
+            "When": {  "DungeonStage": 5  }
         },
         {
-            "LogName": "Stage 7 Crow Stat Changes", //d-mines or floor 100
+            "LogName": "Stage 6 Crow Stat Changes",
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -252,10 +252,10 @@
                     "13": 50    // Exp
                 }
             },
-            "When": {  "HasFlag": "reachedCaldera, CnC_QiChallenge9_Received"  }
+            "DungeonStage": 6
         },
 {
-            "LogName": "Stage 7.5 Crow Stat Changes", //d-mines or floor 100 + mastery
+            "LogName": "Stage 7 Crow Stat Changes", //d-mines or floor 100 + mastery
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -292,7 +292,7 @@
                     "13": 50    // Exp
                 }
             },
-            "When": {  "HasFlag": "reachedBottomOfHardMines, qiCave, CnC_Reached_SkullLevel_100, CnC_Has_Infinity_Blade, CnC_Has_Combat_Mastery"  }
+            "When": {  "DungeonStage": 7 }
         },
 //DEEP DARK
         {
@@ -333,7 +333,7 @@
                     "13": 55    // Exp
                 }
             },
-            "When": {  "HasSeenEvent": "SnS.Ch4.Dandelion.7"  }
+            "When": {  "DungeonStage": 8  }
         },
         {
             "LogName": "Stage 9 Crow Stat Changes", 
@@ -373,10 +373,10 @@
                     "13": 55    // Exp
                 }
             },
-            "When": {  "HasFlag": "DuskspireDefeated"  }
+            "When": {  "DungeonStage": 9  }
         },
         {
-            "LogName": "Stage 9.5 Crow Stat Changes DD + Mastery", 
+            "LogName": "Stage 10 Crow Stat Changes DD + Mastery", 
             "Action": "EditData",
             "Target": "Data/Monsters",
             "Fields": {
@@ -413,7 +413,7 @@
                     "13": 55    // Exp
                 }
             },
-            "When": {  "HasFlag": "DuskspireDefeated, CnC_Has_Combat_Mastery"  }
+            "When": {  "DungeonStage": 10  }
         }
     ]
 }

@@ -5,10 +5,10 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-            "{{ModID}}_Crow_On_Farm.test": {
-                "Id": "{{ModID}}_Crow_On_Farm.test",
+            "{{ModID}}_Crow_On_Farm": {
+                "Id": "{{ModID}}_Crow_On_Farm",
                 "Trigger": "DayStarted",
-                "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Black ANY\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Brown ANY\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.White ANY\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Gold ANY\"",
+                "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Black 0 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Brown 0 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.White 0 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{ModID}}_Crow.Gold 0 1\"",
                 "Actions": [ "AddMail Current CnC_Crow_On_Farm now" ]
                 },
             "{{ModID}}_Has_Golden_Axe": {
@@ -71,10 +71,10 @@
                 "Condition": "PLAYER_STAT Current Mastery_4 1",
                 "Actions": [ "AddMail Current CnC_Has_Combat_Mastery now" ]
                 },
-            "{{ModID}}_The_Murder_Below_Dungeon_Unlocked.test": {
-                "Id": "{{ModID}}_The_Murder_Below_Dungeon_Unlocked.test",
+            "{{ModID}}_The_Murder_Below_Dungeon_Unlocked": {
+                "Id": "{{ModID}}_The_Murder_Below_Dungeon_Unlocked",
                 "Trigger": "DayStarted",
-                "Condition": "PLAYER_HAS_MAIL Any CnC_Crow_On_Farm Any, PLAYER_HAS_MAIL Any CnC_Has_Golden_Axe Any, CnC_Reached_MineLevel_80",
+                "Condition": "PLAYER_HAS_MAIL Any CnC_Crow_On_Farm Any, PLAYER_HAS_MAIL Any CnC_Has_Golden_Axe Any, PLAYER_HAS_MAIL Any CnC_Reached_MineLevel_80 any",
                 "Actions": [ "AddMail Current CnC_The_Murder_Below_Dungeon_Unlocked now" ]
                 },
             }
