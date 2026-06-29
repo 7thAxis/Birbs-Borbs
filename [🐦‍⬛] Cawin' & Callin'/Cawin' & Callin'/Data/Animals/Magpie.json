@@ -25,7 +25,7 @@
                             "Id": "Feather",
                             "Condition": "RANDOM 0.8",
                             "MinimumFriendship": 0,
-                            "ItemId": "{{ModID}}_BlueCorvidFeather"
+                            "ItemId": "{{ModID}}_BlackCorvidFeather"
                         },
                         {
                             "Id": "Egg",

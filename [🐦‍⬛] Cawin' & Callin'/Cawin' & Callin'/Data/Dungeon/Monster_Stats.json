@@ -252,7 +252,7 @@
                     "13": 50    // Exp
                 }
             },
-            "DungeonStage": 6
+            "When": {  "DungeonStage": 6 }
         },
 {
             "LogName": "Stage 7 Crow Stat Changes", //d-mines or floor 100 + mastery
