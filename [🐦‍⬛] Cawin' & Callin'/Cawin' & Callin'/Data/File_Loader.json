@@ -91,7 +91,7 @@
             "Target": "TileSheets/Projectiles",
             "FromFile": "Assets/Misc/Void_Ball.png",
             "PatchMode": "Replace",
-            "ToArea": { "X": 32, "Y": 16, "Width": 16, "Height": 16 },
+            "ToArea": { "X": 32, "Y": 16, "Width": 16, "Height": 16 }
         }
     ]
 }
