@@ -38,6 +38,13 @@
             "Target": "Maps/7A.TMB.1, Maps/7A.TMB.2, Maps/7A.TMB.3, Maps/7A.TMB.4, Maps/7A.TMB.5, Maps/7A.TMB.6, Maps/7A.TMB.7, Maps/7A.TMB.8, Maps/7A.TMB.9, Maps/7A.TMB.END, Maps/7A.TMB.ENTRY",
             "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
         },
+        //NPCS
+        { 
+            "LogName": "Load Ebony & Darkness",
+            "Action": "Load",
+            "Target": "Characters/7A.Ebony, Portraits/7A.Ebony, Characters/7A.Darkness, Portraits/7A.Darkness",
+            "FromFile": "Assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+        },
         //OVERLAYS AND REPLACERS
         {
             "LogName": "Egg Accessibility Overlay Assets",

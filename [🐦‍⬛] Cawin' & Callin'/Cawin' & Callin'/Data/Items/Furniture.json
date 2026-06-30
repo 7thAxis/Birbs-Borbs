@@ -1,6 +1,6 @@
 {
     "Changes": [
- {
+        {
             "LogName": "Create Furniture",
             "Action": "EditData",
             "Target": "Data/Furniture",
