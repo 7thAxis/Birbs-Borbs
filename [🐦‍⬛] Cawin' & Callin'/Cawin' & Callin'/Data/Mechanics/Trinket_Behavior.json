@@ -1,0 +1,219 @@
+{
+    "Changes": [
+    {
+        "LogName": "Trinket Mechanics",
+        "Action": "EditData",
+        "Target": "mushymato.TrinketTinker/Tinker",
+        "Entries": {
+    //EBONY
+            "{{ModId}}_EbonyTrinket": {
+                "Inventory": { "Capacity": 9 },
+                "Variants": [
+                    {
+                        "Texture": "Characters/7A.Ebony",
+                        "Portrait": "Portraits/7A.Ebony",
+                        "Name": "Ebony",
+                        "Width": 32, "Height": 32,
+                        "ShadowScale": 0
+                    }
+                ],
+                "Chatter": {
+                    "Ebony_Base": { "Lines": [ "{{i18n: Dialogue.Ebony.Base.{{Random: 1,7}}}}" ], "Precedence": 2 },
+
+                    "Ebony_Indoors": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Indoors.{{Random: 1,7}}}}", ],
+                        "Condition": "LOCATION_IS_INDOORS Here", "Precedence": 1 }, 
+                    "Ebony_RainOutdoors": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.RainOutdoors.{{Random: 1,7}}}}"],
+                        "Condition": "WEATHER Here Rain, LOCATION_IS_OUTDOORS Here", "Precedence": 1 },  
+                    
+                    "Ebony_Woods": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Woods.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Backwoods Forest" },
+                    "Ebony_Town": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Town.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Town" },
+                    "Ebony_Beach": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Beach.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Beach" },    
+                    "Ebony_Mountain": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Mountain.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Mountain" },   
+                    "Ebony_Railroad": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Railroad.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Railroad" },
+                    "Ebony_Tunnel": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Tunnel.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Tunnel" },    
+                    "Ebony_Sewers": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Sewers.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Sewer" },     
+                    "Ebony_Desert": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Desert.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Desert" },    
+                    "Ebony_SecretWoods": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.SecretWoods.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Woods" },    
+                    "Ebony_Summit": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Summit.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Summit" },   
+                    "Ebony_Mines": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Mines.{{Random: 1,7}}}}"],
+                        "Condition": "ANY \"LOCATION_IS_MINES Here \" \"LOCATION_IS_SKULL_CAVE Here\"" },
+                    "Ebony_MurderBelow": {
+                        "Lines": [ "{{i18n: Dialogue.Ebony.MurderBelow.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_CONTEXT Here CnCCrowBasement" }                     
+                },
+                "Motion": {
+                    "MotionClass": "Lerp",
+                    "DirectionMode": "DRUL",
+                    //"HideDuringEvents": "{{Hide During Events}}",
+                    "FrameLength": 4,
+                    "Anchors": [ { "Mode": "Forage", "Range": 320 } ],
+                    "AnimClips": {
+                        
+                        "Idle.1": { "FrameStart": 40, "FrameLength": 2, "Interval": 300 },
+                        "Idle.2": { "FrameStart": 42, "FrameLength": 2, "Interval": 300 },
+                        "Idle.3": { "FrameStart": 44, "FrameLength": 2, "Interval": 300 },
+                        "Idle.4": { "FrameStart": 46, "FrameLength": 2, "Interval": 300 },
+
+                        "Swim.1": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        "Swim.2": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        "Swim.3": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        "Swim.4": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        //"Howl": { "FrameStart": 32, "FrameLength": 9, "Interval": 200, "PauseMovement": true }
+                    },
+
+                    "Args": { "Min": 64, "Rate": 300, "MoveSync": true }
+                },
+                "Abilities": [
+                    [
+                        {
+                            "AbilityClass": "Chatter",
+                            "Proc": "Interact",
+                            "Args": { "ChatterPrefix": "Ebony" },
+                            "ProcSound": { "CueName": "crow" }
+                        },
+                        {
+                            "AbilityClass": "Buff",
+                            "Proc": "Always",
+                            "Args": { "BuffId": "{{ModId}}_EbonyBuff" }
+                        },
+                        {
+                            "AbilityClass": "HarvestForage",
+                            "Proc": "Timer",
+                            "ProcTimer": 300,
+                            "ProcSound": { "CueName": "crow" },
+                            "Args": { "Range": 1, "HarvestTo": "TinkerInventory" }
+                        }
+                    ]
+                ]
+            },
+    // DARKNESS
+            "{{ModId}}_DarknessTrinket": {
+                "Inventory": { "Capacity": 9 },
+                "Variants": [
+                    {
+                        "Texture": "Characters/7A.Darkness",
+                        "Portrait": "Portraits/7A.Darkness",
+                        "Name": "Darkness",
+                        "Width": 32, "Height": 32,
+                        "ShadowScale": 0
+                    }
+                ],
+                "Chatter": {
+                    "Darkness_Base": { "Lines": [ "{{i18n: Dialogue.Darkness.Base.{{Random: 1,7}}}}" ], "Precedence": 2 },
+
+                    "Darkness_Indoors": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Indoors.{{Random: 1,7}}}}", ],
+                        "Condition": "LOCATION_IS_INDOORS Here", "Precedence": 1 }, 
+                    "Darkness_RainOutdoors": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.RainOutdoors.{{Random: 1,7}}}}"],
+                        "Condition": "WEATHER Here Rain, LOCATION_IS_OUTDOORS Here", "Precedence": 1 },  
+                    
+                    "Darkness_Woods": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Woods.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Backwoods Forest" },
+                    "Darkness_Town": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Town.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Town" },
+                    "Darkness_Beach": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Beach.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Beach" },    
+                    "Darkness_Mountain": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Mountain.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Mountain" },   
+                    "Darkness_Railroad": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Railroad.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Railroad" },
+                    "Darkness_Tunnel": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Tunnel.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Tunnel" },    
+                    "Darkness_Sewers": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Sewers.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Sewer" },     
+                    "Darkness_Desert": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Desert.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Desert" },    
+                    "Darkness_SecretWoods": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.SecretWoods.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Woods" },    
+                    "Darkness_Summit": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Summit.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_NAME Here Summit" },   
+                    "Darkness_Mines": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Mines.{{Random: 1,7}}}}"],
+                        "Condition": "ANY \"LOCATION_IS_MINES Here \" \"LOCATION_IS_SKULL_CAVE Here\"" },
+                    "Darkness_MurderBelow": {
+                        "Lines": [ "{{i18n: Dialogue.Darkness.MurderBelow.{{Random: 1,7}}}}"],
+                        "Condition": "LOCATION_CONTEXT Here CnCCrowBasement" }                     
+                },
+                "Motion": {
+                    "MotionClass": "Lerp",
+                    "DirectionMode": "DRUL",
+                    //"HideDuringEvents": "{{Hide During Events}}",
+                    "FrameLength": 4,
+                    "Anchors": [ { "Mode": "Forage", "Range": 320 } ],
+                    "AnimClips": {
+                        
+                        "Idle.1": { "FrameStart": 48, "FrameLength": 2, "Interval": 300 },
+                        "Idle.2": { "FrameStart": 50, "FrameLength": 2, "Interval": 300 },
+                        "Idle.3": { "FrameStart": 52, "FrameLength": 2, "Interval": 300 },
+                        "Idle.4": { "FrameStart": 54, "FrameLength": 2, "Interval": 300 },
+
+                        "Swim.1": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        "Swim.2": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        "Swim.3": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        "Swim.4": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        //"Howl": { "FrameStart": 32, "FrameLength": 9, "Interval": 200, "PauseMovement": true }
+                    },
+
+                    "Args": { "Min": 64, "Rate": 300, "MoveSync": true }
+                },
+                "Abilities": [
+                    [
+                        {
+                            "AbilityClass": "Chatter",
+                            "Proc": "Interact",
+                            "Args": { "ChatterPrefix": "Darkness" },
+                            "ProcSound": { "CueName": "crow" }
+                        },
+                        /*{
+                            "AbilityClass": "Buff",
+                            "Proc": "Always",
+                            "Args": { "BuffId": "{{ModId}}_DarknessBuff" }
+                        },*/
+                        {
+                            "AbilityClass": "HarvestForage",
+                            "Proc": "Timer",
+                            "ProcTimer": 300,
+                            "ProcSound": { "CueName": "crow" },
+                            "Args": { "Range": 1, "HarvestTo": "TinkerInventory" }
+                        }
+                    ]
+                ]
+            }
+        }
+    }
+]
+}

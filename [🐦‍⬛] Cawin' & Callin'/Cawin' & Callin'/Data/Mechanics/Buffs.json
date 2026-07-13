@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+            "LogName": "Ebony Buff",
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}_EbonyBuff": {
+                    "DisplayName": "enobys buff",
+                    "Description": "Soothign or whatever\n",
+                    "Duration": -2,
+                    "MaxDuration": -1,
+                    "IconTexture": "Objects/7A.CnC/Misc",
+                    "IconSpriteIndex": 6,
+                    "Effects": { "Defense": 0.5, "Speed": 0.5 },
+                    "CustomFields": { "spacechase0.SpaceCore/HealthRegeneration": 0.1 }
+                }
+            }
+        },
+    ]
+}

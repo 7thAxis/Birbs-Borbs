@@ -1,5 +1,40 @@
-{
+ {
     "Changes": [
-        
-    ]
+        {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+        // Ebony
+            "{{ModID}}_EbonyEquip": {
+                "Id": "{{ModID}}_EbonyEquip",
+                "MarkActionApplied": false,
+                "Trigger": "Spiderbuttons.BETAS_ItemEquipped",
+                "Condition": "ITEM_ID Target (O){{ModId}}_EbonyCharm, mushymato.TrinketTinker_ENABLED_TRINKET_COUNT {{ModId}}_EbonyTrinket Current <1",
+                "Actions": [ "mushymato.TrinketTinker_EquipHiddenTrinket {{ModId}}_EbonyTrinket 4 0 -1" ]
+            },
+            "{{ModID}}_EbonyUnequip": {
+                "Id": "{{ModID}}_EbonyUnequip",
+                "MarkActionApplied": false,
+                "Trigger": "Spiderbuttons.BETAS_ItemUnequipped",
+                "Condition": "ITEM_ID Target (O){{ModId}}_EbonyCharm",
+                "Actions": [ "mushymato.TrinketTinker_UnequipHiddenTrinket {{ModID}}_EbonyTrinket" ]
+            },
+        //Darkness
+            "{{ModID}}_DarknessEquip": {
+                "Id": "{{ModID}}_DarknessEquip",
+                "MarkActionApplied": false,
+                "Trigger": "Spiderbuttons.BETAS_ItemEquipped",
+                "Condition": "ITEM_ID Target (O){{ModId}}_DarknessCharm, mushymato.TrinketTinker_ENABLED_TRINKET_COUNT {{ModId}}_DarknessTrinket Current <1",
+                "Actions": [ "mushymato.TrinketTinker_EquipHiddenTrinket {{ModId}}_DarknessTrinket 4 0 -1" ]
+            },
+            "{{ModID}}_DarknessUnequip": {
+                "Id": "{{ModID}}_DarknessUnequip",
+                "MarkActionApplied": false,
+                "Trigger": "Spiderbuttons.BETAS_ItemUnequipped",
+                "Condition": "ITEM_ID Target (O){{ModId}}_DarknessCharm",
+                "Actions": [ "mushymato.TrinketTinker_UnequipHiddenTrinket {{ModID}}_DarknessTrinket" ]
+            },
+        }
+    }
+]
 }

@@ -78,7 +78,7 @@
         }, 
         {
             "Name": "DungeonStage", "Value": 10,
-            "When": { "HasFlag": "DuskspireDefeated, CnC_Has_Combat_Mastery" }
+            "When": { "HasFlag|contains=DuskspireDefeated": true, "HasFlag|contains=CnC_Has_Combat_Mastery": true }
         }
     ],
     "Changes": [
@@ -88,3 +88,7 @@
         }
     ]
 }
+
+//Notes:
+//if player loses trinkets, remember to resend them
+//readd buffs on day start
