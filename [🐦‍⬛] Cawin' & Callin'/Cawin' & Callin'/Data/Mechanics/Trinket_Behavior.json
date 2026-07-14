@@ -84,7 +84,7 @@
                         //"Howl": { "FrameStart": 32, "FrameLength": 9, "Interval": 200, "PauseMovement": true }
                     },
 
-                    "Args": { "Min": 64, "Rate": 300, "MoveSync": true }
+                    "Args": { "Min": 128, "Rate": 300, "MoveSync": true, "Velocity": -1 }
                 },
                 "Abilities": [
                     [
@@ -111,7 +111,6 @@
             },
     // DARKNESS
             "{{ModId}}_DarknessTrinket": {
-                "Inventory": { "Capacity": 9 },
                 "Variants": [
                     {
                         "Texture": "Characters/7A.Darkness",
@@ -185,10 +184,14 @@
                         "Swim.2": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
                         "Swim.3": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
                         "Swim.4": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
-                        //"Howl": { "FrameStart": 32, "FrameLength": 9, "Interval": 200, "PauseMovement": true }
+
+                        "VoidBall.1": { "FrameStart": 32, "FrameLength": 2, "Interval": 300, "PauseMovement": true },
+                        "VoidBall.2": { "FrameStart": 34, "FrameLength": 2, "Interval": 300, "PauseMovement": true },
+                        "VoidBall.3": { "FrameStart": 36, "FrameLength": 2, "Interval": 300, "PauseMovement": true },
+                        "VoidBall.4": { "FrameStart": 38, "FrameLength": 2, "Interval": 300, "PauseMovement": true }
                     },
 
-                    "Args": { "Min": 64, "Rate": 300, "MoveSync": true }
+                    "Args": { "Min": 128, "Rate": 300, "MoveSync": true,  "Velocity": -1 }
                 },
                 "Abilities": [
                     [
@@ -198,18 +201,42 @@
                             "Args": { "ChatterPrefix": "Darkness" },
                             "ProcSound": { "CueName": "crow" }
                         },
-                        /*{
+                        {
                             "AbilityClass": "Buff",
                             "Proc": "Always",
                             "Args": { "BuffId": "{{ModId}}_DarknessBuff" }
-                        },*/
+                        },
                         {
                             "AbilityClass": "HarvestForage",
                             "Proc": "Timer",
                             "ProcTimer": 300,
                             "ProcSound": { "CueName": "crow" },
-                            "Args": { "Range": 1, "HarvestTo": "TinkerInventory" }
-                        }
+                            "Args": { "Range": 1, /*"HarvestTo": "TinkerInventory"*/ }
+                        },
+                        {
+                            "Proc": "Timer",
+                            "ProcTimer": 2000,
+                            "AbilityClass": "Projectile",
+                            "ProcOneshotAnim": "VoidBall",
+                            "ProcSound": { "CueName": "coldSpell" },
+                            "Args": {
+                                "StunTime": 150,
+                                "Range": 1000,
+                                "Min": 20, "Max": 30, //level scale this?
+                                "CritChance": 0.2,
+                                "CritDamage": 0.2,
+                                "Texture": "Misc/7A.VoidBall",
+                                "SpriteIndex": 0,
+                                "Pierce": 10,
+                                "Acceleration": 2,
+                                "MinVelocity": 2,
+                                "MaxVelocity": 24,
+                                "SpriteWidth": 16,
+                                "SpriteHeight": 16,
+                                "IgnoreObjectCollisions": false,
+                                "Filters": [ "Stygium Crab", "Rock Crab", "Truffle Crab", "Lava Crab", "Iridium Crab", "Stygium False Mushroom" ]
+                            }
+                        },
                     ]
                 ]
             }

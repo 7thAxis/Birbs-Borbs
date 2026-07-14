@@ -42,7 +42,7 @@
         { 
             "LogName": "Load Ebony & Darkness",
             "Action": "Load",
-            "Target": "Characters/7A.Ebony, Portraits/7A.Ebony, Characters/7A.Darkness, Portraits/7A.Darkness",
+            "Target": "Characters/7A.Ebony, Portraits/7A.Ebony, Characters/7A.Darkness, Portraits/7A.Darkness, Misc/7A.VoidBall",
             "FromFile": "Assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
         },
         //OVERLAYS AND REPLACERS
@@ -89,7 +89,7 @@
             "Action": "EditImage",
             "Update": "OnLocationChange",
             "Target": "TileSheets/Projectiles",
-            "FromFile": "Assets/Misc/Void_Ball.png",
+            "FromFile": "Assets/Misc/7A.VoidBall.png",
             "PatchMode": "Replace",
             "ToArea": { "X": 32, "Y": 16, "Width": 16, "Height": 16 }
         }

@@ -6,16 +6,25 @@
             "Target": "Data/Buffs",
             "Entries": {
                 "{{ModId}}_EbonyBuff": {
-                    "DisplayName": "enobys buff",
-                    "Description": "Soothign or whatever\n",
+                    "DisplayName": "-Darkwood Dance-\nYou can smell the forest.",
+                    "Description": "+1 Immunity\n",
                     "Duration": -2,
                     "MaxDuration": -1,
                     "IconTexture": "Objects/7A.CnC/Misc",
                     "IconSpriteIndex": 6,
-                    "Effects": { "Defense": 0.5, "Speed": 0.5 },
+                    "Effects": { "Defense": 0.5, "Immunity": 0.5, "Speed": 0.5 },
                     "CustomFields": { "spacechase0.SpaceCore/HealthRegeneration": 0.1 }
+                },
+"               {{ModId}}_DarknessBuff": {
+                    "DisplayName": "-Dark Delirium-\nThe void creeps closer.",
+                    "Duration": -2,
+                    "MaxDuration": -1,
+                    "IconTexture": "Objects/7A.CnC/Misc",
+                    "IconSpriteIndex": 5,
+                    "Effects": { "Attack": 0.5, "MaxStamina": 12.5 },
+                    "CustomFields": { "spacechase0.SpaceCore/StaminaRegeneration": 0.1 }
                 }
             }
-        },
+        }
     ]
 }
