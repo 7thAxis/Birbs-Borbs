@@ -8,16 +8,16 @@
             "Entries": {
                 "{{ModID}}_EbonyTrinket": {
                     "Id": "{{ModId}}_EbonyTrinket",
-                    "DisplayName": "Invalid",
+                    "DisplayName": "Ebony",
                     "Description": "Invalid",
                     "Texture": "Objects/7A.CnC/Misc",
-                    "SheetIndex": 3,
+                    "SheetIndex": 7,
                     "DropsNaturally": false,
                     "CanBeReforged": false
                 },
                 "{{ModID}}_DarknessTrinket": {
                     "Id": "{{ModID}}_DarknessTrinket",
-                    "DisplayName": "Invalid",
+                    "DisplayName": "Darkness",
                     "Description": "Invalid",
                     "Texture": "Objects/7A.CnC/Misc",
                     "SheetIndex": 3,
@@ -33,7 +33,7 @@
                 "{{ModID}}_EbonyCharm": {
                     "Name": "{{ModID}}_EbonyCharm",
                     "DisplayName": "Ebony Charm",
-                    "Description": "Summons Ebony",
+                    "Description": "Summons Ebony the Crow, a sassy medic!\n-----------------------\n= Chats\n= Inventory\n= Wears Hats\n= +1 Def\n= +1 Spd\n= +1 Heath every 10s\n----------------------\nTo change interaction keybinds, edit Trinket Tinker's config.",
                     "Type": "Ring",
                     "Category": -96,
                     "Price": -1,
@@ -50,7 +50,7 @@
                 "{{ModID}}_DarknessCharm": {
                     "Name": "{{ModID}}_DarknessCharm",
                     "DisplayName": "Darkness Charm",
-                    "Description": "Summons Ebony",
+                    "Description": "Summons Darkness the Crow, a tired knight.\n-----------------------\n= Chats\n= Fights\n= Wears Hats\n= +1 Atk\n= +25 Max Energy\n= +1 Energy every 10s\n----------------------\nTo change interaction keybinds, edit Trinket Tinker's config.",
                     "Type": "Ring",
                     "Category": -96,
                     "Price": -1,

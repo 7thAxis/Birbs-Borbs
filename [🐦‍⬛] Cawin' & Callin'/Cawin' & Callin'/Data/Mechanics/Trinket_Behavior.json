@@ -7,14 +7,60 @@
         "Entries": {
     //EBONY
             "{{ModId}}_EbonyTrinket": {
-                "Inventory": { "Capacity": 9 },
+
+                "EnableCompanionCondition": "{{UnhideOnFarm}}",
+
+                "Inventory": { "Capacity": "{{Ebony Inventory Size}}", "DropContentsAsDebrisCondition": true },
+
                 "Variants": [
                     {
                         "Texture": "Characters/7A.Ebony",
                         "Portrait": "Portraits/7A.Ebony",
                         "Name": "Ebony",
                         "Width": 32, "Height": 32,
-                        "ShadowScale": 0
+                        "ShadowScale": 0,
+                        "HatEquip": {
+                            "AdjustOnFrame": {
+                            // D
+                            "0": "0,-11",
+                            "1": "0,-7",
+                            "2": "0,-11",
+                            "3": "0,-7",
+                            // R
+                            "4": "10,-11",
+                            "5": "10,-7",
+                            "6": "10,-11",
+                            "7": "10,-7",
+                            // U
+                            "8": "0,-11",
+                            "9": "0,-7",
+                            "10": "0,-11",
+                            "11": "0,-7",
+                            // L
+                            "12": "-10,-11",
+                            "13": "-10,-7",
+                            "14": "-10,-11",
+                            "15": "-10,-7",
+
+
+                            //IDLE D
+                            "40": "0,-11",
+                            "41": "0,-7",
+
+                            //IDLE R
+                            "42": "10,-11",
+                            "43": "10,-7",
+
+                            //IDLE U
+                            "44": "0,-11",
+                            "45": "0,-7",
+
+                            //IDLE L
+                            "46": "-10,-11",
+                            "47": "-10,-7",
+                            },
+                            "Source": "Given"
+                        }
                     }
                 ],
                 "Chatter": {
@@ -67,7 +113,7 @@
                 "Motion": {
                     "MotionClass": "Lerp",
                     "DirectionMode": "DRUL",
-                    //"HideDuringEvents": "{{Hide During Events}}",
+                    "HideDuringEvents": "{{Hide Companions During Events}}",
                     "FrameLength": 4,
                     "Anchors": [ { "Mode": "Forage", "Range": 320 } ],
                     "AnimClips": {
@@ -111,6 +157,9 @@
             },
     // DARKNESS
             "{{ModId}}_DarknessTrinket": {
+
+                "EnableCompanionCondition": "{{UnhideOnFarm}}",
+
                 "Variants": [
                     {
                         "Texture": "Characters/7A.Darkness",
@@ -170,7 +219,7 @@
                 "Motion": {
                     "MotionClass": "Lerp",
                     "DirectionMode": "DRUL",
-                    //"HideDuringEvents": "{{Hide During Events}}",
+                    "HideDuringEvents": "{{Hide Companions During Events}}",
                     "FrameLength": 4,
                     "Anchors": [ { "Mode": "Forage", "Range": 320 } ],
                     "AnimClips": {

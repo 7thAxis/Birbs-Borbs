@@ -12,7 +12,7 @@
                     "MaxDuration": -1,
                     "IconTexture": "Objects/7A.CnC/Misc",
                     "IconSpriteIndex": 6,
-                    "Effects": { "Defense": 0.5, "Immunity": 0.5, "Speed": 0.5 },
+                    "Effects": { "Defense": 0.5, "Speed": 0.5 },
                     "CustomFields": { "spacechase0.SpaceCore/HealthRegeneration": 0.1 }
                 },
 "               {{ModId}}_DarknessBuff": {

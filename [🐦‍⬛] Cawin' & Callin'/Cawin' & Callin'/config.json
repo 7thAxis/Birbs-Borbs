@@ -2,6 +2,9 @@
   "Wild Corvids": "true",
   "Egg Accessibility Mode": "false",
   "Vanilla Crow Retexture": "true",
+  "Hide Companions During Events": "false",
+  "Enable Companions On Farm": "true",
   "Exclude Items From Perfection": "false",
+  "Ebony Inventory Size": "36",
   "Dungeon Audio Changes": "true"
 }

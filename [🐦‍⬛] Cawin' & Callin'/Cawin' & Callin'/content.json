@@ -2,13 +2,6 @@
     "Format": "2.0.0",
     "ConfigSchema": {
 
-    "Wild Corvids": {
-            "AllowValues": "true, false",
-            "Default": true,
-            "AllowBlank": false,
-            "Description":"Allows random corvids to spawn in the overworld.",
-            "Section": "Graphics"
-    },
     "Egg Accessibility Mode": {
             "AllowValues": "true, false",
             "Default": false,
@@ -23,11 +16,39 @@
             "Description":"Replaces vanilla crow textures with ones in this mod's style.",
             "Section": "Graphics"
     },
+    "Hide Companions During Events": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "Description": "Hide Ebony and Darkness during events if their charms are equipped.",
+            "Section": "Graphics"
+    },
+    "Enable Companions On Farm": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "AllowBlank": false,
+            "Description":"Unhides Ebony and Darkness on the farm if you've adopted them as pets.",
+            "Section": "Graphics"
+    },
     "Exclude Items From Perfection": {
             "AllowValues": "true, false",
             "Default": false,
             "AllowBlank": false,
             "Description":"Excludes items from perfection. Golden items are always excluded regardless of this toggle.",
+            "Section": "Gameplay"
+    },
+    "Ebony Inventory Size": {
+            "AllowValues": "1, 3, 9, 12, 24, 36",
+            "Default": 9,
+            "AllowBlank": false,
+            "Description":"Sets inventory capacity for Ebony. If items get stuck, equip and unequip her ring.",
+            "Section": "Gameplay"
+    },
+    "Wild Corvids": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Allows random corvids to spawn in the overworld that are occasionally adoptable.",
             "Section": "Gameplay"
     },
     "Dungeon Audio Changes": {
@@ -39,47 +60,53 @@
     }
 },
     "DynamicTokens": [
+        { "Name": "UnhideOnFarm", "Value": "!LOCATION_NAME Here Farm Farmhouse" }, 
+            {
+                "Name": "UnhideOnFarm", "Value": "!LOCATION_NAME Here 7AAPLACETHATDOESNTEXIST52525269424242067YOLO",
+                "When": { "Enable Companions On Farm": true }
+            },
+
         { "Name": "DungeonStage", "Value": "0" }, 
-        {
-            "Name": "DungeonStage", "Value": 1,
-            "When": { "HasFlag": "CnC_Reached_MineLevel_100" }
-        },  
-        {
-            "Name": "DungeonStage", "Value": 2,
-            "When": { "HasFlag": "HasSkullKey, CnC_Reached_MineLevel_120" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 3,
-            "When": { "HasFlag": "galaxySword, HasUnlockedSkullDoor" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 4,
-            "When": { "HasFlag": "CnC_Reached_SkullLevel_25" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 5,
-            "When": { "HasFlag": "CnC_Reached_SkullLevel_50, reachedCaldera" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 6,
-            "When": { "HasFlag": "CnC_Reached_SkullLevel_75, CnC_QiChallenge9_Received" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 7,
-            "When": { "HasFlag": "reachedBottomOfHardMines, CnC_Reached_SkullLevel_100, CnC_Has_Infinity_Blade, CnC_Has_Combat_Mastery" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 8,
-            "When": { "HasSeenEvent": "SnS.Ch4.Dandelion.7" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 9,
-            "When": { "HasFlag": "DuskspireDefeated" }
-        }, 
-        {
-            "Name": "DungeonStage", "Value": 10,
-            "When": { "HasFlag|contains=DuskspireDefeated": true, "HasFlag|contains=CnC_Has_Combat_Mastery": true }
-        }
+            {
+                "Name": "DungeonStage", "Value": 1,
+                "When": { "HasFlag": "CnC_Reached_MineLevel_100" }
+            },  
+            {
+                "Name": "DungeonStage", "Value": 2,
+                "When": { "HasFlag": "HasSkullKey, CnC_Reached_MineLevel_120" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 3,
+                "When": { "HasFlag": "galaxySword, HasUnlockedSkullDoor" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 4,
+                "When": { "HasFlag": "CnC_Reached_SkullLevel_25" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 5,
+                "When": { "HasFlag": "CnC_Reached_SkullLevel_50, reachedCaldera" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 6,
+                "When": { "HasFlag": "CnC_Reached_SkullLevel_75, CnC_QiChallenge9_Received" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 7,
+                "When": { "HasFlag": "reachedBottomOfHardMines, CnC_Reached_SkullLevel_100, CnC_Has_Infinity_Blade, CnC_Has_Combat_Mastery" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 8,
+                "When": { "HasSeenEvent": "SnS.Ch4.Dandelion.7" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 9,
+                "When": { "HasFlag": "DuskspireDefeated" }
+            }, 
+            {
+                "Name": "DungeonStage", "Value": 10,
+                "When": { "HasFlag|contains=DuskspireDefeated": true, "HasFlag|contains=CnC_Has_Combat_Mastery": true }
+            },
     ],
     "Changes": [
         {
@@ -91,4 +118,5 @@
 
 //Notes:
 //if player loses trinkets, remember to resend them
-//readd buffs on day start
+//rmember thing i literally just forgot already oh god IT WAS LITERALLY JUST THERE
+//totem not loose? or craft
