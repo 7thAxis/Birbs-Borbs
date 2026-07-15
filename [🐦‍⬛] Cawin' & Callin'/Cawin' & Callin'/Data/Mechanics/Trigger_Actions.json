@@ -19,6 +19,41 @@
                 "Condition": "ITEM_ID Target (O){{ModId}}_EbonyCharm",
                 "Actions": [ "mushymato.TrinketTinker_UnequipHiddenTrinket {{ModID}}_EbonyTrinket" ]
             },
+            "{{ModID}}_EbonyLevel_1": {
+                "Id": "{{ModID}}_EbonyLevel_1",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_EbonyEXP 5000",
+                "Actions": [ "AddMail Current CnC_EbonyLevel_1 now" ]
+            },
+            "{{ModID}}_EbonyLevel_2": {
+                "Id": "{{ModID}}_EbonyLevel_2",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_EbonyEXP 20000",
+                "Actions": [ "AddMail Current CnC_EbonyLevel_2 now" ]
+            },
+            "{{ModID}}_EbonyLevel_3": {
+                "Id": "{{ModID}}_EbonyLevel_3",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_EbonyEXP 50000",
+                "Actions": [ "AddMail Current CnC_EbonyLevel_3 now" ]
+            },
+            "{{ModID}}_EbonyLevel_4": {
+                "Id": "{{ModID}}_EbonyLevel_4",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_EbonyEXP 90000",
+                "Actions": [ "AddMail Current CnC_EbonyLevel_4 now" ]
+            },   
+            "{{ModID}}_EbonyLevel_5": {
+                "Id": "{{ModID}}_EbonyLevel_5",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_EbonyEXP 150000",
+                "Actions": [ "AddMail Current CnC_EbonyLevel_5 now" ]
+            },               
         //Darkness
             "{{ModID}}_DarknessEquip": {
                 "Id": "{{ModID}}_DarknessEquip",
@@ -34,6 +69,41 @@
                 "Condition": "ITEM_ID Target (O){{ModId}}_DarknessCharm",
                 "Actions": [ "mushymato.TrinketTinker_UnequipHiddenTrinket {{ModID}}_DarknessTrinket" ]
             },
+            "{{ModID}}_DarknessLevel_1": {
+                "Id": "{{ModID}}_DarknessLevel_1",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_DarknessEXP 5000",
+                "Actions": [ "AddMail Current CnC_DarknessLevel_1 now" ]
+            },
+            "{{ModID}}_DarknessLevel_2": {
+                "Id": "{{ModID}}_DarknessLevel_2",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_DarknessEXP 20000",
+                "Actions": [ "AddMail Current CnC_DarknessLevel_2 now" ]
+            },
+            "{{ModID}}_DarknessLevel_3": {
+                "Id": "{{ModID}}_DarknessLevel_3",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_DarknessEXP 50000",
+                "Actions": [ "AddMail Current CnC_DarknessLevel_3 now" ]
+            },
+            "{{ModID}}_DarknessLevel_4": {
+                "Id": "{{ModID}}_DarknessLevel_4",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_DarknessEXP 90000",
+                "Actions": [ "AddMail Current CnC_DarknessLevel_4 now" ]
+            },   
+            "{{ModID}}_DarknessLevel_5": {
+                "Id": "{{ModID}}_DarknessLevel_5",
+                "MarkActionApplied": true,
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_STAT Current CnC_DarknessEXP 150000",
+                "Actions": [ "AddMail Current CnC_DarknessLevel_5 now" ]
+            }, 
         }
     }
 ]

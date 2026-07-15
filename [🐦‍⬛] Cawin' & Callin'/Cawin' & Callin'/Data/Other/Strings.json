@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "CnC Strings",
+            "Action": "EditData",
+            "Target": "Strings/7A.CnC",
+            "Entries": {
+                "EbonyInvSlots": "{{EbonyInventorySize}}"
+            }
+        }
+    ]
+}

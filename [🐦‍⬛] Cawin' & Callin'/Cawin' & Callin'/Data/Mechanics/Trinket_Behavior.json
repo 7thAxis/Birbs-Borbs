@@ -10,7 +10,7 @@
 
                 "EnableCompanionCondition": "{{UnhideOnFarm}}",
 
-                "Inventory": { "Capacity": "{{Ebony Inventory Size}}", "DropContentsAsDebrisCondition": true },
+                "Inventory": { "Capacity": "{{EbonyInventorySize}}", "DropContentsAsDebrisCondition": true },
 
                 "Variants": [
                     {
@@ -70,7 +70,7 @@
                     "Ebony_Base": { "Lines": [ "{{i18n: Dialogue.Ebony.Base.{{Random: 1,7}}}}" ], "Precedence": 2 },
 
                     "Ebony_Indoors": {
-                        "Lines": [ "{{i18n: Dialogue.Ebony.Indoors.{{Random: 1,7}}}}", ],
+                        "Lines": [ "{{i18n: Dialogue.Ebony.Indoors.{{Random: 1,7}}}}" ],
                         "Condition": "LOCATION_IS_INDOORS Here", "Precedence": 1 }, 
                     "Ebony_RainOutdoors": {
                         "Lines": [ "{{i18n: Dialogue.Ebony.RainOutdoors.{{Random: 1,7}}}}"],
@@ -130,13 +130,17 @@
                         "Swim.2": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
                         "Swim.3": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
                         "Swim.4": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
-                        //"Howl": { "FrameStart": 32, "FrameLength": 9, "Interval": 200, "PauseMovement": true }
                     },
 
                     "Args": { "Min": 128, "Rate": 300, "MoveSync": true, "Velocity": -1 }
                 },
                 "Abilities": [
                     [
+                        {
+                            "AbilityClass": "Action",
+                            "Proc": "Footstep",
+                            "Args": { "Action": "IncrementStat CnC_EbonyEXP 1" }
+                        },
                         {
                             "AbilityClass": "Chatter",
                             "Proc": "Interact",
@@ -146,7 +150,6 @@
                         {
                             "AbilityClass": "Buff",
                             "Proc": "Always",
-                            "ProcSound": { "CueName": "crow" },
                             "Args": { "BuffId": "{{ModId}}_EbonyBuff" }
                         },
                         {
@@ -280,7 +283,6 @@
                     "DirectionMode": "DRUL",
                     "HideDuringEvents": "{{Hide Companions During Events}}",
                     "FrameLength": 4,
-                    "Anchors": [ { "Mode": "Forage", "Range": 320 } ],
                     "AnimClips": {
                         
                         "Idle.1": { "FrameStart": 48, "FrameLength": 2, "Interval": 300 },
@@ -304,6 +306,11 @@
                 "Abilities": [
                     [
                         {
+                            "AbilityClass": "Action",
+                            "Proc": "Footstep",
+                            "Args": { "Action": "IncrementStat CnC_DarknessEXP 1" }
+                        },
+                        {
                             "AbilityClass": "Chatter",
                             "Proc": "Interact",
                             "Args": { "ChatterPrefix": "Darkness" },
@@ -312,15 +319,7 @@
                         {
                             "AbilityClass": "Buff",
                             "Proc": "Always",
-                            "ProcSound": { "CueName": "CnC_CorruptedCaw" },
                             "Args": { "BuffId": "{{ModId}}_DarknessBuff" }
-                        },
-                        {
-                            "AbilityClass": "HarvestForage",
-                            "Proc": "Timer",
-                            "ProcTimer": 300,
-                            "ProcSound": { "CueName": "CnC_CorruptedCaw" },
-                            "Args": { "Range": 1, /*"HarvestTo": "TinkerInventory"*/ }
                         },
                         {
                             "Proc": "Timer",
@@ -329,14 +328,14 @@
                             "ProcOneshotAnim": "VoidBall",
                             "ProcSound": { "CueName": "coldSpell" },
                             "Args": {
-                                "StunTime": 150,
+                                "StunTime": 300,
                                 "Range": 1000,
-                                "Min": 20, "Max": 30, //level scale this?
-                                "CritChance": 0.2,
-                                "CritDamage": 0.2,
+                                "Min": 25, "Max": 30, 
+                                "CritChance": "{{DarknessCritStats}}",
+                                "CritDamage": "{{DarknessCritStats}}",
                                 "Texture": "Misc/7A.VoidBall",
                                 "SpriteIndex": 0,
-                                "Pierce": 10,
+                                "Pierce": 1,
                                 "Acceleration": 2,
                                 "MinVelocity": 2,
                                 "MaxVelocity": 24,

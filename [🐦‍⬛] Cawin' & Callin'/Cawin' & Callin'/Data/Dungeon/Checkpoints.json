@@ -68,7 +68,7 @@
             "{{ModID}}_Has_Infinity_Blade": {
                 "Id": "{{ModID}}_Has_Infinity_Blade",
                 "Trigger": "DayStarted",
-                "Condition": "ANY \"Spiderbuttons.BETAS_ITEM_IN_WORLD (W)62\"",
+                "Condition": "Spiderbuttons.BETAS_ITEM_IN_WORLD (W)62",
                 "Actions": [ "AddMail Current CnC_Has_Infinity_Blade now" ]
                 },
             "{{ModID}}_Has_Combat_Mastery": {

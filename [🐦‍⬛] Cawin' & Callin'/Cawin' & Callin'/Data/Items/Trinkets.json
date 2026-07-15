@@ -33,7 +33,7 @@
                 "{{ModID}}_EbonyCharm": {
                     "Name": "{{ModID}}_EbonyCharm",
                     "DisplayName": "Ebony Charm",
-                    "Description": "Summons Ebony the Crow, a sassy medic!\n-----------------------\n= Chats\n= Inventory\n= Wears Hats\n= +1 Def\n= +1 Spd\n= +1 Heath every 10s\n----------------------\nTo change interaction keybinds, edit Trinket Tinker's config.",
+                    "Description": "Summons Ebony the Crow, a sassy medic!\n-----------------------\n= Chats\n= Inventory\n= Wears Hats\n= +1 Def\n= +1 Spd\n= +1 Heath every 10s\n----------------------\nEbony's inventory size increases as you walk with her over time.\n----------------------\nTo change interaction keybinds, edit Trinket Tinker's config.",
                     "Type": "Ring",
                     "Category": -96,
                     "Price": -1,
@@ -50,7 +50,7 @@
                 "{{ModID}}_DarknessCharm": {
                     "Name": "{{ModID}}_DarknessCharm",
                     "DisplayName": "Darkness Charm",
-                    "Description": "Summons Darkness the Crow, a tired knight.\n-----------------------\n= Chats\n= Fights\n= Wears Hats\n= +1 Atk\n= +25 Max Energy\n= +1 Energy every 10s\n----------------------\nTo change interaction keybinds, edit Trinket Tinker's config.",
+                    "Description": "Summons Darkness the Crow, a tired knight.\n-----------------------\n= Chats\n= Fights\n= Wears Hats\n= +1 Atk\n= +25 Max Energy\n= +1 Energy every 10s\n----------------------\nDarkness's crit stats increase as you walk with him over time.\n----------------------\nTo change interaction keybinds, edit Trinket Tinker's config.",
                     "Type": "Ring",
                     "Category": -96,
                     "Price": -1,
@@ -65,23 +65,6 @@
                     "SpriteIndex": 5
                 }        
             }
-        },
-        {
-                "LogName": "Trinket Item Extensions",
-                "Action": "EditData",
-                "Target": "spacechase0.SpaceCore/ObjectExtensionData",
-                "Entries": {
-
-                    "{{ModID}}_EbonyCharm": {
-                        "CanBeTrashed": false,
-                        "CanBeShipped": false
-                    },
-
-                    "{{ModID}}_DarknessCharm": {
-                        "CanBeTrashed": false,
-                        "CanBeShipped": false
-                    }
-                }
-            }
+        }
     ]
 }
