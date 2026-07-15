@@ -184,7 +184,7 @@
                     "Sound": "crow",
                     //"BabySound": "crow",
                     "Texture": "Animals/Magpie/Magpie_Green",
-                    "BabyTexture": "Animals/Chicks/Corvid_Chick_",
+                    "BabyTexture": "Animals/Chicks/Corvid_Chick_Brown",
                     "UseFlippedRightForLeft": false,
                     "SpriteWidth": 16,
                     "SpriteHeight": 16,

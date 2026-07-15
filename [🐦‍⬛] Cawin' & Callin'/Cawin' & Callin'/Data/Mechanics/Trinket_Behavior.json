@@ -42,6 +42,9 @@
                             "14": "-10,-11",
                             "15": "-10,-7",
 
+                            //SWIM
+                            "20": "10,-10",
+                            "21": "10,-6",
 
                             //IDLE D
                             "40": "0,-11",
@@ -143,6 +146,7 @@
                         {
                             "AbilityClass": "Buff",
                             "Proc": "Always",
+                            "ProcSound": { "CueName": "crow" },
                             "Args": { "BuffId": "{{ModId}}_EbonyBuff" }
                         },
                         {
@@ -166,7 +170,62 @@
                         "Portrait": "Portraits/7A.Darkness",
                         "Name": "Darkness",
                         "Width": 32, "Height": 32,
-                        "ShadowScale": 0
+                        "ShadowScale": 0,
+                        "HatEquip": {
+                            "AdjustOnFrame": {
+                            // D
+                            "0": "0,-11",
+                            "1": "0,-7",
+                            "2": "0,-11",
+                            "3": "0,-7",
+                            // R
+                            "4": "10,-11",
+                            "5": "10,-7",
+                            "6": "10,-11",
+                            "7": "10,-7",
+                            // U
+                            "8": "0,-11",
+                            "9": "0,-7",
+                            "10": "0,-11",
+                            "11": "0,-7",
+                            // L
+                            "12": "-10,-11",
+                            "13": "-10,-7",
+                            "14": "-10,-11",
+                            "15": "-10,-7",
+
+                            //SWIM
+                            "20": "10,-10",
+                            "21": "10,-6",
+
+                            //ATTACK D
+                            "32": "0,-14",
+                            "33": "0,-19",
+                            //ATTACK R
+                            "34": "0,-15",
+                            "35": "0,-20",
+                            //ATTACK U
+                            "36": "0,-14",
+                            "37": "0,-19",
+                            //ATTACK L
+                            "38": "0,-15",
+                            "39": "0,-20",
+
+                            //IDLE D
+                            "48": "0,-11",
+                            "49": "0,-7",
+                            //IDLE R
+                            "50": "10,-11",
+                            "51": "10,-7",
+                            //IDLE U
+                            "52": "0,-11",
+                            "53": "0,-7",
+                            //IDLE L
+                            "54": "-10,-11",
+                            "55": "-10,-7"
+                            },
+                            "Source": "Given"
+                        }
                     }
                 ],
                 "Chatter": {
@@ -248,18 +307,19 @@
                             "AbilityClass": "Chatter",
                             "Proc": "Interact",
                             "Args": { "ChatterPrefix": "Darkness" },
-                            "ProcSound": { "CueName": "crow" }
+                            "ProcSound": { "CueName": "CnC_CorruptedCaw" }
                         },
                         {
                             "AbilityClass": "Buff",
                             "Proc": "Always",
+                            "ProcSound": { "CueName": "CnC_CorruptedCaw" },
                             "Args": { "BuffId": "{{ModId}}_DarknessBuff" }
                         },
                         {
                             "AbilityClass": "HarvestForage",
                             "Proc": "Timer",
                             "ProcTimer": 300,
-                            "ProcSound": { "CueName": "crow" },
+                            "ProcSound": { "CueName": "CnC_CorruptedCaw" },
                             "Args": { "Range": 1, /*"HarvestTo": "TinkerInventory"*/ }
                         },
                         {

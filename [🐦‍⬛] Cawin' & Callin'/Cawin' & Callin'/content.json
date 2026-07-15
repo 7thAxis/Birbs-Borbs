@@ -18,16 +18,16 @@
     },
     "Hide Companions During Events": {
             "AllowValues": "true, false",
-            "Default": false,
+            "Default": true,
             "AllowBlank": false,
-            "Description": "Hide Ebony and Darkness during events if their charms are equipped.",
+            "Description": "Hide Ebony and Darkness follower companions during events when equipped.",
             "Section": "Graphics"
     },
     "Enable Companions On Farm": {
             "AllowValues": "true, false",
             "Default": false,
             "AllowBlank": false,
-            "Description":"Unhides Ebony and Darkness on the farm if you've adopted them as pets.",
+            "Description":"Unhides Ebony and Darkness follower companions on the farm if you've adopted them as pets.",
             "Section": "Graphics"
     },
     "Exclude Items From Perfection": {
@@ -63,7 +63,7 @@
         { "Name": "UnhideOnFarm", "Value": "!LOCATION_NAME Here Farm Farmhouse" }, 
             {
                 "Name": "UnhideOnFarm", "Value": "!LOCATION_NAME Here 7AAPLACETHATDOESNTEXIST52525269424242067YOLO",
-                "When": { "Enable Companions On Farm": true }
+                "When": { "Enable Companions On Farm": true } //i know i can put null here. this is funnier.
             },
 
         { "Name": "DungeonStage", "Value": "0" }, 
