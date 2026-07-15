@@ -43,7 +43,7 @@
                     "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": true,
                     "IsDrink": false,
-                    "ContextTags": [ "color_green", "ring_item", "trinket_item" ],
+                    "ContextTags": [ "color_green", "ring_item", "trinket_item", "not_giftable" ],
                     "Texture": "Objects/7A.CnC/Misc",
                     "SpriteIndex": 6
                 },
@@ -60,11 +60,28 @@
                     "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": true,
                     "IsDrink": false,
-                    "ContextTags": [ "color_black", "ring_item", "trinket_item" ],
+                    "ContextTags": [ "color_black", "ring_item", "trinket_item", "not_giftable" ],
                     "Texture": "Objects/7A.CnC/Misc",
                     "SpriteIndex": 5
                 }        
             }
-        }
+        },
+        {
+                "LogName": "Trinket Item Extensions",
+                "Action": "EditData",
+                "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+                "Entries": {
+
+                    "{{ModID}}_EbonyCharm": {
+                        "CanBeTrashed": false,
+                        "CanBeShipped": false
+                    },
+
+                    "{{ModID}}_DarknessCharm": {
+                        "CanBeTrashed": false,
+                        "CanBeShipped": false
+                    }
+                }
+            }
     ]
 }

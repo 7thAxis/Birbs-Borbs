@@ -80,7 +80,8 @@
                 "ContextTags": [
                     "color_black",
                     "not_placeable",
-                    "totem_item"
+                    "totem_item",
+                    "not_giftable"
                 ]
             }
         }
@@ -197,7 +198,7 @@
         }
     },*/
     {
-        "LogName": "Misc Item Loads",
+        "LogName": "Misc Item Extensions",
         "Action": "EditData",
         "Target": "spacechase0.SpaceCore/ObjectExtensionData",
         "Entries": {
@@ -207,11 +208,13 @@
                 "CategoryTextOverride": "{{i18n:CnC.CategoryBook}}"
             },
             "{{ModID}}_TMBDungeonTotem": {
+                "CanBeTrashed": false,
+                "CanBeShipped": false,
                 "TotemWarp": {
                     "Location": "CnC_CrowBasementEntry",
                     "Position": "7, 8",
                     "Color": { "B": 0, "G": 0, "R": 255, "A": 155 },
-                    "ConsumedOnUse": true
+                    "ConsumedOnUse": false
                 }
             }
         }
