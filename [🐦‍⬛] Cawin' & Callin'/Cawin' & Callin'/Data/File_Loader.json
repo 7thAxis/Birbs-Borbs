@@ -4,13 +4,13 @@
         {
             "LogName": "New Internal Files",
             "Action": "Load",
-            "Target": "Strings/7A.CnC",
+            "Target": "Strings/7A.CnC, Data/Events/CnC_CrowBasementEntry, Data/Events/CnC_CrowBasementTreasureRoom",
             "FromFile": "Data/Other/Blank.json"
         },
         {
             "LogName": "Data files",
             "Action": "Include",
-            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json, Data/Animals/Jackdaw.json, Data/Animals/Jay.json, Data/Animals/Magpie.json, Data/Animals/Nutcracker.json, Data/Animals/Raven.json, Data/Animals/Rook.json, Data/Animals/Treepie.json, Data/Mechanics/Machines.json, Data/Dungeon/Initialization.json, Data/Dungeon/Spawning.json, Data/Dungeon/Monster_Stats.json, Data/Other/Audio.json, Data/Dungeon/Checkpoints.json, Data/Items/Trinkets.json, Data/Mechanics/Trigger_Actions.json, Data/Mechanics/Trinket_Behavior.json, Data/Mechanics/Buffs.json, Data/Animals/Ebony.json, Data/Animals/Darkness.json, Data/Other/Strings.json"
+            "FromFile": "Data/Items/Eggs.json, Data/Items/Feathers.json, Data/Items/Misc_Items.json, Data/Items/Furniture.json, Data/Animals/Crow.json, Data/Animals/Jackdaw.json, Data/Animals/Jay.json, Data/Animals/Magpie.json, Data/Animals/Nutcracker.json, Data/Animals/Raven.json, Data/Animals/Rook.json, Data/Animals/Treepie.json, Data/Mechanics/Machines.json, Data/Dungeon/Initialization.json, Data/Dungeon/Spawning.json, Data/Dungeon/Monster_Stats.json, Data/Other/Audio.json, Data/Dungeon/Checkpoints.json, Data/Items/Trinkets.json, Data/Mechanics/Trigger_Actions.json, Data/Mechanics/Trinket_Behavior.json, Data/Mechanics/Buffs.json, Data/Animals/Ebony.json, Data/Animals/Darkness.json, Data/Other/Strings.json, Data/Events/The_Murder_Below.json"
         },
     //GRAPHIC LOADS
         {
