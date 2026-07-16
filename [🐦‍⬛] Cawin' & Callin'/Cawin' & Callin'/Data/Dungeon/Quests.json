@@ -1,0 +1,12 @@
+{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Data/Quests",
+        "Entries": {
+            "CnC_Begin": "Location/Answer the Caw/Use The Murder Below warp totem and meet with Rasmodius's confidant./Use the totem!/CnC_CrowBasementEntry/CnC_Dungeon/0/-1/false/",
+            "CnC_Dungeon": "Location/Follow the Call/Get to the bottom of The Murder Below and find Ebony's husband!/Tackle that dungeon!/CnC_CrowBasementTreasureRoom/-1/0/-1/false/"
+        }
+    }
+    ]
+}

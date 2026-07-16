@@ -1,5 +1,13 @@
 {
     "Changes": [
-        
+        {
+            "LogName": "Crow Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": { 
+                "HnH_TheMurderBelowBegins": "Greetings, young adept.^^ It seems you have formed a fellowship with the call of the forest. One is in need of your help... Enclosed is a totem. Follow it and meet with my confidant...   ^^   -M. Rasmodius, Wizard%item quest CnC_Begin%%%action AddItem 7thAxis.CnC_TMBDungeonTotem %%[letterbg 2][#]A Mysterious Letter..."
+
+             }
+        }
     ]
 }

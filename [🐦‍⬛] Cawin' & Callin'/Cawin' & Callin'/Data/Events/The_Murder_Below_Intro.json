@@ -10,6 +10,7 @@
                     /10 16
                     /farmer 7 8 2
                     /addTemporaryActor 7A.Ebony 32 32 12 10 1 false Character
+                    /changeName 7A.Ebony Ebony
                     /setSkipActions AddItem (O){{ModID}}_EbonyCharm#AddItem (O)ButterflyPowder#mushymato.LivestockBazaar_AdoptPet 7A.Ebony 0 Ebony#AddMail Current CnC_AdoptedEbony
                     /skippable
                     /pause 500
@@ -111,12 +112,41 @@
                     /warp 7A.Ebony 11 10
                         /speak 7A.Ebony \"My most sincere apologies for my outburst.#$b#You can never be too careful down here...$s\"/
                     /faceDirection 7A.Ebony 1
-                        /speak 7A.Ebony \"My name is Ebony Ravenway, friend of Rasmodius. Step forward with me, if you will.\"/
-                        /speak 7A.Ebony \"You see... there's a horrid beast at the depths of these caverns - Novus Corvus. He captured countless crows and sapped away their life force, turning them into mere husks - pawns for whatever evil plan he was scheming.\"/
-                        /speak 7A.Ebony \"Fortunately, Rasmodius was able to seal him and his army away before he could cause any more harm... Unfortunately, my dearest husband thought he could rescue all those poor crows by himself!\"
-                        /speak 7A.Ebony \"He's been missing for a while now, I'm deeply worried. I can't even get past this debris on my own... Aaand that's why you've been called here.\"
-
-                        /unskippable
+                        /speak 7A.Ebony \"My name is Ebony Ravenway, friend of Rasmodius.#$b#Step forward with me, if you will.$s\"/
+                    /pause 100
+                    /speed 7A.Ebony 1
+                    /advancedMove 7A.Ebony false 1 0 1 10
+                    /pause 200
+                    /advancedMove farmer false 2 0 0 1 2 0 1 10
+                    /waitForAllStationary
+                    /emote 7A.Ebony 40
+                        /speak 7A.Ebony \"You see... there's a horrid beast at the depths of these caverns - Novus Corvus.#$b#It captured countless crows and sapped away their life force...$s#$b#It turned them into mere husks - pawns for whatever evil plan it was scheming.$a\"/
+                    /faceDirection 7A.Ebony 2
+                    /pause 50
+                    /faceDirection farmer 0
+                        /speak 7A.Ebony \"Fortunately, Rasmodius was able to seal it and its undead army away before he could cause any more harm...$s#$b#Unfortunately, my dearest husband thought he could rescue all those poor crows!$a\"
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /emote 7A.Ebony 12 true
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 300
+                        /speak 7A.Ebony \"He's been missing for several moons now... I'm growing worried something has happened to him.$s\"
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /emote 7A.Ebony 12 true
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 800
+                    /emote farmer 28 
+                    /pause 300
+                        /speak 7A.Ebony \"I can't even get past this debris covering the entrance on my own...$a#$b#Aaand that's why you've been called here!$l\"
+                    /emote 7A.Ebony 40
+                    /unskippable
                         /quickQuestion So, will you help me?#Of course, let's get a move on!#Not my circus, not my monkeys.
                         (break)switchEvent {{ModID}}_TMBIntroduction.C1(break)switchEvent {{ModID}}_TMBIntroduction.C2
                     /end
@@ -124,7 +154,15 @@
                 // Agree to help
                 "{{ModID}}_TMBIntroduction.C1": "
                     pause 1
-                        /emote 7A.Ebony 20
+                    /emote 7A.Ebony 20 true
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /emote 7A.Ebony 12 true
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 300
                         /speak 7A.Ebony \"Wonderful, brilliant! I am forever in your debt!$h#$b#Thank you so, so very much!$l\"/
                         /switchEvent {{ModID}}_TMBIntroduction_Cont.1/pause 1
                     /end
@@ -133,33 +171,68 @@
                 // Refuse to help
                 "{{ModID}}_TMBIntroduction.C2": "
                     pause 1
-                        /emote 7A.Ebony 12
-                        /action AddMail Current CnC_RefusedToHelp
+                    /emote 7A.Ebony 12 true
+                    /playSound crow
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 300
+                    /action AddMail Current CnC_RefusedToHelp
                         /speak 7A.Ebony \"Well that's just too darn bad I'm afraid!$h#$b#You're going to, as I have a reward that would otherwise prevent you from reaching perfection!$a\"/
                         /switchEvent {{ModID}}_TMBIntroduction_Cont.1/pause 1
                     /end
                     ",
                 "{{ModID}}_TMBIntroduction_Cont.1": "
                     pause 1
+                    /emote 7A.Ebony 40
                         /speak 7A.Ebony \"Now that we have that settled... I of course would not send you into those dangerous catacombs alone!#$b#Take this charm. You can use it to summon me at will.\"/
                         /action AddItem (O){{ModID}}_EbonyCharm
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 300
                         /speak 7A.Ebony \"Furthermore... to make things simpler for the both of us, would you be opposed to me staying on your farm?\"/
+                    /emote farmer 40
                         /quickQuestion Adopt Ebony as a pet?#Of course!#Not a chance.
                         (break)switchEvent {{ModID}}_TMBIntroduction.C3(break)switchEvent {{ModID}}_TMBIntroduction.C4              
                 ",
                 "{{ModID}}_TMBIntroduction.C3": "
                     pause 1
-                        /emote 7A.Ebony 20
-                        /speak 7A.Ebony \"Thank you! It will be nice to have a place to rest my weary head again. My nest fell into disarray after Darkiepoo disappeared...#$b#I promise I won't cause you any problems.#$b#Well, too many, at least.\"/
+                    /emote 7A.Ebony 20
+                        /speak 7A.Ebony \"Thank you! It will be nice to have a place to rest my weary head again.$l#$b#My nest fell into disarray after Darkiepoo disappeared...$s#$b#I promise I won't cause you any problems.$h#$b#Well, too many, at least.$l\"/
+                    /emote 7A.Ebony 20 true
+                    /playSound crow
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 300
                         /speak 7A.Ebony \"May the wind be with you! I shall fly to your side as you need me.$h\"/
-                        /action mushymato.LivestockBazaar_AdoptPet 7A.Ebony 0 Ebony
+                    /action mushymato.LivestockBazaar_AdoptPet 7A.Ebony 0 Ebony
+                    /emote farmer 32
+                    /pause 500
                     /end
                     ",
                 "{{ModID}}_TMBIntroduction.C4": "
                     pause 1
-                        /emote 7A.Ebony 20
+                    /action AddMail Current CnC_DidNotAdoptEbony
+                    /emote 7A.Ebony 28 true
+                    /pause 200
+                    /faceDirection 7A.Ebony 1
+                    /pause 300
                         /speak 7A.Ebony \"I... see. Noted. I will lie in wait among the forest trees.$s\"/
+                    /faceDirection 7A.Ebony 2
                         /speak 7A.Ebony \"May the wind be with you. I shall fly to your side as you need me.$s\"/
+                    /emote farmer 60
+                    /pause 500
                     /end
                     ",
             }
@@ -172,4 +245,5 @@
     | FD |  0 |  1 |  2 |  3 |
     | AM |  4 |  1 |  2 |  3 | 
     | MV | -y |  x |  y | -x |
+
 */

@@ -143,7 +143,15 @@
             {
                 "Name": "DungeonStage", "Value": 10,
                 "When": { "HasFlag|contains=DuskspireDefeated": true, "HasFlag|contains=CnC_Has_Combat_Mastery": true }
-            },
+            }
+    ],
+    "EventLimiterExceptions": [
+        "{{ModID}}_TMBIntroduction",
+        "{{ModID}}_TMBIntroduction.C1",
+        "{{ModID}}_TMBIntroduction.C2",
+        "{{ModID}}_TMBIntroduction_Cont.1",
+        "{{ModID}}_TMBIntroduction.C3",
+        "{{ModID}}_TMBIntroduction.C4"
     ],
     "Changes": [
         {

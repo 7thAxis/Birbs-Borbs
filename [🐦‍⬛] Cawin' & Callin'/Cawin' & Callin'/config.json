@@ -1,7 +1,7 @@
 {
   "Egg Accessibility Mode": "false",
   "Vanilla Crow Retexture": "true",
-  "Hide Companions During Events": "false",
+  "Hide Companions During Events": "true",
   "Enable Companions On Farm": "false",
   "Exclude Items From Perfection": "false",
   "Wild Corvids": "true",

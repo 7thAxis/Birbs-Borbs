@@ -1,0 +1,107 @@
+{
+   "Changes": [
+        {
+            "LogName": "TMB End",
+            "Action": "EditData",
+            "Target": "Data/Events/CnC_CrowBasementTreasureRoom",
+            "Entries": {
+                "{{ModID}}_TMBEnd/": "
+                    caldera
+                    /8 23
+                    /farmer 6 10 2
+                    /addTemporaryActor 7A.Ebony 32 32 7 11 2 false Character
+                    /addTemporaryActor 7A.Darkness 32 32 25 13 2 false Character
+                    /changeName 7A.Ebony Ebony
+                    /changeName 7A.Darkness Darkness
+                    /ignoreCollisions 7A.Ebony
+                    /ignoreCollisions 7A.Darkness
+                    /showFrame 7A.Darkness 27
+                    /skippable
+                    /pause 1000
+
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /playSound crow
+                    /emote 7A.Ebony 16 true
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 800
+                        /speak 7A.Ebony \"We... We made it?$u#$b#We actually made it!$l\"
+                    /emote farmer 8 true
+                    /advancedMove farmer false 0 1 1 10
+                    /waitForAllStationary
+                    /pause 300
+                    /faceDirection farmer 3
+                    /pause 300
+                    /faceDirection farmer 1
+                    /pause 200
+                        /speak 7A.Ebony \"Alright! No time to stand around...$a\"
+                    /showFrame 7A.Ebony 33
+                    /jump 7A.Ebony
+                    /playSound crow
+                    /pause 500
+                    /showFrame 7A.Ebony 32
+                    /pause 5
+                    /showFrame 7A.Ebony 0
+                    /pause 800
+                    /viewport move 1 0 16000
+                    /advancedMove 7A.Ebony false 0 2 2 0 4 700 0 0 2 500 0 0 4 500 5 0 4 700 0 0 2 500 0 0 4 500 6 0 4 700 0 0 2 500 0 0 4 500 0 0 1 10
+                    /pause 1000
+                    /textAboveHead 7A.Ebony \"Darkness...?\"
+                    /advancedMove farmer false 0 3 3 0 4 700 0 0 2 500 0 0 4 500 5 0 4 700 0 0 2 500 0 0 4 500 6 0 1 10 
+                    /pause 5000 
+                    /textAboveHead 7A.Ebony \"Where are you...?\"
+                    /pause 1000
+                    /emote farmer 8
+                    /waitForAllStationary
+                    /pause 300
+                    /showFrame 7A.Ebony 35
+                    /jump 7A.Ebony
+                    /playSound crow
+                    /emote 7A.Ebony 16 true
+                    /pause 500
+                    /showFrame 7A.Ebony 34
+                    /pause 5
+                    /showFrame 7A.Ebony 4
+                    /pause 800
+                        /speak 7A.Ebony \"D-darkiepoo...?!\"
+                        /speak 7A.Ebony \"You- You bird-brain, you had better get up!$a\"
+                        /speak 7A.Darkness \"Uuhggh...\"
+                        /speak 7A.Darkness \"Where... Oh, right. The lair.\"
+                        /speak 7A.Ebony \"I told you those crows were too far gone to be saved! Gah! You never listen, you stubborn bird.\"
+                        /speak 7A.Darkness \"Ebony...\"
+                        /speak 7A.Ebony \"I was so worried- I... I'm so glad you're okay-#$b#You... you don't look so good.\"
+                        /speak 7A.Darkness \"I don't feel so good, but I will be alright... I still have my mind.\"
+                        /speak 7A.Darkness \"Thank you for coming to my aid. My ego got the better of me.\"
+                        /speak 7A.Darkness \"Ugh...\"
+                        /speak 7A.Ebony \"Darkiepoo-! Crow-friend, Darkness needs a safe place to rest... can he stay with you for a while?\"
+
+                        /speak 7A.Ebony \"Thank you, thank you, thank you-\"
+                        /speak 7A.Darkness \"Guh...\"
+                        /speak 7A.Ebony \"Darkness-\"
+                        /speak 7A.Darkness \"Thank you, crow-friend. I will not take advantage of your kindness.\"
+                        /speak 7A.Darkness \"Take this amulet. I will come to your aid when you call.\"
+
+                        /speak 7A.Ebony \"Why you- He's hurt, he needs-\"
+                        /speak 7A.Darkness \"Guh...\"
+                        /speak 7A.Ebony \"Darkness!\"
+                        /speak 7A.Darkness \"Enough, Ebony. Respect the space of our ally. It's more than enough that this kind soul came to our aid in the first place.\"
+                        /speak 7A.Ebony \"I- But- Sigh. I suppose you're right.\"
+                        /speak 7A.Darkness \"Take this amulet. I will come to your aid when you call.\"
+
+                    /end
+                " ,            
+            }
+        },
+        /*
+                | ^ |  > |  v  |  < | 
+            ___|___________________|
+            | FD |  0 |  1 |  2 |  3 |
+            | AM |  4 |  1 |  2 |  3 | 
+            | MV | -y |  x |  y | -x |
+
+        */
+   ] 
+}

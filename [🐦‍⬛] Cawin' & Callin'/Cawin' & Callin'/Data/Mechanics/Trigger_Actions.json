@@ -104,6 +104,14 @@
                 "Condition": "PLAYER_STAT Current CnC_DarknessEXP 150000",
                 "Actions": [ "AddMail Current CnC_DarknessLevel_5 now" ]
             }, 
+        //SEND MAIL
+            "{{ModID}}_TheMurderBelowBegins": {
+                "Id": "{{ModID}}_TheMurderBelowBegins",
+                "Trigger": "DayEnding",
+                "MarkActionApplied": true,
+                "Condition": "PLAYER_HAS_SEEN_EVENT Current 112, PLAYER_HAS_MAIL Current CnC_Crow_On_Farm Any, PLAYER_HAS_MAIL Current CnC_Reached_MineLevel_80, PLAYER_HAS_MAIL Current CnC_Has_Golden_Axe",
+                "Actions": [ "AddMail Current HnH_TheMurderBelowBegins tomorrow" ]
+            },
         }
     }
 ]
