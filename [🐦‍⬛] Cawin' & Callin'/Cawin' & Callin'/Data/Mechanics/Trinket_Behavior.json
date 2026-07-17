@@ -8,7 +8,7 @@
     //EBONY
             "{{ModId}}_EbonyTrinket": {
 
-                "EnableCompanionCondition": "{{UnhideOnFarm}}",
+                "EnableCompanionCondition": "{{UnhideOnFarmEbony}}",
 
                 "Inventory": { "Capacity": "{{EbonyInventorySize}}", "DropContentsAsDebrisCondition": true },
 
@@ -165,7 +165,7 @@
     // DARKNESS
             "{{ModId}}_DarknessTrinket": {
 
-                "EnableCompanionCondition": "{{UnhideOnFarm}}",
+                "EnableCompanionCondition": "{{UnhideOnFarmDarkness}}",
 
                 "Variants": [
                     {

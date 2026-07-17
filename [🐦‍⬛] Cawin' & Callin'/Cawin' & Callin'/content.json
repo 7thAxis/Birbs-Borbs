@@ -44,6 +44,13 @@
             "Description":"Allows random corvids to spawn in the overworld that are occasionally adoptable.",
             "Section": "Gameplay"
     },
+    "Dungeon Difficulty": {
+            "AllowValues": "Scaled, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, Impossible",
+            "Default": "Scaled",
+            "AllowBlank": false,
+            "Description": "Force a specific dungeon difficulty stage for The Murder Below.",
+            "Section": "Gameplay"
+    },
     "Dungeon Audio Changes": {
             "AllowValues": "true, false",
             "Default": true,
@@ -53,10 +60,25 @@
     }
 },
     "DynamicTokens": [
-        { "Name": "UnhideOnFarm", "Value": "!LOCATION_NAME Here Farm Farmhouse" }, 
+        { "Name": "UnhideOnFarmEbony", "Value": "!LOCATION_NAME Here Farm Farmhouse" }, 
             {
-                "Name": "UnhideOnFarm", "Value": "!LOCATION_NAME Here 7AAPLACETHATDOESNTEXIST52525269424242067YOLO",
-                "When": { "Enable Companions On Farm": true } //i know i can put null here. this is funnier.
+                "Name": "UnhideOnFarmEbony", "Value": "!LOCATION_NAME Here 7AAPLACETHATDOESNTEXIST52525269424242067YOLO",
+                "When": { "HasFlag": "CnC_DidNotAdoptEbony", "HasSeenEvent": "{{ModID}}_TMBIntroduction" } 
+                    //i know i can put null here. this is funnier.
+            },
+            {
+                "Name": "UnhideOnFarmEbony", "Value": "!LOCATION_NAME Here 7AAPLACETHATDOESNTEXIST52525269424242067YOLO",
+                "When": { "Enable Companions On Farm": true } 
+            },
+
+        { "Name": "UnhideOnFarmDarkness", "Value": "!LOCATION_NAME Here Farm Farmhouse" }, 
+            {
+                "Name": "UnhideOnFarmDarkness", "Value": "!LOCATION_NAME Here 7AAPLACETHATDOESNTEXIST52525269424242067YOLO",
+                "When": { "HasFlag": "CnC_DidNotAdoptDarkness", "HasSeenEvent": "{{ModID}}_TMBEnd" } 
+            },
+            {
+                "Name": "UnhideOnFarmDarkness", "Value": "!LOCATION_NAME Here 7AAPLACETHATDOESNTEXIST52525269424242067YOLO",
+                "When": { "Enable Companions On Farm": true }
             },
 
         { "Name": "EbonyInventorySize", "Value": 9 },
@@ -143,6 +165,10 @@
             {
                 "Name": "DungeonStage", "Value": 10,
                 "When": { "HasFlag|contains=DuskspireDefeated": true, "HasFlag|contains=CnC_Has_Combat_Mastery": true }
+            },
+            {
+                "Name": "DungeonStage", "Value": "{{Dungeon Difficulty}}",
+                "When": { "Dungeon Difficulty|contains=Scaled": false }
             }
     ],
     "EventLimiterExceptions": [
@@ -151,7 +177,10 @@
         "{{ModID}}_TMBIntroduction.C2",
         "{{ModID}}_TMBIntroduction_Cont.1",
         "{{ModID}}_TMBIntroduction.C3",
-        "{{ModID}}_TMBIntroduction.C4"
+        "{{ModID}}_TMBIntroduction.C4",
+        "{{ModID}}_TMBEnd",
+        "{{ModID}}_TMBEnd.C1",
+        "{{ModID}}_TMBEnd.C2"
     ],
     "Changes": [
         {

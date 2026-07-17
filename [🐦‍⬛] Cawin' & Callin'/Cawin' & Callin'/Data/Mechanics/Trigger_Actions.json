@@ -110,7 +110,7 @@
                 "Trigger": "DayEnding",
                 "MarkActionApplied": true,
                 "Condition": "PLAYER_HAS_SEEN_EVENT Current 112, PLAYER_HAS_MAIL Current CnC_Crow_On_Farm Any, PLAYER_HAS_MAIL Current CnC_Reached_MineLevel_80, PLAYER_HAS_MAIL Current CnC_Has_Golden_Axe",
-                "Actions": [ "AddMail Current HnH_TheMurderBelowBegins tomorrow" ]
+                "Actions": [ "AddMail Current CnC_TheMurderBelowBegins tomorrow" ]
             },
         }
     }

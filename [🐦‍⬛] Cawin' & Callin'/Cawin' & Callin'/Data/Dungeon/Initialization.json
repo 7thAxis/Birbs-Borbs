@@ -13,13 +13,15 @@
                 "CnC_CrowBasementEntry": {
                     "DisplayName": "{{i18n:Dungeon.CrowBasementEntry}}",
                     "ExcludeFromNpcPathfinding": true,
-                    "CreateOnLoad": { "MapPath": "Maps/7A.TMB.ENTRY" }
+                    "CreateOnLoad": { "MapPath": "Maps/7A.TMB.ENTRY" },
+                    "DefaultArrivalTile": { "X": 7, "Y": 8 }
                 },
                 "CnC_CrowBasementTreasureRoom": {
                     "DisplayName": "{{i18n:Dungeon.CrowBasementTreasureRoom}}",
                     "ExcludeFromNpcPathfinding": true,
                     "CreateOnLoad": { "MapPath": "Maps/7A.TMB.END" },
-                    "Music": [ { "Track": "caldera" } ]
+                    "Music": [ { "Track": "caldera" } ],
+                    "DefaultArrivalTile": { "X": 6, "Y": 10 }
                 }
             }
         },
@@ -107,7 +109,7 @@
                         "LadderExitTile": "12, 6",
                         "ElevatorExitLocation": "CnC_CrowBasementEntry",
                         "ElevatorExitTile": "15, 10",
-                        "FloorsWithElevator": [ 5, 9, 10 ],
+                        "FloorsWithElevator": [ 5, 10 ],
                         "SpawnLadders": false,
                         "SpawnMineshafts": false,
                         "ViewportFollowsPlayer": true

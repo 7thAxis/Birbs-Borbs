@@ -414,6 +414,46 @@
                 }
             },
             "When": {  "DungeonStage": 10  }
+        },
+        {
+            "LogName": "Stage Impossible (cheats only)", 
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+                "Void_Crow_Underling": {
+                    "0": 999999,     // HP
+                    "1": 45,         // Damage
+                    "7": 999999,     // Defense
+                    "9": 3,          // Movement threshold
+                    "10": 2,         // speed
+                    "13": 33         // Exp
+                },
+                "Void_Crow_Boss": {
+                    "0": 999999,     // HP
+                    "1": 55,         // Damage
+                    "7": 999999,     // Defense
+                    "9": 2,          // Movement threshold
+                    "10": 2,         // speed
+                    "13": 37         // Exp
+                },
+                "Void_Crow_Walker": {
+                    "0": 999999,    // HP
+                    "1": 50,        // Damage
+                    "7": 5,         // Defense
+                    "9": 999999,    // Movement threshold
+                    "10": 3,        // speed
+                    "13": 37        // Exp
+                },
+                "Novus_Corvus": {
+                    "0": 999999,    // HP
+                    "1": 65,        // Damage
+                    "7": 999999,    // Defense
+                    "9": 50,        // Movement threshold
+                    "10": 15,       // speed
+                    "13": 55        // Exp
+                }
+            },
+            "When": {  "DungeonStage": "Impossible"  }
         }
     ]
 }

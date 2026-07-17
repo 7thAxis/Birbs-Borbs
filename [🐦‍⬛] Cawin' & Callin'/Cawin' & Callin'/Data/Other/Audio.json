@@ -13,6 +13,14 @@
                     "Looped": true
                     //https://www.youtube.com/watch?v=KKurml4cd_Q
                 },
+                "CnC_VampiresPiano": {
+                    "ID": "CnC_VampiresPiano",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/TAD_Vampires_Piano.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                    //https://www.youtube.com/watch?v=KKurml4cd_Q
+                },
                 "CnC_CorruptedCaw": {
                     "Id": "CnC_CorruptedCaw",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Jofae_Crow_Caw.ogg}}" ],
@@ -58,8 +66,12 @@
                 "CnC_TheMurderBelow": {
                     "Name": "{{i18n:Music.TheMurderBelow}}",
                     "Available": null
+                },
+                "CnC_VampiresPiano": {
+                    "Name": "{{i18n:Music.VampiresPiano}}",
+                    "Available": null
                 }
             }
         }
     ]
-}
+} 

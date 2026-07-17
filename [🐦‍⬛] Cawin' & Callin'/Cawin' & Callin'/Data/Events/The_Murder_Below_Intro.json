@@ -11,7 +11,7 @@
                     /farmer 7 8 2
                     /addTemporaryActor 7A.Ebony 32 32 12 10 1 false Character
                     /changeName 7A.Ebony Ebony
-                    /setSkipActions AddItem (O){{ModID}}_EbonyCharm#AddItem (O)ButterflyPowder#mushymato.LivestockBazaar_AdoptPet 7A.Ebony 0 Ebony#AddMail Current CnC_AdoptedEbony
+                    /setSkipActions AddItem (O){{ModID}}_EbonyCharm#AddItem (O)ButterflyPowder#mushymato.LivestockBazaar_AdoptPet 7A.Ebony 0 Ebony
                     /skippable
                     /pause 500
 
@@ -193,6 +193,7 @@
                     /showFrame 7A.Ebony 33
                     /jump 7A.Ebony
                     /pause 500
+                    /playSound crow
                     /showFrame 7A.Ebony 32
                     /pause 5
                     /showFrame 7A.Ebony 0

@@ -158,7 +158,7 @@
                         },
                         {
                             "SpawnableIds": [ { "Weight": 1.0, "Value": "CnC_Spawn_Ore" } ],
-                            "Minimum": 0, "Maximum": 2
+                            "Minimum": -2, "Maximum": 4
                         }
                     ]
                 },

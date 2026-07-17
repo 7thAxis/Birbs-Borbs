@@ -7,8 +7,9 @@
             "Entries": {
                 "{{ModID}}_TMBEnd/": "
                     caldera
-                    /8 23
+                    /12 11
                     /farmer 6 10 2
+                    /setSkipActions AddItem (O){{ModID}}_DarknessCharm#AddItem (O)ButterflyPowder#mushymato.LivestockBazaar_AdoptPet 7A.Darkness 0 Darkness
                     /addTemporaryActor 7A.Ebony 32 32 7 11 2 false Character
                     /addTemporaryActor 7A.Darkness 32 32 25 13 2 false Character
                     /changeName 7A.Ebony Ebony
@@ -45,7 +46,7 @@
                     /showFrame 7A.Ebony 32
                     /pause 5
                     /showFrame 7A.Ebony 0
-                    /pause 800
+                    /pause 500
                     /viewport move 1 0 16000
                     /advancedMove 7A.Ebony false 0 2 2 0 4 700 0 0 2 500 0 0 4 500 5 0 4 700 0 0 2 500 0 0 4 500 6 0 4 700 0 0 2 500 0 0 4 500 0 0 1 10
                     /pause 1000
@@ -58,6 +59,21 @@
                     /waitForAllStationary
                     /pause 300
                     /showFrame 7A.Ebony 35
+                    /playSound crow
+                    /emote 7A.Ebony 16 true
+                    /jump 7A.Ebony
+                    /pause 500
+                    /showFrame 7A.Ebony 34
+                    /pause 5
+                    /showFrame 7A.Ebony 4
+                    /pause 800
+                    /playMusic CnC_VampiresPiano
+                    /shake 7A.Ebony 2000
+                        /speak 7A.Ebony \"D-darkiepoo...?!$u\"
+                    /speed 7A.Ebony 4
+                    /advancedMove 7A.Ebony false 5 0 4 1
+                    /waitForAllStationary
+                    /showFrame 7A.Ebony 35
                     /jump 7A.Ebony
                     /playSound crow
                     /emote 7A.Ebony 16 true
@@ -65,34 +81,222 @@
                     /showFrame 7A.Ebony 34
                     /pause 5
                     /showFrame 7A.Ebony 4
-                    /pause 800
-                        /speak 7A.Ebony \"D-darkiepoo...?!\"
-                        /speak 7A.Ebony \"You- You bird-brain, you had better get up!$a\"
-                        /speak 7A.Darkness \"Uuhggh...\"
-                        /speak 7A.Darkness \"Where... Oh, right. The lair.\"
-                        /speak 7A.Ebony \"I told you those crows were too far gone to be saved! Gah! You never listen, you stubborn bird.\"
-                        /speak 7A.Darkness \"Ebony...\"
-                        /speak 7A.Ebony \"I was so worried- I... I'm so glad you're okay-#$b#You... you don't look so good.\"
-                        /speak 7A.Darkness \"I don't feel so good, but I will be alright... I still have my mind.\"
-                        /speak 7A.Darkness \"Thank you for coming to my aid. My ego got the better of me.\"
-                        /speak 7A.Darkness \"Ugh...\"
-                        /speak 7A.Ebony \"Darkiepoo-! Crow-friend, Darkness needs a safe place to rest... can he stay with you for a while?\"
-
-                        /speak 7A.Ebony \"Thank you, thank you, thank you-\"
-                        /speak 7A.Darkness \"Guh...\"
-                        /speak 7A.Ebony \"Darkness-\"
-                        /speak 7A.Darkness \"Thank you, crow-friend. I will not take advantage of your kindness.\"
-                        /speak 7A.Darkness \"Take this amulet. I will come to your aid when you call.\"
-
-                        /speak 7A.Ebony \"Why you- He's hurt, he needs-\"
-                        /speak 7A.Darkness \"Guh...\"
-                        /speak 7A.Ebony \"Darkness!\"
-                        /speak 7A.Darkness \"Enough, Ebony. Respect the space of our ally. It's more than enough that this kind soul came to our aid in the first place.\"
-                        /speak 7A.Ebony \"I- But- Sigh. I suppose you're right.\"
-                        /speak 7A.Darkness \"Take this amulet. I will come to your aid when you call.\"
-
+                    /pause 25
+                    /showFrame 7A.Ebony 35
+                    /jump 7A.Ebony
+                    /pause 500
+                    /showFrame 7A.Ebony 34
+                    /pause 5
+                    /showFrame 7A.Ebony 4
+                    /pause 500
+                        /speak 7A.Ebony \"You- You feather-brain, you had better get up!$a\"
+                        /textAboveHead 7A.Darkness \"Uuhggh...\"
+                        /shake 7A.Darkness 1000
+                        /pause 100
+                    		showFrame 7A.Ebony 4/		    
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+                            showFrame 7A.Ebony 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+   			                positionOffset 7A.Ebony -4 0/ pause 5/
+                            showFrame 7A.Ebony 4/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+                            showFrame 7A.Ebony 7/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+                            showFrame 7A.Ebony 4/pause 5/	    	    
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+			                positionOffset 7A.Ebony -4 0/ pause 5/
+                            showFrame 7A.Ebony 5/
+			                positionOffset 7A.Ebony -4 -1/ pause 5/
+			                positionOffset 7A.Ebony -4 -1/ pause 5/
+			                positionOffset 7A.Ebony -4 -1/ pause 5/
+   			                positionOffset 7A.Ebony -4 -1/ pause 5/
+                            showFrame 7A.Ebony 4/
+			                positionOffset 7A.Ebony -4 -1/ pause 5/
+			                positionOffset 7A.Ebony -4 -1/ pause 5/
+			                positionOffset 7A.Ebony -4 -1/ pause 5/
+			                positionOffset 7A.Ebony -4 -1/ pause 5/
+                            showFrame 7A.Ebony 7/
+                            pause 5
+                    /warp 7A.Ebony 23 13
+                    /showFrame 7A.Ebony 4
+                    /shake 7A.Darkness 2000
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 100/showFrame 7A.Darkness 25/pause 40
+                        /showFrame 7A.Darkness 24/pause 100/showFrame 7A.Darkness 4/pause 10
+                    /pause 500
+                    /faceDirection 7A.Darkness 2
+                    /pause 100
+                    /faceDirection 7A.Darkness 3
+                    /pause 100                   
+                        /speak 7A.Darkness \"Where...?$u#$b#Oh, right. The lair.$s\"
+                    /shake 7A.Ebony 800
+                    /emote 7A.Ebony 12
+                        /speak 7A.Ebony \"I told you those crows were too far gone to be saved!$a#$b#Gah! You never listen, you stubborn bird.$s\"
+                    /faceDirection 7A.Ebony 2
+                    /shake 7A.Ebony 500
+                    /emote 7A.Ebony 28
+                    /pause 500
+                        /speak 7A.Darkness \"Ebony...$s\"
+                    /faceDirection 7A.Ebony 1
+                        /speak 7A.Ebony \"I was so worried- I... I'm so glad you're okay-$s#$b#You... you don't look well.$s\"
+                    /shake 7A.Darkness 500
+                    /emote 7A.Darkness 40
+                        /speak 7A.Darkness \"I don't feel at my peak, but I will be alright.$h#$b#...I still have my mind, and that is what matters.$l\"
+                    /emote 7A.Ebony 28 true
+                    /advancedMove farmer false 5 0 4 10
+                    /waitForAllStationary
+                    /emote farmer 60
+                    /pause 100
+                    /faceDirection 7A.Darkness 2
+                    /emote 7A.Darkness 8
+                    /pause 300
+                        /speak 7A.Darkness \"Hm? I suppose you're my savior, no?#$b#Thank you for coming to my aid. My ego has bested me once more, it seems.$s\"
+                    /pause 100
+                    /shake 7A.Darkness 300
+                        /textAboveHead 7A.Darkness \"Ugh...\"
+                    /faceDirection 7A.Darkness 1
+                    /pause 600
+                    /shake 7A.Darkness 3200
+                        /showFrame 7A.Darkness 24/pause 100/showFrame 7A.Darkness 25/pause 40
+                        /showFrame 7A.Darkness 26/pause 100/showFrame 7A.Darkness 27/pause 10
+                    /pause 100
+                    /showFrame 7A.Ebony 35
+                    /jump 7A.Ebony
+                    /playSound crow
+                    /pause 500
+                    /showFrame 7A.Ebony 34
+                    /pause 5
+                    /showFrame 7A.Ebony 4
+                    /pause 500
+                    /textAboveHead 7A.Ebony \"Darkiepoo-!\"
+                    /pause 1800
+                        /speak 7A.Ebony \"Crow-friend, Darkness- He needs a safe place to rest!$u#$b#Can he stay with you for a while?$s\"
+                    /unskippable
+                        /quickQuestion Will you adopt Darkness as a pet?#Of course, there's plenty of space!#Not a chance.
+                        (break)switchEvent {{ModID}}_TMBEnd.C1(break)switchEvent {{ModID}}_TMBEnd.C2
                     /end
-                " ,            
+                " ,
+
+                "{{ModID}}_TMBEnd.C1": "
+                    pause 1
+                        /action mushymato.LivestockBazaar_AdoptPet 7A.Darkness 0 Darkness
+                        /shake 7A.Ebony 300
+                        /emote 7A.Ebony 20
+                        /speak 7A.Ebony \"Thank you, thank you, thank you-!$l\"
+                        /textAboveHead 7A.Darkness \"Guh...\"
+                    /shake 7A.Darkness 2000
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 100/showFrame 7A.Darkness 25/pause 40
+                        /showFrame 7A.Darkness 24/pause 100/showFrame 7A.Darkness 4/pause 10
+                    /pause 500
+                    /faceDirection 7A.Darkness 2
+                    /pause 1000
+                        /speak 7A.Ebony \"Darkness- Please be careful!$u\"
+                    /faceDirection 7A.Darkness 3
+                    /pause 50
+                    /showFrame 7A.Darkness 47
+                    /jump 7A.Darkness
+                    /playSound CnC_CorruptedCaw
+                    /emote 7A.Darkness 56 true
+                    /pause 500
+                    /showFrame 7A.Darkness 46
+                    /pause 5
+                    /showFrame 7A.Darkness 12
+                    /pause 25
+                        /speak 7A.Darkness \"I will be alright, now that we're together again.$l\"
+                    /emote 7A.Ebony 60 true
+                    /pause 100
+                    /emote 7A.Darkness 20
+                    /pause 100
+                    /faceDirection 7A.Darkness 2
+                    /pause 15
+                    /faceDirection 7A.Ebony 2
+                    /pause 25
+                        /speak 7A.Darkness \"Thank you, crow-friend. I will not take advantage of your kindness.$l\"
+                    /emote 7A.Darkness 40
+                        /speak 7A.Darkness \"Take this amulet. I will come to your aid when you call.$h\"
+                    /action AddItem (O){{ModID}}_DarknessCharm
+                    /pause 50
+                    /showFrame 7A.Darkness 33
+                    /jump 7A.Darkness
+                    /playSound CnC_CorruptedCaw
+                    /pause 500
+                    /showFrame 7A.Darkness 32
+                    /pause 5
+                    /showFrame 7A.Darkness 0
+                    /pause 25
+                        /speak 7A.Darkness \"Till we meet again, crow-friend.$l\"
+                    /emote farmer 32
+                    /pause 1000
+                    /globalFade 0.012
+                    /viewport -1000 -1000
+                        /speak 7A.Ebony \"May the wind always be with you, crow-friend. Thank you.$h\"
+                    /end
+                ",
+
+                "{{ModID}}_TMBEnd.C2": "
+                    pause 1
+                    /action AddMail Current CnC_DidNotAdoptDarkness
+                    /shake 7A.Ebony 300
+                    /emote 7A.Ebony 12
+                        /speak 7A.Ebony \"Why you- He's hurt, he needs-$a\"
+                        /textAboveHead 7A.Darkness \"Guh...\"
+                    /shake 7A.Darkness 2000
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 50/showFrame 7A.Darkness 27/pause 50
+                        /showFrame 7A.Darkness 26/pause 100/showFrame 7A.Darkness 25/pause 40
+                        /showFrame 7A.Darkness 24/pause 100/showFrame 7A.Darkness 4/pause 10
+                    /pause 500
+                    /faceDirection 7A.Darkness 2
+                    /pause 500
+                        /speak 7A.Ebony \"Darkness!$u\"
+                    /pause 100
+                    /faceDirection 7A.Darkness 3
+                        /speak 7A.Darkness \"Enough, Ebony. Respect the space of our ally.#$b#It's more than enough that this kind soul came to our aid in the first place...$l\"
+                    /emote 7A.Ebony 40
+                        /speak 7A.Ebony \"I- But- Sigh. I suppose you're right.$s\"
+                    /faceDirection 7A.Darkness 2
+                    /pause 15
+                    /faceDirection 7A.Ebony 2
+                    /pause 25
+                        /speak 7A.Darkness \"Take this amulet. I will come to your aid when you call.\"
+                    /action AddItem (O){{ModID}}_DarknessCharm
+                    /pause 50
+                    /showFrame 7A.Darkness 33
+                    /jump 7A.Darkness
+                    /playSound CnC_CorruptedCaw
+                    /pause 500
+                    /showFrame 7A.Darkness 32
+                    /pause 5
+                    /showFrame 7A.Darkness 0
+                    /pause 25
+                        /speak 7A.Darkness \"Till we meet again, crow-friend.$l\"
+                    /emote farmer 60
+                    /pause 1000
+                    /globalFade 0.012
+                    /viewport -1000 -1000
+                        /speak 7A.Darkness \"May the wind be with you, always. Thank you.$l\"
+                    /end
+                    ",
+                    
             }
         },
         /*
