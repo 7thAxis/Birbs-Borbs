@@ -60,7 +60,7 @@
 
                             //IDLE L
                             "46": "-10,-11",
-                            "47": "-10,-7",
+                            "47": "-10,-7"
                             },
                             "Source": "Given"
                         }
@@ -129,7 +129,7 @@
                         "Swim.1": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
                         "Swim.2": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
                         "Swim.3": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
-                        "Swim.4": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 },
+                        "Swim.4": { "FrameStart": 20, "FrameLength": 2, "Interval": 300 }
                     },
 
                     "Args": { "Min": 128, "Rate": 300, "MoveSync": true, "Velocity": -1 }
@@ -235,7 +235,7 @@
                     "Darkness_Base": { "Lines": [ "{{i18n: Dialogue.Darkness.Base.{{Random: 1,7}}}}" ], "Precedence": 2 },
 
                     "Darkness_Indoors": {
-                        "Lines": [ "{{i18n: Dialogue.Darkness.Indoors.{{Random: 1,7}}}}", ],
+                        "Lines": [ "{{i18n: Dialogue.Darkness.Indoors.{{Random: 1,7}}}}" ],
                         "Condition": "LOCATION_IS_INDOORS Here", "Precedence": 1 }, 
                     "Darkness_RainOutdoors": {
                         "Lines": [ "{{i18n: Dialogue.Darkness.RainOutdoors.{{Random: 1,7}}}}"],
@@ -344,7 +344,7 @@
                                 "IgnoreObjectCollisions": false,
                                 "Filters": [ "Stygium Crab", "Rock Crab", "Truffle Crab", "Lava Crab", "Iridium Crab", "Stygium False Mushroom" ]
                             }
-                        },
+                        }
                     ]
                 ]
             }

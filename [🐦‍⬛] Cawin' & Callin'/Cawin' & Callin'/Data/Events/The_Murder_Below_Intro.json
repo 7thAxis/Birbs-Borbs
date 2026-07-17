@@ -206,7 +206,7 @@
                 "{{ModID}}_TMBIntroduction.C3": "
                     pause 1
                     /emote 7A.Ebony 20
-                        /speak 7A.Ebony \"Thank you! It will be nice to have a place to rest my weary head again.$l#$b#My nest fell into disarray after Darkiepoo disappeared...$s#$b#I promise I won't cause you any problems.$h#$b#Well, too many, at least.$l\"/
+                        /speak 7A.Ebony \"Thank you! It will be nice to have a place to rest my weary head again.$l#$b#My nest fell into disarray after Darkling disappeared...$s#$b#I promise I won't cause you any problems.$h#$b#Well, too many, at least.$l\"/
                     /emote 7A.Ebony 20 true
                     /playSound crow
                     /showFrame 7A.Ebony 33

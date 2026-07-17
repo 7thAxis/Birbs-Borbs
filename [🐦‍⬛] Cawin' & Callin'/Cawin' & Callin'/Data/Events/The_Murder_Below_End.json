@@ -69,7 +69,7 @@
                     /pause 800
                     /playMusic CnC_VampiresPiano
                     /shake 7A.Ebony 2000
-                        /speak 7A.Ebony \"D-darkiepoo...?!$u\"
+                        /speak 7A.Ebony \"D-Darkling...?!$u\"
                     /speed 7A.Ebony 4
                     /advancedMove 7A.Ebony false 5 0 4 1
                     /waitForAllStationary
@@ -183,7 +183,7 @@
                     /pause 5
                     /showFrame 7A.Ebony 4
                     /pause 500
-                    /textAboveHead 7A.Ebony \"Darkiepoo-!\"
+                    /textAboveHead 7A.Ebony \"Darkling-!\"
                     /pause 1800
                         /speak 7A.Ebony \"Crow-friend, Darkness- He needs a safe place to rest!$u#$b#Can he stay with you for a while?$s\"
                     /unskippable
